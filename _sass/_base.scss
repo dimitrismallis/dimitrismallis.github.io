@@ -24,16 +24,6 @@ hr {
 }
 
 table {
-<<<<<<< HEAD
-
-  td,
-  th {
-    color: var(--global-text-color);
-  }
-
-  td {
-    font-size: 1rem;
-=======
   td,
   th {
     font-size: 1rem;
@@ -41,7 +31,6 @@ table {
 
   th {
     font-weight: bold;
->>>>>>> 944d225 (Initial commit)
   }
 }
 
@@ -424,15 +413,12 @@ footer.sticky-bottom {
   }
 }
 
-<<<<<<< HEAD
-=======
 .post-title {
   mjx-container[jax="CHTML"][display="true"] {
     display: unset;
   }
 }
 
->>>>>>> 944d225 (Initial commit)
 .post-list {
   margin: 0;
   margin-bottom: 40px;
@@ -465,13 +451,10 @@ footer.sticky-bottom {
         color: var(--global-theme-color);
       }
     }
-<<<<<<< HEAD
-=======
 
     mjx-container[jax="CHTML"][display="true"] {
       display: unset;
     }
->>>>>>> 944d225 (Initial commit)
   }
 }
 
@@ -661,10 +644,7 @@ footer.sticky-bottom {
           padding-right: 1rem;
           padding-top: 0.25rem;
           padding-bottom: 0.25rem;
-<<<<<<< HEAD
-=======
           margin-left: 0;
->>>>>>> 944d225 (Initial commit)
 
           &:hover {
             color: var(--global-theme-color);
@@ -674,19 +654,12 @@ footer.sticky-bottom {
       }
 
       .badges {
-<<<<<<< HEAD
-=======
         padding-bottom: 0.5rem;
->>>>>>> 944d225 (Initial commit)
         span {
           display: inline-block;
           color: $black-color;
           height: 100%;
-<<<<<<< HEAD
-          padding-left: 0.5rem;
-=======
           padding-right: 0.5rem;
->>>>>>> 944d225 (Initial commit)
           vertical-align: middle;
 
           &:hover {
@@ -862,45 +835,21 @@ progress::-moz-progress-bar {
   height: inherit;
 }
 
-<<<<<<< HEAD
-pre {
-  padding: 8px 12px;
-  position: relative;
-
-  /* Copy code to clipboard button */
-=======
 /* Copy button */
 .code-display-wrapper {
   position: relative;
 
->>>>>>> 944d225 (Initial commit)
   .copy {
     background: var(--global-card-bg-color);
     border-color: var(--global-bg-color);
     border-radius: .3rem;
-<<<<<<< HEAD
-    border-style: solid;
-=======
     border-style: none;
->>>>>>> 944d225 (Initial commit)
     color: var(--global-text-color);
     font-size: medium;
     opacity: 0;
     position: absolute;
-<<<<<<< HEAD
-    right: .25rem;
-    top: .25rem;
-
-    &:active,
-    &:focus,
-    &:hover {
-      color: var(--global-hover-color);
-      opacity: 1;
-    }
-=======
     right: .5rem;
     top: .5rem;
->>>>>>> 944d225 (Initial commit)
   }
 
   &:active .copy,
@@ -910,8 +859,6 @@ pre {
     opacity: 1;
   }
 }
-<<<<<<< HEAD
-=======
 
 .btn-group.dropdown {
   .btn {
@@ -1000,4 +947,3 @@ nav[data-toggle="toc"] {
   }
 }
 
->>>>>>> 944d225 (Initial commit)

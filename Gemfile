@@ -12,10 +12,7 @@ group :jekyll_plugins do
     gem 'jekyll-paginate-v2'
     gem 'jekyll-scholar'
     gem 'jekyll-sitemap'
-<<<<<<< HEAD
-=======
     gem 'jekyll-toc'
->>>>>>> 944d225 (Initial commit)
     gem 'jekyll-twitter-plugin'
     gem 'jemoji'
     gem 'mini_racer'

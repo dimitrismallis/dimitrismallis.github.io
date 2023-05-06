@@ -16,10 +16,6 @@ let setTheme = (theme) =>  {
 
   if (theme) {
     document.documentElement.setAttribute("data-theme", theme);
-<<<<<<< HEAD
-  }
-  else {
-=======
 
     // Add class to tables.
     let tables = document.getElementsByTagName('table');
@@ -31,7 +27,6 @@ let setTheme = (theme) =>  {
       }
     }
   } else {
->>>>>>> 944d225 (Initial commit)
     document.documentElement.removeAttribute("data-theme");
   }
   localStorage.setItem("theme", theme);
