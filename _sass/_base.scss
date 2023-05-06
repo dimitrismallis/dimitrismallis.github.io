@@ -24,6 +24,7 @@ hr {
 }
 
 table {
+<<<<<<< HEAD
 
   td,
   th {
@@ -32,6 +33,15 @@ table {
 
   td {
     font-size: 1rem;
+=======
+  td,
+  th {
+    font-size: 1rem;
+  }
+
+  th {
+    font-weight: bold;
+>>>>>>> 944d225 (Initial commit)
   }
 }
 
@@ -414,6 +424,15 @@ footer.sticky-bottom {
   }
 }
 
+<<<<<<< HEAD
+=======
+.post-title {
+  mjx-container[jax="CHTML"][display="true"] {
+    display: unset;
+  }
+}
+
+>>>>>>> 944d225 (Initial commit)
 .post-list {
   margin: 0;
   margin-bottom: 40px;
@@ -446,6 +465,13 @@ footer.sticky-bottom {
         color: var(--global-theme-color);
       }
     }
+<<<<<<< HEAD
+=======
+
+    mjx-container[jax="CHTML"][display="true"] {
+      display: unset;
+    }
+>>>>>>> 944d225 (Initial commit)
   }
 }
 
@@ -635,6 +661,10 @@ footer.sticky-bottom {
           padding-right: 1rem;
           padding-top: 0.25rem;
           padding-bottom: 0.25rem;
+<<<<<<< HEAD
+=======
+          margin-left: 0;
+>>>>>>> 944d225 (Initial commit)
 
           &:hover {
             color: var(--global-theme-color);
@@ -644,11 +674,19 @@ footer.sticky-bottom {
       }
 
       .badges {
+<<<<<<< HEAD
+=======
+        padding-bottom: 0.5rem;
+>>>>>>> 944d225 (Initial commit)
         span {
           display: inline-block;
           color: $black-color;
           height: 100%;
+<<<<<<< HEAD
           padding-left: 0.5rem;
+=======
+          padding-right: 0.5rem;
+>>>>>>> 944d225 (Initial commit)
           vertical-align: middle;
 
           &:hover {
@@ -824,20 +862,32 @@ progress::-moz-progress-bar {
   height: inherit;
 }
 
+<<<<<<< HEAD
 pre {
   padding: 8px 12px;
   position: relative;
 
   /* Copy code to clipboard button */
+=======
+/* Copy button */
+.code-display-wrapper {
+  position: relative;
+
+>>>>>>> 944d225 (Initial commit)
   .copy {
     background: var(--global-card-bg-color);
     border-color: var(--global-bg-color);
     border-radius: .3rem;
+<<<<<<< HEAD
     border-style: solid;
+=======
+    border-style: none;
+>>>>>>> 944d225 (Initial commit)
     color: var(--global-text-color);
     font-size: medium;
     opacity: 0;
     position: absolute;
+<<<<<<< HEAD
     right: .25rem;
     top: .25rem;
 
@@ -847,6 +897,10 @@ pre {
       color: var(--global-hover-color);
       opacity: 1;
     }
+=======
+    right: .5rem;
+    top: .5rem;
+>>>>>>> 944d225 (Initial commit)
   }
 
   &:active .copy,
@@ -856,3 +910,94 @@ pre {
     opacity: 1;
   }
 }
+<<<<<<< HEAD
+=======
+
+.btn-group.dropdown {
+  .btn {
+    box-shadow: none;
+    -webkit-box-shadow: none;
+  }
+
+  .btn-secondary.dropdown-toggle {
+    border: 1px solid var(--global-divider-color);
+
+    .page-size {
+      color: inherit;
+    }
+
+    &:not(.active) {
+      background-color: var(--global-bg-color) !important;
+      color: var(--global-text-color);
+    }
+
+    &:hover {
+      background-color: var(--global-hover-color) !important;
+      color: var(--global-hover-text-color) !important;
+    }
+  }
+
+  .dropdown-menu {
+    background-color: var(--global-bg-color);
+  }
+
+  .dropdown-item {
+    background-color: var(--global-bg-color);
+    color: var(--global-text-color);
+
+    &:hover {
+      color: var(--global-hover-color);
+    }
+  }
+
+  .dropdown-item.active, .dropdown-item:active {
+    background-color: var(--global-hover-color);
+    color: var(--global-hover-text-color) !important;
+
+    &:hover {
+      color: var(--global-hover-text-color);
+    }
+  }
+}
+
+/* Table of Contents */
+nav[data-toggle="toc"] {
+  top: 5rem;
+
+  .nav .nav>li>a {
+    font-size: .75rem;
+  }
+
+  .nav>li>a {
+    color: var(--global-text-color);
+    font-size: .75rem;
+
+    &:hover {
+      color: var(--global-hover-color);
+      border-left-color: var(--global-hover-color);
+    }
+  }
+
+  .nav-link.active {
+    color: var(--global-theme-color);
+    border-left-color: var(--global-theme-color);
+    font-size: .75rem;
+
+    &:hover {
+      color: var(--global-hover-color);
+      border-left-color: var(--global-hover-color);
+    }
+  }
+}
+
+/* small screens */
+@media (max-width: 576px) {
+  /* override stickyness so that the navigation does not follow scrolling */
+  nav[data-toggle="toc"] {
+    visibility: hidden;
+    height: 0;
+    top: 0;
+  }
+}
+
+>>>>>>> 944d225 (Initial commit)
