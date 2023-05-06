@@ -252,14 +252,12 @@ Starting version [v0.3.5](https://github.com/alshedivat/al-folio/releases/tag/v0
 5. After deployment, the webpage will become available at `<your-github-username>.github.io`.
 
 **For project pages:**
-
 1. In `_config.yml`, set `url` to `https://<your-github-username>.github.io` and `baseurl` to `/<your-repository-name>/`.
 2. Set up automatic deployment of your webpage (see instructions below).
 3. Make changes, commit, and push!
 4. After deployment, the webpage will become available at `<your-github-username>.github.io/<your-repository-name>/`.
 
 **To enable automatic deployment:**
-
 1. Click on **Actions** tab and **Enable GitHub Actions**; do not worry about creating any workflows as everything has already been set for you.
 2. Go to Settings -> Actions -> General -> Workflow permissions, and give **Read and write permissions** to GitHub Actions
 3. Make any other changes to your webpage, commit, and push. This will automatically trigger the **Deploy** action.
@@ -298,7 +296,6 @@ For a user site this could well be something like `$HOME/<user>.github.io`.
 Firstly, from the deployment repo dir, checkout the git branch hosting your publishing source.
 
 Then from the website sources dir (commonly your al-folio fork's clone):
-
 ```bash
 $ bundle exec jekyll build --lsi --destination $HOME/repo/publishing-source
 ```
@@ -455,7 +452,6 @@ The co-author data format in `_data/coauthors.yml` is as follows,
   - firstname: ["Carl Philipp Emanuel", "C. P. E."]
     url: https://en.wikipedia.org/wiki/Carl_Philipp_Emanuel_Bach
 ```
-
 If the entry matches one of the combinations of the last names and the first names, it will be highlighted and linked to the url provided.
 
 </details>
@@ -577,7 +573,6 @@ You may also use the following codes for displaying this in any other pages.
 ```
 
 #### Theming
-
 A variety of beautiful theme colors have been selected for you to choose from.
 The default is purple, but you can quickly change it by editing the
 `--global-theme-color` variable in the `_sass/_themes.scss` file.
@@ -587,7 +582,6 @@ You can also add your own colors to this file assigning each a name for ease of
 use across the template.
 
 #### Social media previews
-
 **al-folio** supports preview images on social media.
 To enable this functionality you will need to set `serve_og_meta` to `true` in your `_config.yml`.
 Once you have done so, all your site's pages will include Open Graph data in the HTML head element.
@@ -598,7 +592,6 @@ If for an individual page this variable is not set, then the theme will fall bac
 In both the page-specific and site-wide cases, the `og_image` variable needs to hold the URL for the image you wish to display in social media previews.
 
 #### Atom (RSS-like) Feed
-
 It generates an Atom (RSS-like) feed of your posts, useful for Atom and RSS readers.
 The feed is reachable simply by typing after your homepage `/feed.xml`.
 E.g. assuming your website mountpoint is the main folder, you can type `yourusername.github.io/feed.xml`
