@@ -1,19 +1,19 @@
 ---
 layout: about
-title: about
+title: About
 permalink: /
-subtitle: 3D Computer Vision Researcher, University of Luxembourg.
+subtitle: Computer Vision Researcher, University of Luxembourg.
 
 profile:
   align: right
   image: profile.jpg
   image_circular: false # crops the image to make it circular
   address: >
-    <p>CVI² Research Group</p>
+    <p>CVI² Research Group,</p>
     <p>University of Luxembourg</p>
 
 
-news: false  # includes a list of news items
+news: true  # includes a list of news items
 latest_posts: false  # includes a list of the newest posts
 selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true  # includes social icons at the bottom of the page

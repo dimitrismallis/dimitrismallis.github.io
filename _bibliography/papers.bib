@@ -9,31 +9,86 @@
   journal={IEEE Transactions on Pattern Analysis and Machine Intelligence}, 
   title={From Keypoints to Object Landmarks via Self-Training Correspondence: A novel approach to Unsupervised Landmark Discovery}, 
   year={2023},
+  selected={true},
+  abbr={TPAMI},
   doi={10.1109/TPAMI.2023.3234212},
-  selected={true}
+  altmetric={true},
+  code={https://github.com/dimitrismallis/KeypointsToLandmarks},
+  arxiv={2205.15895},
+  bibtex_show={true},
+  dimensions={true},
+  html={https://ieeexplore.ieee.org/document/10005822},
+  abstract={This paper proposes a novel paradigm for the unsupervised learning of object landmark detectors. Contrary to existing methods that build on auxiliary tasks such as image generation or equivariance, we propose a self-training approach where, departing from generic keypoints, a landmark detector and descriptor is trained to improve itself, tuning the keypoints into distinctive landmarks. To this end, we propose an iterative algorithm that alternates between producing new pseudo-labels through feature clustering and learning distinctive features for each pseudo-class through contrastive learning. With a shared backbone for the landmark detector and descriptor, the keypoint locations progressively converge to stable landmarks, filtering those less stable. Compared to previous works, our approach can learn points that are more flexible in terms of capturing large viewpoint changes. We validate our method on a variety of difficult datasets, including LS3D, BBCPose, Human3.6M and PennAction, achieving new state of the art results.}
 }
 @article{Katsileros2022AnIL,
   title={An Incremental Learning framework for Large-scale CTR Prediction},
   author={Petros Katsileros and Nikiforos Mandilaras and Dimitrios Mallis and Vassilis Pitsikalis and Stavros Theodorakis and Gil Chamiel},
-  journal={Proceedings of the 16th ACM Conference on Recommender Systems (RecSys)},
+  journal={Conference on Recommender Systems},
   year={2022},
-  selected={true}
+  abbr={RecSys 2022},
+  bibtex_show={true},
+  html={https://dl.acm.org/doi/10.1145/3523227.3547390},
+  arxiv={2209.00458},
+  abstract={In this work we introduce an incremental learning framework for Click-Through-Rate (CTR) prediction and demonstrate its effectiveness for Taboola's massive-scale recommendation service. Our approach enables rapid capture of emerging trends through warm-starting from previously deployed models and fine tuning on "fresh" data only. Past knowledge is maintained via a teacher-student paradigm, where the teacher acts as a distillation technique, mitigating the catastrophic forgetting phenomenon. Our incremental learning framework enables significantly faster training and deployment cycles (x12 speedup). We demonstrate a consistent Revenue Per Mille (RPM) lift over multiple traffic segments and a significant CTR increase on newly introduced items.}
 }
 
 
 @article{unsupervLandm2020,
 title={Unsupervised Learning of Object Landmarks via Self-Training Correspondence},
 author={Mallis, Dimitrios and Sanchez, Enrique and Bell, Matt and Tzimiropoulos, Georgios},
-journal={Conference on Neural Information Processing Systems (NeurIPS)},
+journal={Neural Information Processing Systems},
 year={2020},
-selected={true}
+selected={true},  
+preview={nips2020.png},  
+altmetric={true},
+bibtex_show={true},
+slides={https://crossminds.ai/video/unsupervised-learning-of-object-landmarks-via-self-training-correspondence-606ff105f43a7f2f827c18dd/},
+html={https://proceedings.neurips.cc/paper/2020/hash/32508f53f24c46f685870a075eaaa29c-Abstract.html},
+pdf={https://proceedings.neurips.cc/paper/2020/file/32508f53f24c46f685870a075eaaa29c-Paper.pdf},
+supp={https://proceedings.neurips.cc/paper_files/paper/2020/file/32508f53f24c46f685870a075eaaa29c-Supplemental.pdf},
+code={https://github.com/dimitrismallis/UnsupervisedLandmarks},
+abstract={This paper addresses the problem of unsupervised discovery of object landmarks.
+We take a different path compared to existing works, based on 2 novel perspectives: (1) Self-training: starting from generic keypoints, we propose a self-training
+approach where the goal is to learn a detector that improves itself, becoming
+more and more tuned to object landmarks. (2) Correspondence: we identify correspondence as a key objective for unsupervised landmark discovery and propose
+an optimization scheme which alternates between recovering object landmark
+correspondence across different images via clustering and learning an object landmark descriptor without labels. Compared to previous works, our approach can
+learn landmarks that are more flexible in terms of capturing large changes in
+viewpoint. We show the favourable properties of our method on a variety of difficult datasets including LS3D, BBCPose and Human3.6M.}
 }
 
 @article { emmissionstudy,
-    title = {Modified approach to estimating daily methane emissions of dairy cows by measuring filtered eructations during milking},
-    journal = {Landbauforschung},
-    year = {2019},
-    author = {Matt Bell and Phil Garnsworthy and Dimitrios Mallis and Richrd Eckard and Peter Moate and Tianhai Yan}
+  title = {Modified approach to estimating daily methane emissions of dairy cows by measuring filtered eructations during milking},
+  journal = {Landbauforschung},
+  year = {2019},
+  bibtex_show={true},
+  preview={methanepaper.png},  
+  author = {Matt Bell and Phil Garnsworthy and Dimitrios Mallis and Richrd Eckard and Peter Moate and Tianhai Yan},
+  pdf={https://nottingham-repository.worktribe.com/preview/4225430/LBF-69-01-8_Research_Bell_et_al_200318.pdf},
+  abstract={The aim of this study was to compare metrics for quantifying
+enteric methane (CH4) emissions from individual cows during
+milking using frequent spot measurements and peak analysis
+methods. An infrared gas analyser was used to measure the
+CH4 emitted by cows, and eructation peaks were identified
+using a Signal Processing Toolbox provided by Matlab. CH4
+emissions were quantified by gas peak height, peak amplitude and average concentration, and were expressed in
+grams per day and CH4 yield (grams per kilogram of dry matter intake (DMI)). Peak analysis measurements of CH4 were
+obtained from 36 cows during 2,474 milkings, during which
+cows were fed a ration containing between 39 and 70% forage. Spot measurements of CH4 were compared to a separate
+dataset of 196 chamber CH4 records from another group of
+105 cows, which were fed a ration containing between 25
+and 80% forage. The results showed that the metrics of CH4
+peak height and CH4 peak amplitude demonstrated similar positive relationships between daily CH4 emissions and
+DMI (both r=0.37), and a negative relationship between CH4
+yield and DMI (r=-0.43 and -0.38 respectively) as observed in
+the chamber measurements (r=0.57 for daily emissions and
+r=-0.40 for CH4 yield). The CH4 metrics of peak height and
+peak amplitude were highly repeatable (ranging from 0.76
+to 0.81), comparable to the high repeatability of production
+traits (ranging from 0.63 to 0.99) and were more repeatable
+than chamber CH4 measurements (0.31 for daily emissions and
+0.03 for CH4 yield). This study recommends quantifying CH4
+emissions from the maximum amplitude of an eructation.}
 }
 
 
@@ -42,24 +97,82 @@ selected={true}
   author={Dimitrios Mallis and Thomas Sgouros and Nikolaos Mitianoudis},
   journal={Evolving Systems},
   year={2018},
+  bibtex_show={true},
+  html={https://link.springer.com/article/10.1007/s12530-017-9199-3},
+  arxiv={1708.03989},
+  preview={evolvingSystems.png},  
+  html={https://link.springer.com/article/10.1007/s12530-017-9199-3},
+  abstract={Audio source separation is the task of isolating sound sources that are active simultaneously in a room captured by a set of microphones. Convolutive audio source separation of equal number of sources and microphones has a number of shortcomings including the complexity of frequency-domain ICA, the permutation ambiguity and the problem's scalabity with increasing number of sensors. In this paper, the authors propose a multiple-microphone audio source separation algorithm based on a previous work of Mitianoudis and Davies (2003). Complex FastICA is substituted by Robust ICA increasing robustness and performance. Permutation ambiguity is solved using two methodologies. The first is using the Likelihood Ration Jump solution, which is now modified to decrease computational complexity in the case of multiple microphones. The application of the MuSIC algorithm, as a preprocessing step to the previous solution, forms a second methodology with promising results.}
 }
 @article{Kalamatianos2018TowardsTC,
   title={Towards the creation of an emotion lexicon for microblogging},
   author={Georgios Kalamatianos and Symeon Symeonidis and Dimitrios Mallis and Avi Arampatzis},
   journal={Journal of Systems and Information Technology},
   year={2018},
+  bibtex_show={true},
+  preview={tweets.png}, 
+  pdf={JSIT18.pdf}, 
+  website={http://hashtag.nonrelevant.net/},
+  html={https://www.emerald.com/insight/content/doi/10.1108/JSIT-06-2017-0040/full/html},
+  abstract={<b>Purpose</b> - The rapid growth of social media has rendered opinion and sentiment mining an important area
+of research with a wide range of applications. This paper aims to focus on the Greek language and the
+microblogging platform Twitter, investigating methods for extracting emotion of individual tweets as well as
+population emotion for different subjects (hashtags). <br><br>
+
+<b>Design/methodology/approach</b> – The authors propose and investigate the use of emotion lexiconbased methods as a mean of extracting emotion/sentiment information from social media. The authors
+compare several approaches for measuring the intensity of six emotions: anger, disgust, fear, happiness,
+sadness and surprise. To evaluate the effectiveness of the methods, the authors develop a benchmark dataset
+of tweets, manually rated by two humans. <br><br>
+
+<b>Findings</b> – Development of a new sentiment lexicon for use in Web applications. The authors then assess
+the performance of the methods with the new lexicon and find improved results.<br><br>
+
+<b>Research limitations/implications</b> – Automated emotion results of research seem promising and
+correlate to real user emotion. At this point, the authors make some interesting observations about the lexiconbased approach which lead to the need for a new, better, emotion lexicon.<br><br>
+
+<b>Practical implications</b> – The authors examine the variation of emotion intensity over time for selected
+hashtags and associate it with real-world events.<br><br>
+
+<b>Originality/value</b> – The originality in this research is the development of a training set of tweets,
+manually annotated by two independent raters. The authors “transfer” the sentiment information of these
+annotated tweets, in a meaningful way, to the set of words that appear in them.}
 }
 
-@inproceedings{Mallis2016ConvolutiveAS,
+@article{Mallis2016ConvolutiveAS,
   title={Convolutive Audio Source Separation Using Robust ICA and Reduced Likelihood Ratio Jump},
   author={Dimitrios Mallis and Thomas Sgouros and Nikolaos Mitianoudis},
-  booktitle={Artificial Intelligence Applications and Innovations (AIAI)},
-  year={2016}
+  journal={Artificial Intelligence Applications and Innovations},
+  year={2016},
+  bibtex_show={true},
+  preview={cas.png}, 
+  pdf={https://utopia.duth.gr/nmitiano/pdf/aiai2016.pdf},
+  html={https://www.springerprofessional.de/en/convolutive-audio-source-separation-using-robust-ica-and-reduced/10651414},
+  abstract={Audio source separation is the task of isolating sound sources that are active simultaneously in a room captured by a set of microphones. Convolutive audio source separation of equal number of sources and microphones has a number of shortcomings including the complexity of frequency-domain ICA, the permutation ambiguity and the problem’s scalabity with increasing number of sensors. In this paper, the authors propose a multiple-microphone audio source separation algorithm based on a previous work of Mitianoudis and Davies. Complex FastICA is substituted by Robust ICA increasing robustness and performance. Permutation ambiguity is solved using the Likelihood Ration Jump solution, which is now modified to decrease computational complexity in the case of multiple microphones.}
 }
 
 @article{Kalamatianos2015SentimentAO,
   title={Sentiment analysis of greek tweets and hashtags using a sentiment lexicon},
   author={Georgios Kalamatianos and Dimitrios Mallis and Symeon Symeonidis and Avi Arampatzis},
   journal={Panhellenic Conference on Informatics},
-  year={2015}
+  year={2015},
+  bibtex_show={true},
+  preview={hashtags.png},  
+  website={http://hashtag.nonrelevant.net/},
+  html={https://dl.acm.org/doi/10.1145/2801948.2802010},
+  pdf={http://www.aviarampatzis.com/publications/PCI2015a.pdf},
+  abstract={The rapid growth of social media has rendered opinion and
+sentiment mining an important area of research with a wide range
+of applications. We focus on the Greek language and the
+microblogging platform “Twitter”, investigating methods for
+extracting sentiment of individual tweets as well population
+sentiment for different subjects (hashtags). The proposed methods
+are based on a sentiment lexicon. We compare several approaches
+for measuring the intensity of “Anger”, “Disgust”, “Fear”,
+“Happiness”, “Sadness”, and “Surprise”. To evaluate the
+effectiveness of our methods, we develop a benchmark dataset of
+tweets, manually rated by two humans. Our automated sentiment
+results seem promising and correlate to real user sentiment. Finally,
+we examine the variation of sentiment intensity over time for
+selected hashtags, and associate it with real-world events.}
+
 }
