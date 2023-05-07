@@ -2,25 +2,23 @@
 layout: about
 title: about
 permalink: /
-subtitle: <a href='#'>Affiliations</a>. Address. Contacts. Moto. Etc.
+subtitle: 3D Computer Vision Researcher, University of Luxembourg.
 
 profile:
   align: right
-  image: prof_pic.jpg
+  image: profile.jpg
   image_circular: false # crops the image to make it circular
   address: >
-    <p>555 your office number</p>
-    <p>123 your address street</p>
-    <p>Your City, State 12345</p>
+    <p>CVI² Research Group</p>
+    <p>University of Luxembourg</p>
 
-news: true  # includes a list of news items
-latest_posts: true  # includes a list of the newest posts
+
+news: false  # includes a list of news items
+latest_posts: false  # includes a list of the newest posts
 selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true  # includes social icons at the bottom of the page
 ---
 
-Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](http://reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
+I received my PhD in Computer Vision at the [University of Nottingham (UK)](https://www.nottingham.ac.uk/research/groups/cvl/) under the supervision of [Dr. Yorgos Tzimiropoulos](https://ytzimiro.github.io/). I was also a PhD Intern at [Samsung AI Cambridge (SAIC)](https://research.samsung.com/aicenter_cambridge) and later worked as a Senior Machine Learning Engineer for [Taboola](https://www.taboola.com/) and [Deeplab, Athens](https://deeplab.ai/). Currently, I am a Posdoctoral Researcher with the [Interdisciplinary Centre for Security, Reliability and Trust (SnT)](https://wwwfr.uni.lu/snt) of the [University of Luxembourg (UL)](https://wwwen.uni.lu/).
 
-Put your address / P.O. box / other info right below your picture. You can also disable any of these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically.
-
-Link to your social media connections, too. This theme is set up to use [Font Awesome icons](http://fortawesome.github.io/Font-Awesome/) and [Academicons](https://jpswalsh.github.io/academicons/), like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them.
+My research focuses on learning for vision tasks (Landmark Detection, Human Pose Estimation) under limited supervision (Self-Supervised Learning, Semi-Supervised Learning). Moreover, I have also looked into deep learning-based Recommender Systems, and more recently I am focusing on 3D Computer Vision and particularly applications on computer-aided design (CAD).
