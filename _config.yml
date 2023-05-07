@@ -3,7 +3,7 @@
 # -----------------------------------------------------------------------------
 
 title: blank # the website title (if blank, full name will be used instead)
-first_name: Dimitrios
+first_name: Dimitri(o)s
 middle_name:
 last_name: Mallis (PhD)
 email: malldimi1@gmail.com
@@ -227,6 +227,7 @@ plugins:
   - jekyll-toc
   - jekyll-twitter-plugin
   - jemoji
+  - jekyll-include-cache
 
 # Sitemap settings
 defaults:
