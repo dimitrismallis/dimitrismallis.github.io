@@ -73,19 +73,19 @@
 
               <!-- About -->
               <li class="nav-item active">
-                <a class="nav-link" href="/">about<span class="sr-only">(current)</span></a>
+                <a class="nav-link" href="/">About<span class="sr-only">(current)</span></a>
               </li>
               
 
               <!-- Other pages -->
               <li class="nav-item ">
-                <a class="nav-link" href="/publications/">publications</a>
+                <a class="nav-link" href="/publications/">Publications</a>
               </li>
               <li class="nav-item ">
-                <a class="nav-link" href="/repositories/">repositories</a>
+                <a class="nav-link" href="/repositories/">Repositories</a>
               </li>
               <li class="nav-item ">
-                <a class="nav-link" href="/cv/">cv</a>
+                <a class="nav-link" href="/cv/">CV</a>
               </li>
 
               <!-- Toogle theme mode -->
@@ -118,7 +118,7 @@
           <h1 class="post-title">
            <span class="font-weight-bold">Dimitri(o)s</span>  Mallis (PhD)
           </h1>
-          <p class="desc">3D Computer Vision Researcher, University of Luxembourg.</p>
+          <p class="desc">Computer Vision Researcher, University of Luxembourg.</p>
         </header>
 
         <article>
@@ -141,7 +141,7 @@
 </figure>
 
             <div class="address">
-              <p>CVI² Research Group</p> <p>University of Luxembourg</p>
+              <p>CVI² Research Group,</p> <p>University of Luxembourg</p>
 
             </div>
           </div>
@@ -160,13 +160,13 @@
           
 
           <!-- Selected papers -->
-          <h2><a href="/publications/" style="color: inherit;">selected publications</a></h2>
+          <h2><a href="/publications/" style="color: inherit;">Selected Publications</a></h2>
           <div class="publications">
             <ol class="bibliography">
 <li>
 <!-- _layouts/bib.html -->
       <div class="row">
-        <div class="col-sm-2 abbr"></div>
+        <div class="col-sm-2 abbr"><abbr class="badge">TPAMI</abbr></div>
 
         <!-- Entry bib key -->
         <div id="10005822" class="col-sm-8">
@@ -190,6 +190,11 @@
 
           <!-- Links/Buttons -->
           <div class="links">
+            <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
+            <a href="http://arxiv.org/abs/2205.15895" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">arXiv</a>
+            <a class="bibtex btn btn-sm z-depth-0" role="button">Bib</a>
+            <a href="https://ieeexplore.ieee.org/document/10005822" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">HTML</a>
+            <a href="https://github.com/dimitrismallis/KeypointsToLandmarks" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">Code</a>
           </div>
           
           <div class="badges">
@@ -197,52 +202,44 @@
               <span class="__dimensions_badge_embed__" data-doi="10.1109/TPAMI.2023.3234212" data-hide-zero-citations="true" data-style="small_rectangle" data-legend="hover-right" style="margin-bottom: 3px;"></span>
           </div>
 
-          
+          <!-- Hidden abstract block -->
+          <div class="abstract hidden">
+            <p>This paper proposes a novel paradigm for the unsupervised learning of object landmark detectors. Contrary to existing methods that build on auxiliary tasks such as image generation or equivariance, we propose a self-training approach where, departing from generic keypoints, a landmark detector and descriptor is trained to improve itself, tuning the keypoints into distinctive landmarks. To this end, we propose an iterative algorithm that alternates between producing new pseudo-labels through feature clustering and learning distinctive features for each pseudo-class through contrastive learning. With a shared backbone for the landmark detector and descriptor, the keypoint locations progressively converge to stable landmarks, filtering those less stable. Compared to previous works, our approach can learn points that are more flexible in terms of capturing large viewpoint changes. We validate our method on a variety of difficult datasets, including LS3D, BBCPose, Human3.6M and PennAction, achieving new state of the art results.</p>
+          </div>
+<!-- Hidden bibtex block -->
+          <div class="bibtex hidden">
+            <figure class="highlight"><pre><code class="language-bibtex" data-lang="bibtex"><span class="nc">@article</span><span class="p">{</span><span class="nl">10005822</span><span class="p">,</span>
+  <span class="na">author</span> <span class="p">=</span> <span class="s">{Mallis, Dimitrios and Sanchez, Enrique and Bell, Matt and Tzimiropoulos, Georgios}</span><span class="p">,</span>
+  <span class="na">journal</span> <span class="p">=</span> <span class="s">{IEEE Transactions on Pattern Analysis and Machine Intelligence}</span><span class="p">,</span>
+  <span class="na">title</span> <span class="p">=</span> <span class="s">{From Keypoints to Object Landmarks via Self-Training Correspondence: A novel approach to Unsupervised Landmark Discovery}</span><span class="p">,</span>
+  <span class="na">year</span> <span class="p">=</span> <span class="s">{2023}</span><span class="p">,</span>
+  <span class="na">doi</span> <span class="p">=</span> <span class="s">{10.1109/TPAMI.2023.3234212}</span><span class="p">,</span>
+  <span class="na">dimensions</span> <span class="p">=</span> <span class="s">{true}</span><span class="p">,</span>
+<span class="p">}</span></code></pre></figure>
+          </div>
         </div>
       </div>
 </li>
 <li>
 <!-- _layouts/bib.html -->
       <div class="row">
-        <div class="col-sm-2 abbr"></div>
+        <div class="col-sm-2 preview">
+<figure>
 
-        <!-- Entry bib key -->
-        <div id="Katsileros2022AnIL" class="col-sm-8">
-        <!-- Title -->
-        <div class="title">An Incremental Learning framework for Large-scale CTR Prediction</div>
-        <!-- Author -->
-        <div class="author">
-        
+  <picture>
+    
+    <source class="responsive-img-srcset" media="(max-width: 480px)" srcset="/assets/img/publication_preview/nips2020-480.webp"></source>
+    <source class="responsive-img-srcset" media="(max-width: 800px)" srcset="/assets/img/publication_preview/nips2020-800.webp"></source>
+    <source class="responsive-img-srcset" media="(max-width: 1400px)" srcset="/assets/img/publication_preview/nips2020-1400.webp"></source>
+    
 
-        Petros Katsileros, Nikiforos Mandilaras, <em>Dimitrios Mallis</em>, Vassilis Pitsikalis, Stavros Theodorakis, and Gil Chamiel</div>
+    <!-- Fallback to the original file -->
+    <img src="/assets/img/publication_preview/nips2020.png" class="preview z-depth-1 rounded" width="auto" height="auto" alt="nips2020.png" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
 
-        <!-- Journal/Book title and date -->
-        
-        
-        <div class="periodical">
-          <em>Proceedings of the 16th ACM Conference on Recommender Systems (RecSys)</em>, 2022
-        </div>
-        <div class="periodical">
-          
-        </div>
+  </picture>
 
-          <!-- Links/Buttons -->
-          <div class="links">
-          </div>
-          
-          <div class="badges">
-            <span class="altmetric-embed" data-hide-no-mentions="true" data-hide-less-than="15" data-badge-type="2" data-badge-popover="right"></span>
-              <span class="__dimensions_badge_embed__" data-pmid="" data-hide-zero-citations="true" data-style="small_rectangle" data-legend="hover-right" style="margin-bottom: 3px;"></span>
-          </div>
-
-          
-        </div>
-      </div>
-</li>
-<li>
-<!-- _layouts/bib.html -->
-      <div class="row">
-        <div class="col-sm-2 abbr"></div>
+</figure>
+</div>
 
         <!-- Entry bib key -->
         <div id="unsupervLandm2020" class="col-sm-8">
@@ -258,7 +255,7 @@
         
         
         <div class="periodical">
-          <em>Conference on Neural Information Processing Systems (NeurIPS)</em>, 2020
+          <em>Neural Information Processing Systems</em>, 2020
         </div>
         <div class="periodical">
           
@@ -266,14 +263,40 @@
 
           <!-- Links/Buttons -->
           <div class="links">
+            <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
+            <a class="bibtex btn btn-sm z-depth-0" role="button">Bib</a>
+            <a href="https://proceedings.neurips.cc/paper/2020/hash/32508f53f24c46f685870a075eaaa29c-Abstract.html" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">HTML</a>
+            <a href="https://proceedings.neurips.cc/paper/2020/file/32508f53f24c46f685870a075eaaa29c-Paper.pdf" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">PDF</a>
+            <a href="https://proceedings.neurips.cc/paper_files/paper/2020/file/32508f53f24c46f685870a075eaaa29c-Supplemental.pdf" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">Supp</a>
+            <a href="https://github.com/dimitrismallis/UnsupervisedLandmarks" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">Code</a>
+            <a href="https://crossminds.ai/video/unsupervised-learning-of-object-landmarks-via-self-training-correspondence-606ff105f43a7f2f827c18dd/" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">Slides</a>
           </div>
           
           <div class="badges">
-            <span class="altmetric-embed" data-hide-no-mentions="true" data-hide-less-than="15" data-badge-type="2" data-badge-popover="right"></span>
+            <span class="altmetric-embed" data-hide-no-mentions="true" data-hide-less-than="15" data-badge-type="2" data-badge-popover="right" data-altmetric-id="true"></span>
               <span class="__dimensions_badge_embed__" data-pmid="" data-hide-zero-citations="true" data-style="small_rectangle" data-legend="hover-right" style="margin-bottom: 3px;"></span>
           </div>
 
-          
+          <!-- Hidden abstract block -->
+          <div class="abstract hidden">
+            <p>This paper addresses the problem of unsupervised discovery of object landmarks.
+We take a different path compared to existing works, based on 2 novel perspectives: (1) Self-training: starting from generic keypoints, we propose a self-training
+approach where the goal is to learn a detector that improves itself, becoming
+more and more tuned to object landmarks. (2) Correspondence: we identify correspondence as a key objective for unsupervised landmark discovery and propose
+an optimization scheme which alternates between recovering object landmark
+correspondence across different images via clustering and learning an object landmark descriptor without labels. Compared to previous works, our approach can
+learn landmarks that are more flexible in terms of capturing large changes in
+viewpoint. We show the favourable properties of our method on a variety of difficult datasets including LS3D, BBCPose and Human3.6M.</p>
+          </div>
+<!-- Hidden bibtex block -->
+          <div class="bibtex hidden">
+            <figure class="highlight"><pre><code class="language-bibtex" data-lang="bibtex"><span class="nc">@article</span><span class="p">{</span><span class="nl">unsupervLandm2020</span><span class="p">,</span>
+  <span class="na">title</span> <span class="p">=</span> <span class="s">{Unsupervised Learning of Object Landmarks via Self-Training Correspondence}</span><span class="p">,</span>
+  <span class="na">author</span> <span class="p">=</span> <span class="s">{Mallis, Dimitrios and Sanchez, Enrique and Bell, Matt and Tzimiropoulos, Georgios}</span><span class="p">,</span>
+  <span class="na">journal</span> <span class="p">=</span> <span class="s">{Neural Information Processing Systems}</span><span class="p">,</span>
+  <span class="na">year</span> <span class="p">=</span> <span class="s">{2020}</span><span class="p">,</span>
+<span class="p">}</span></code></pre></figure>
+          </div>
         </div>
       </div>
 </li>
