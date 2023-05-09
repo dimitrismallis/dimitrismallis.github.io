@@ -2,7 +2,7 @@
 layout: about
 title: About
 permalink: /
-subtitle: <font size="2">  Computer Vision Researcher @ <a href="https://wwwen.uni.lu/">SnT</a> | PhD from the University of Nottingham</font>
+subtitle: <font size="2">  <b>Computer Vision Researcher</b> @ <a href="https://wwwen.uni.lu/">SnT</a>  •  <i>PhD from the University of Nottingham.</i></font>
 
 profile:
   align: right
@@ -19,7 +19,7 @@ selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true  # includes social icons at the bottom of the page
 ---
 
-Welcome! I am a Postdoctoral Researcher at the [Interdisciplinary Centre for Security, Reliability and Trust (SnT)](https://www.uni.lu/snt) of the **University of Luxembourg**, focusing on 3D Computer Vision and it's applications for Computer-Aided Design (CAD).
+Welcome!! 👋  I am a Postdoctoral Researcher at the [Interdisciplinary Centre for Security, Reliability and Trust (SnT)](https://www.uni.lu/snt) of the **University of Luxembourg**, focusing on 3D Computer Vision and it's applications for Computer-Aided Design (CAD).
 
 I received my PhD in Computer Vision at the **University of Nottingham** under the supervision of [Dr. Yorgos Tzimiropoulos](https://ytzimiro.github.io/). I was also a Research Intern at [Samsung AI Cambridge (SAIC)](https://research.samsung.com/aicenter_cambridge) and later a Senior Machine Learning Engineer for [Taboola](https://www.taboola.com/) and [Deeplab](https://deeplab.ai/).
 

@@ -4,7 +4,9 @@
     - name: Full Name
       value: Dimitrios Mallis
     - name: Email
-      value: malldimi1@gmail.com
+      value: malldimi1 <b>[at]</b> gmail <b>[dot]</b> com
+    - name: Address
+      value: Luxembourg
 
 - title: Education
   type: time_table
@@ -13,55 +15,80 @@
       institution: University of Nottingham
       year: 2018-2022
       description:
-        - "Supervisor: <a href=https://ytzimiro.github.io/>Dr. Yiorgos Tzimiropoulos</a>"
-        - title: Research areas
+        - "<i><u>Advisor:</u></i> <a href=https://ytzimiro.github.io/>Dr. Yiorgos Tzimiropoulos</a>"
+        - Member of the <a href="https://www.nottingham.ac.uk/research/groups/cvl/">Computer Vision Laboratory (CVL)</a> of the University of Nottingham.
+        - My PhD thesis was on <b>Unsupervised Landmark Discovery via Self-Training Correspondence</b>.
+        - "My research on <i>self-supervised representation learning</i> for <i>landmark correspondence recovery</i> lead to prestigious publications at the Conference on Neural Information Processing Systems (<b>NeurIPS</b>) in 2020 and IEEE Transactions on Pattern Analysis and Machine Intelligence (<b>TPAMI</b>)."
+        - title: <b>Research areas</b>
           contents:
             - "<i>Unsupervised Landmark Discovery</i>"
             - "<i>Self-Supervised Learning</i>"
             - "<i>Self-Training</i>"
-    - title: BSc - MSc in Electrical and Computer Engineering
-      institution: Democritus University of Thrace (DUTH), Greece
+            - "<i>Learning under label noise</i>"
+    - title: Diploma in Electrical and Computer Engineering
+      institution: Democritus University of Thrace (D.U.Th.)
       year: 2010-2015
+      description:
+        - "<i>Program Duration:</i> 5 years"
+        - "Greek equivelant to a <b>BSc + MSc</b>."
+        - My Diploma thesis was on <b>Sound Source Separation in Real Room Environment</b>.
+        - Graduated with the <b>4th highest grade</b> on my cohord.
+        - "<i><u>Advisor:</u></i> <a href=https://utopia.duth.gr/nmitiano/>Dr. Nikos Mitianoudis</a>"
 
 
 - title: Experience
   type: time_table
   contents:
     - title: Posdoctoral Researcher (3D Computer Vision)
-      institution: "CVI² group, SnT, University of Luxembourg"
+      institution: SnT - Interdisciplinary Center for Security, Reliability and Trust •  University of Luxembourg
       year: 2023-present
 
     - title: Senior Machine Learning Engineer (Recommender Systems)
-      institution: Taboola - DeepLabAthens
+      institution: Taboola - DeepLab
       year: 2022-2023
       description:
-        - "R&D on Taboola’s Recommender System infrastructure."
-
+        - Member of <b>Taboola</b>'s Algo Group.
+        - Working for Taboola through <b>Deeplab</b>'s <i>RecSys team</i>.
+        - I aqured experience with <i>developing</i> and <i>deploying</i> ML solutions at scale, for <b>Taboola</b>'s massive <i>recommender system service</i>.
+        - Our work on <i>incremental learning</i> for efficient <i>Click-Through-Rate (CTR)</i> prediction, was presented on the industrial track of the Conference on Recommender Systems (<b>RecSys</b>) in 2022.
+        - I supervised <i>two bachelor</i> students and <i>one master</i> student. Part of Deeplab's collaboration with the National Technical University of Athens.
+        - title: <b>Research areas</b>
+          contents:
+            - "<i>Deep Learning for Recommender Systems</i>"
+            - <i>Click-Through-Rate (CTR)</i> prediction
     - title: Research Intern (Computer Vision)
       institution: Samsung AI Centre Cambridge (SAIC-C)
       year: 2020-2021
       description:
-        - title: Research areas
+        - <i>Six-month</i> PhD Internshp, extended as a <i>part-time</i> position.
+        - "<i><u>Manager:</u></i> <a href=https://ytzimiro.github.io/>Dr. Yiorgos Tzimiropoulos</a>"
+        - I developed a framework for adapting <i>pretrained</i> pose estimation models on new target domains, resulted in a significant performance increase on internal benchmarks with direct application on various pipelines within Samsung.
+        - title: <b>Research areas</b>
           contents:
-            - "<i>2D/3D Human Pose Estimation</i>"
+            - "<i>Multiperson Human Pose Estimation</i>"
+            - "<i>3D Pose Estimation</i>"
             - "<i>Semi-Supervised Learning</i>"
+            - "<i>Self-Training</i>"
 
     - title: Software Engineer
       institution: Singular Logic, Athens
       year: 2016 - 2017
+      description:
+      - Designing custom solution, applications and services for organisations in the Greek public sector
+      - Main focus on server-side applications, middle-wares and APIs, using C# and dotNET.
 
 
 - title: Open Source Projects
   type: time_table
   contents:
     - title: <a href="https://gitlab.uni.lu/cvi2/iccv2023-sharp-challenge">ICCV 2023 - SHARP CHALLENGE</a>
-      description: SHARP 2023 workshop and challenge in conjunction with ICCV 2023. Organised by CVI² & Artec3D.
+      description: SHARP 2023 workshop and challenge organised by the CVI² group of the University of Luxembourg and Artec3D, in conjunction with ICCV 2023.
 
     - title: <a href="https://github.com/dimitrismallis/KeypointsToLandmarks">KeypointsToLandmarks</a>
-      description: "Code for our TPAMI paper From Keypoints to Object Landmarks via Self-Training Correspondence: A novel approach to Unsupervised Landmark Discovery."
+      description: "Code for our TPAMI paper <i>From Keypoints to Object Landmarks via Self-Training Correspondence: A novel approach to Unsupervised Landmark Discovery.</i>"
 
     - title: <a href="https://github.com/dimitrismallis/UnsupervisedLandmarks">UnsupervisedLandmarks</a>
-      description: "Code for paper Unsupervised Learning of Object Landmarks via Self-Training Correspondence (NeurIPS2020)."
+      description: "Code NeurIPS 2020 paper, <i>Unsupervised Learning of Object Landmarks via Self-Training Correspondence</i>."
 
 
 
