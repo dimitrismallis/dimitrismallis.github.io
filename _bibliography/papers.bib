@@ -4,19 +4,19 @@
 @string{aps = {American Physical Society,}}
 
 
-@ARTICLE{10005822,
+@ARTICLE{Mallis2023landm,
   author={Mallis, Dimitrios and Sanchez, Enrique and Bell, Matt and Tzimiropoulos, Georgios},
   journal={IEEE Transactions on Pattern Analysis and Machine Intelligence}, 
   title={From Keypoints to Object Landmarks via Self-Training Correspondence: A novel approach to Unsupervised Landmark Discovery}, 
   year={2023},
   selected={true},
-  abbr={TPAMI},
+  preview={tpami2022.jpg},  
   doi={10.1109/TPAMI.2023.3234212},
-  altmetric={true},
   code={https://github.com/dimitrismallis/KeypointsToLandmarks},
   arxiv={2205.15895},
   bibtex_show={true},
-  dimensions={true},
+  doi={10.1109/TPAMI.2023.3234212},
+  abbr={TPAMI},
   html={https://ieeexplore.ieee.org/document/10005822},
   abstract={This paper proposes a novel paradigm for the unsupervised learning of object landmark detectors. Contrary to existing methods that build on auxiliary tasks such as image generation or equivariance, we propose a self-training approach where, departing from generic keypoints, a landmark detector and descriptor is trained to improve itself, tuning the keypoints into distinctive landmarks. To this end, we propose an iterative algorithm that alternates between producing new pseudo-labels through feature clustering and learning distinctive features for each pseudo-class through contrastive learning. With a shared backbone for the landmark detector and descriptor, the keypoint locations progressively converge to stable landmarks, filtering those less stable. Compared to previous works, our approach can learn points that are more flexible in terms of capturing large viewpoint changes. We validate our method on a variety of difficult datasets, including LS3D, BBCPose, Human3.6M and PennAction, achieving new state of the art results.}
 }
@@ -25,12 +25,28 @@
   author={Petros Katsileros and Nikiforos Mandilaras and Dimitrios Mallis and Vassilis Pitsikalis and Stavros Theodorakis and Gil Chamiel},
   journal={Conference on Recommender Systems},
   year={2022},
-  abbr={RecSys 2022},
+  preview={recsys2022.jpg},  
   bibtex_show={true},
+  abbr={RecSys2022},
   html={https://dl.acm.org/doi/10.1145/3523227.3547390},
   arxiv={2209.00458},
   abstract={In this work we introduce an incremental learning framework for Click-Through-Rate (CTR) prediction and demonstrate its effectiveness for Taboola's massive-scale recommendation service. Our approach enables rapid capture of emerging trends through warm-starting from previously deployed models and fine tuning on "fresh" data only. Past knowledge is maintained via a teacher-student paradigm, where the teacher acts as a distillation technique, mitigating the catastrophic forgetting phenomenon. Our incremental learning framework enables significantly faster training and deployment cycles (x12 speedup). We demonstrate a consistent Revenue Per Mille (RPM) lift over multiple traffic segments and a significant CTR increase on newly introduced items.}
 }
+
+@phdthesis{Mallisthesis,
+  title={Unsupervised Landmark Discovery via Self-Training Correspondence},
+  author={Mallis, Dimitrios},
+  school = {University of Nottingham},
+  note = {PhD Thesis},
+  pdf={Thesis.pdf},
+  year={2022},
+  bibtex_show={true},
+  abbr={PhDThesis},
+  abstract={Object parts, also known as landmarks, convey information about an object's shape and spatial configuration in 3D space, especially for deformable objects. The goal of landmark detection is to have a model that, for a particular object instance, can estimate the locations of its parts. Research in this field is mainly driven by supervised approaches, where a sufficient amount of human-annotated data is available. As annotating landmarks for all objects is impractical, this thesis focuses on learning landmark detectors without supervision. Despite good performance on limited scenarios (objects showcasing minor rigid deformation), unsupervised landmark discovery mostly remains an open problem. Existing work fails to capture semantic landmarks, i.e. points similar to the ones assigned by human annotators and may not generalise well to highly articulated objects like the human body, complicated backgrounds or large viewpoint variations.
+
+In this thesis, we propose a novel self-training framework for the discovery of unsupervised landmarks. Contrary to existing methods that build on auxiliary tasks such as image generation or equivariance, we depart from generic keypoints and train a landmark detector and descriptor to improve itself, tuning the keypoints into distinctive landmarks. We propose an iterative algorithm that alternates between producing new pseudo-labels through feature clustering and learning distinctive features for each pseudo-class through contrastive learning. Our detector can discover highly semantic landmarks, that are more flexible in terms of capturing large viewpoint changes and out-of-plane rotations (3D rotations). New state-of-the-art performance is achieved in multiple challenging datasets.}
+}
+
 
 
 @article{unsupervLandm2020,
@@ -39,18 +55,18 @@ author={Mallis, Dimitrios and Sanchez, Enrique and Bell, Matt and Tzimiropoulos,
 journal={Neural Information Processing Systems},
 year={2020},
 selected={true},  
-preview={nips2020.png},  
-altmetric={true},
+preview={nips2020.jpg},  
 bibtex_show={true},
+abbr={NeurIPS2020},
 slides={https://crossminds.ai/video/unsupervised-learning-of-object-landmarks-via-self-training-correspondence-606ff105f43a7f2f827c18dd/},
 html={https://proceedings.neurips.cc/paper/2020/hash/32508f53f24c46f685870a075eaaa29c-Abstract.html},
 pdf={https://proceedings.neurips.cc/paper/2020/file/32508f53f24c46f685870a075eaaa29c-Paper.pdf},
 supp={https://proceedings.neurips.cc/paper_files/paper/2020/file/32508f53f24c46f685870a075eaaa29c-Supplemental.pdf},
 code={https://github.com/dimitrismallis/UnsupervisedLandmarks},
 abstract={This paper addresses the problem of unsupervised discovery of object landmarks.
-We take a different path compared to existing works, based on 2 novel perspectives: (1) Self-training: starting from generic keypoints, we propose a self-training
+We take a different path compared to existing works, based on 2 novel perspectives: <b>(1) Self-training</b>: starting from generic keypoints, we propose a self-training
 approach where the goal is to learn a detector that improves itself, becoming
-more and more tuned to object landmarks. (2) Correspondence: we identify correspondence as a key objective for unsupervised landmark discovery and propose
+more and more tuned to object landmarks. <b>(2) Correspondence</b>: we identify correspondence as a key objective for unsupervised landmark discovery and propose
 an optimization scheme which alternates between recovering object landmark
 correspondence across different images via clustering and learning an object landmark descriptor without labels. Compared to previous works, our approach can
 learn landmarks that are more flexible in terms of capturing large changes in
@@ -62,9 +78,9 @@ viewpoint. We show the favourable properties of our method on a variety of diffi
   journal = {Landbauforschung},
   year = {2019},
   bibtex_show={true},
-  preview={methanepaper.png},  
+  preview={Landbauforschung2019.jpg},  
   author = {Matt Bell and Phil Garnsworthy and Dimitrios Mallis and Richrd Eckard and Peter Moate and Tianhai Yan},
-  pdf={https://nottingham-repository.worktribe.com/preview/4225430/LBF-69-01-8_Research_Bell_et_al_200318.pdf},
+  pdf={methanestudy.pdf},
   abstract={The aim of this study was to compare metrics for quantifying
 enteric methane (CH4) emissions from individual cows during
 milking using frequent spot measurements and peak analysis
@@ -100,7 +116,7 @@ emissions from the maximum amplitude of an eructation.}
   bibtex_show={true},
   html={https://link.springer.com/article/10.1007/s12530-017-9199-3},
   arxiv={1708.03989},
-  preview={evolvingSystems.png},  
+  preview={evolvingsystems.jpg},  
   html={https://link.springer.com/article/10.1007/s12530-017-9199-3},
   abstract={Audio source separation is the task of isolating sound sources that are active simultaneously in a room captured by a set of microphones. Convolutive audio source separation of equal number of sources and microphones has a number of shortcomings including the complexity of frequency-domain ICA, the permutation ambiguity and the problem's scalabity with increasing number of sensors. In this paper, the authors propose a multiple-microphone audio source separation algorithm based on a previous work of Mitianoudis and Davies (2003). Complex FastICA is substituted by Robust ICA increasing robustness and performance. Permutation ambiguity is solved using two methodologies. The first is using the Likelihood Ration Jump solution, which is now modified to decrease computational complexity in the case of multiple microphones. The application of the MuSIC algorithm, as a preprocessing step to the previous solution, forms a second methodology with promising results.}
 }
@@ -110,7 +126,8 @@ emissions from the maximum amplitude of an eructation.}
   journal={Journal of Systems and Information Technology},
   year={2018},
   bibtex_show={true},
-  preview={tweets.png}, 
+  abbr={JSIT},
+  preview={JSIT2018.jpg}, 
   pdf={JSIT18.pdf}, 
   website={http://hashtag.nonrelevant.net/},
   html={https://www.emerald.com/insight/content/doi/10.1108/JSIT-06-2017-0040/full/html},
@@ -144,8 +161,9 @@ annotated tweets, in a meaningful way, to the set of words that appear in them.}
   journal={Artificial Intelligence Applications and Innovations},
   year={2016},
   bibtex_show={true},
-  preview={cas.png}, 
-  pdf={https://utopia.duth.gr/nmitiano/pdf/aiai2016.pdf},
+  abbr={AIAI2016},
+  preview={AIAI2016.jpg}, 
+  pdf={aiai2016.pdf},
   html={https://www.springerprofessional.de/en/convolutive-audio-source-separation-using-robust-ica-and-reduced/10651414},
   abstract={Audio source separation is the task of isolating sound sources that are active simultaneously in a room captured by a set of microphones. Convolutive audio source separation of equal number of sources and microphones has a number of shortcomings including the complexity of frequency-domain ICA, the permutation ambiguity and the problem’s scalabity with increasing number of sensors. In this paper, the authors propose a multiple-microphone audio source separation algorithm based on a previous work of Mitianoudis and Davies. Complex FastICA is substituted by Robust ICA increasing robustness and performance. Permutation ambiguity is solved using the Likelihood Ration Jump solution, which is now modified to decrease computational complexity in the case of multiple microphones.}
 }
@@ -156,10 +174,11 @@ annotated tweets, in a meaningful way, to the set of words that appear in them.}
   journal={Panhellenic Conference on Informatics},
   year={2015},
   bibtex_show={true},
-  preview={hashtags.png},  
+  preview={PCI2015.jpg},  
+  abbr={PCI2015},
   website={http://hashtag.nonrelevant.net/},
   html={https://dl.acm.org/doi/10.1145/2801948.2802010},
-  pdf={http://www.aviarampatzis.com/publications/PCI2015a.pdf},
+  pdf={PCI2015a.pdf},
   abstract={The rapid growth of social media has rendered opinion and
 sentiment mining an important area of research with a wide range
 of applications. We focus on the Greek language and the

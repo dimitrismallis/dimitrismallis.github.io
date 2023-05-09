@@ -10,50 +10,41 @@
   type: time_table
   contents:
     - title: PhD in Computer Vision
-      institution: University of Nottingham, UK
-      year: 2022
+      institution: University of Nottingham
+      year: 2018-2022
       description:
-        - "Thesis Title: Unsupervised Landmark Localisation via Self-Training Correspondence."
-        - "Supervisor: Dr. Yiorgos Tzimiropoulos."
+        - "Supervisor: <a href=https://ytzimiro.github.io/>Dr. Yiorgos Tzimiropoulos</a>"
         - title: Research areas
           contents:
-            - Unsupervised Landmark Discovery
-            - Self-Supervised Learning
-            - Self-Training.
+            - "<i>Unsupervised Landmark Discovery</i>"
+            - "<i>Self-Supervised Learning</i>"
+            - "<i>Self-Training</i>"
     - title: BSc - MSc in Electrical and Computer Engineering
-      institution: Democritus University of Thrace
-      year: 2015
+      institution: Democritus University of Thrace (DUTH), Greece
+      year: 2010-2015
 
 
 - title: Experience
   type: time_table
   contents:
-    - title: Posdoctoral Researcher
-      institution: University of Luxembourg, Luxembourg
-      year: 2023 - present
-      description:
-        - Part of the CVI2 group, working on 3D Computer Vision.
+    - title: Posdoctoral Researcher (3D Computer Vision)
+      institution: "CVI² group, SnT, University of Luxembourg"
+      year: 2023-present
 
-    - title: Senior Machine Learning Engineer
+    - title: Senior Machine Learning Engineer (Recommender Systems)
       institution: Taboola - DeepLabAthens
-      year: 1933
+      year: 2022-2023
       description:
         - "R&D on Taboola’s Recommender System infrastructure."
-        - title: Research areas
-          contents:
-            - Recommender Systems
-            - CTR Prediction
-            - Deep Learning
 
-    - title: Research Intern
+    - title: Research Intern (Computer Vision)
       institution: Samsung AI Centre Cambridge (SAIC-C)
       year: 2020-2021
       description:
         - title: Research areas
           contents:
-            - 2D/3D Human Pose Estimation
-            - Semi-Supervised Learning
-            - Emotion Recognition
+            - "<i>2D/3D Human Pose Estimation</i>"
+            - "<i>Semi-Supervised Learning</i>"
 
     - title: Software Engineer
       institution: Singular Logic, Athens
@@ -71,6 +62,7 @@
 
     - title: <a href="https://github.com/dimitrismallis/UnsupervisedLandmarks">UnsupervisedLandmarks</a>
       description: "Code for paper Unsupervised Learning of Object Landmarks via Self-Training Correspondence (NeurIPS2020)."
+
 
 
 

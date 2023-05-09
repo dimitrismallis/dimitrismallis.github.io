@@ -5,16 +5,15 @@
 title: blank # the website title (if blank, full name will be used instead)
 first_name: Dimitri(o)s
 middle_name:
-last_name: Mallis (PhD)
+last_name: Mallis
 email: malldimi1@gmail.com
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
   A simple, whitespace theme for academics. Based on [*folio](https://github.com/bogoli/-folio) design.
-footer_text: >
-  My Personal WebSpace.
-keywords: jekyll, jekyll-theme, academic-website, portfolio-website  # add your own keywords or leave empty
+footer_text: 
+keywords: dimitrismallis, mallis, unsupervisedlandmarks  # add your own keywords or leave empty
 
 lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
-icon: ⚛️  # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
+icon:   # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
 
 url: https://dimitrismallis.github.io/ # the base hostname & protocol for your site
 baseurl:  # the subpath of your site, e.g. /blog/
@@ -103,7 +102,7 @@ youtube_id: # your youtube channel id (youtube.com/@<youtube_id>)
 discord_id: # your discord id (18-digit unique numerical identifier)
 
 contact_note: >
-  Reach Out through Social Media or Email me directly.
+  Reach out through social media or email me directly.
 
 # -----------------------------------------------------------------------------
 # Analytics and search engine verification
@@ -119,7 +118,7 @@ bing_site_verification:  # out your bing-site-verification ID (Bing Webmaster)
 # Blog
 # -----------------------------------------------------------------------------
 
-blog_name: al-folio # blog_name will be displayed in your blog page
+blog_name:  # blog_name will be displayed in your blog page
 blog_nav_title: # your blog must have a title for it to be displayed in the nav bar
 blog_description: a simple whitespace theme for academics
 permalink: /blog/:year/:title/
@@ -174,7 +173,7 @@ collections:
     permalink: /projects/:path/
 
 announcements:
-  enabled: false
+  enabled: true
   scrollable: true # adds a vertical scroll bar if there are more than 3 news items
   limit: 5 # leave blank to include all the news in the `_news` folder
 
@@ -356,7 +355,7 @@ enable_math:                true   # enables math typesetting (uses MathJax)
 enable_tooltips:            false  # enables automatic tooltip links generated
                                    # for each section titles on pages and posts
 enable_darkmode:            true   # enables switching between light/dark modes
-enable_navbar_social:       false  # enables displaying social links in the
+enable_navbar_social:       true  # enables displaying social links in the
                                    # navbar on the about page
 enable_project_categories:  true   # enables categorization of projects into
                                    # multiple categories

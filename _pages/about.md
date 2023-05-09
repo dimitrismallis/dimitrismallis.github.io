@@ -2,15 +2,15 @@
 layout: about
 title: About
 permalink: /
-subtitle: Computer Vision Researcher, University of Luxembourg.
+subtitle: <font size="2">  Computer Vision Researcher @ <a href="https://wwwen.uni.lu/">SnT</a> | PhD from the University of Nottingham</font>
 
 profile:
   align: right
   image: profile.jpg
   image_circular: false # crops the image to make it circular
-  address: >
-    <p>CVI² Research Group,</p>
-    <p>University of Luxembourg</p>
+  address: 
+    # <p>CVI² Research Group,</p>
+    # <p>University of Luxembourg</p>
 
 
 news: true  # includes a list of news items
@@ -19,6 +19,14 @@ selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true  # includes social icons at the bottom of the page
 ---
 
-I received my PhD in Computer Vision at the [University of Nottingham (UK)](https://www.nottingham.ac.uk/research/groups/cvl/) under the supervision of [Dr. Yorgos Tzimiropoulos](https://ytzimiro.github.io/). I was also a PhD Intern at [Samsung AI Cambridge (SAIC)](https://research.samsung.com/aicenter_cambridge) and later worked as a Senior Machine Learning Engineer for [Taboola](https://www.taboola.com/) and [Deeplab, Athens](https://deeplab.ai/). Currently, I am a Posdoctoral Researcher with the [Interdisciplinary Centre for Security, Reliability and Trust (SnT)](https://wwwfr.uni.lu/snt) of the [University of Luxembourg (UL)](https://wwwen.uni.lu/).
+Welcome! I am a Postdoctoral Researcher at the [Interdisciplinary Centre for Security, Reliability and Trust (SnT)](https://www.uni.lu/snt) of the **University of Luxembourg**, focusing on 3D Computer Vision and it's applications for Computer-Aided Design (CAD).
 
-My research focuses on learning for vision tasks (Landmark Detection, Human Pose Estimation) under limited supervision (Self-Supervised Learning, Semi-Supervised Learning). Moreover, I have also looked into deep learning-based Recommender Systems, and more recently I am focusing on 3D Computer Vision and particularly applications on computer-aided design (CAD).
+I received my PhD in Computer Vision at the **University of Nottingham** under the supervision of [Dr. Yorgos Tzimiropoulos](https://ytzimiro.github.io/). I was also a Research Intern at [Samsung AI Cambridge (SAIC)](https://research.samsung.com/aicenter_cambridge) and later a Senior Machine Learning Engineer for [Taboola](https://www.taboola.com/) and [Deeplab](https://deeplab.ai/).
+
+### Research
+
+During my PhD, I concentrated on learning with minimal manual supervision through _self-supervised_ and _semi-supervised learning_, specifically for the tasks of _landmark detection_ and _human pose estimation_. Later, I also looked into deep learning based recommender systems and _click through rate_ prediction. My current focus in on 3D vision, and its application towards accelerating _parametric computer-aided design (CAD)_.
+
+
+
+

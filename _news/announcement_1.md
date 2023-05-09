@@ -1,8 +1,8 @@
 ---
 layout: post
-date: 2023-04-01 15:59:00-0400
+date: 2023-04-01
 inline: true
 related_posts: false
 ---
 
-Started Postdoctoral Research position within SnT, University of Luxembourg.
+I have now started my new position as Postdoctoral Researcher at the [SnT, Interdisciplinary Centre for Security, Reliability and Trust](https://www.uni.lu/snt) of the **University of Luxembourg**.
