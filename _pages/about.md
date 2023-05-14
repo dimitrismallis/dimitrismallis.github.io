@@ -25,7 +25,7 @@ I received my PhD in Computer Vision at the **University of Nottingham** under t
 
 ### Research
 
-During my PhD, I concentrated on learning with minimal manual supervision through _self-supervised_ and _semi-supervised learning_, specifically for the tasks of _landmark detection_ and _human pose estimation_. Later, I also looked into deep learning based recommender systems and _click through rate_ prediction. My current focus in on 3D vision, and its application towards accelerating _parametric computer-aided design (CAD)_.
+During my PhD, I concentrated on learning with minimal manual supervision through _self-supervised_ and _semi-supervised learning_, specifically for the tasks of _landmark detection_ and _human pose estimation_. Later, I also looked into deep learning based recommender systems and the problem of _click-through-rate (CTR)_ prediction. My current focus in on 3D vision, and its application towards accelerating _parametric computer-aided design (CAD)_.
 
 
 

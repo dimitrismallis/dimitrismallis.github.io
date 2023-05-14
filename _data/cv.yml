@@ -4,7 +4,7 @@
     - name: Full Name
       value: Dimitrios Mallis
     - name: Email
-      value: malldimi1 <b>[at]</b> gmail <b>[dot]</b> com
+      value: malldimi1 <i><b>[at]</b></i> gmail <i><b>[dot]</b></i> com
     - name: Address
       value: Luxembourg
 
@@ -17,8 +17,8 @@
       description:
         - "<i><u>Advisor:</u></i> <a href=https://ytzimiro.github.io/>Dr. Yiorgos Tzimiropoulos</a>"
         - Member of the <a href="https://www.nottingham.ac.uk/research/groups/cvl/">Computer Vision Laboratory (CVL)</a> of the University of Nottingham.
-        - My PhD thesis was on <b>Unsupervised Landmark Discovery via Self-Training Correspondence</b>.
-        - "My research on <i>self-supervised representation learning</i> for <i>landmark correspondence recovery</i> lead to prestigious publications at the Conference on Neural Information Processing Systems (<b>NeurIPS</b>) in 2020 and IEEE Transactions on Pattern Analysis and Machine Intelligence (<b>TPAMI</b>)."
+        - My PhD thesis was on <i><b>Unsupervised Landmark Discovery via Self-Training Correspondence</b></i>.
+        - "My research on self-supervised representation learning< for landmark correspondence recovery lead to prestigious publications at the Conference on Neural Information Processing Systems (<b>NeurIPS</b>) in 2020 and IEEE's Transactions on Pattern Analysis and Machine Intelligence (<b>TPAMI</b>) in 2023."
         - title: <b>Research areas</b>
           contents:
             - "<i>Unsupervised Landmark Discovery</i>"
@@ -30,8 +30,8 @@
       year: 2010-2015
       description:
         - "<i>Program Duration:</i> 5 years"
-        - "Greek equivelant to a <b>BSc + MSc</b>."
-        - My Diploma thesis was on <b>Sound Source Separation in Real Room Environment</b>.
+        - "A diploma is the Greek equivelant to <b>BSc + MSc</b>."
+        - My diploma thesis was on <b>Sound Source Separation in Real Room Environment</b>.
         - Graduated with the <b>4th highest grade</b> on my cohord.
         - "<i><u>Advisor:</u></i> <a href=https://utopia.duth.gr/nmitiano/>Dr. Nikos Mitianoudis</a>"
 
@@ -47,11 +47,11 @@
       institution: Taboola - DeepLab
       year: 2022-2023
       description:
-        - Member of <b>Taboola</b>'s Algo Group.
-        - Working for Taboola through <b>Deeplab</b>'s <i>RecSys team</i>.
+        - Part of DeepLab's dedicated team of <i>Taboolars</i>.
         - I aqured experience with <i>developing</i> and <i>deploying</i> ML solutions at scale, for <b>Taboola</b>'s massive <i>recommender system service</i>.
-        - Our work on <i>incremental learning</i> for efficient <i>Click-Through-Rate (CTR)</i> prediction, was presented on the industrial track of the Conference on Recommender Systems (<b>RecSys</b>) in 2022.
-        - I supervised <i>two bachelor</i> students and <i>one master</i> student. Part of Deeplab's collaboration with the National Technical University of Athens.
+        - Our work on <i>incremental learning</i> for efficient <i>Click-Through-Rate (CTR)</i> prediction, was presented on the industrial track of <b>RecSys</b> in 2022.
+        - I supervised <i>two bachelor</i> students and <i>one master</i> student along the lines of DeepLab's collaboration with the National Technical University of Athens.
+        - "<i><u>Manager:</u></i> <a href=https://stangelid.github.io/>Dr. Stefanos Angelidis</a>"
         - title: <b>Research areas</b>
           contents:
             - "<i>Deep Learning for Recommender Systems</i>"
@@ -60,9 +60,9 @@
       institution: Samsung AI Centre Cambridge (SAIC-C)
       year: 2020-2021
       description:
-        - <i>Six-month</i> PhD Internshp, extended as a <i>part-time</i> position.
+        - <i>Six-month</i> PhD Internshp, extended to a <i>part-time</i> position.
         - "<i><u>Manager:</u></i> <a href=https://ytzimiro.github.io/>Dr. Yiorgos Tzimiropoulos</a>"
-        - I developed a framework for adapting <i>pretrained</i> pose estimation models on new target domains, resulted in a significant performance increase on internal benchmarks with direct application on various pipelines within Samsung.
+        - I developed a framework for adapting <i>pretrained</i> pose estimation models on new target domains. Significant performance increase was reported on internal company benchmarks, with direct application on various pipelines within Samsung.
         - title: <b>Research areas</b>
           contents:
             - "<i>Multiperson Human Pose Estimation</i>"
@@ -74,9 +74,27 @@
       institution: Singular Logic, Athens
       year: 2016 - 2017
       description:
-      - Designing custom solution, applications and services for organisations in the Greek public sector
-      - Main focus on server-side applications, middle-wares and APIs, using C# and dotNET.
+      - Designing custom solution, applications and services for organisations of the Greek public sector.
+      - Main focus on server-side applications, middle-wares and APIs, using .NET and C#.
 
+- title: Reviewer
+  type: list
+  contents:
+    - "I am a reviewer for the following journals and conferences: <br> 
+    <ul><li><b>NeurIPS, ECCV, BMVC, ICIP, ICMLA, CVPR</b>.</li></ul>"
+
+
+- title: Awards and Disntinctions
+  type: time_table
+  contents:
+    - title: 
+      year: 2018
+      description:
+        - I was awarded a full funded PhD scholarship by the University of Nottingham and <a href="https://www.dbt.org.uk/">The Douglas Bomford Trust</a>.
+    - title: 
+      year: 2015
+      description:
+        - I graduated with the 4th highest grade of my university cohord <i>(DUTH)</i>.
 
 - title: Open Source Projects
   type: time_table
@@ -91,7 +109,28 @@
       description: "Code NeurIPS 2020 paper, <i>Unsupervised Learning of Object Landmarks via Self-Training Correspondence</i>."
 
 
+- title: Teaching
+  type: time_table
+  contents:
+    - title: Master and Undergraduate Students
+      year: 2022 - present
+      description:
+        - At DeepLab, I supervised one <i>undergraduate</i> and one <i>master</i> student, towards either the completion of their thesis or journal submissions.
+        - Part of DeepLabs collaboration with the National Technical University of Athens <i>(NTUA)</i>.
+        - At present, I am supervising one <i>master</i> student towards the completion of his thesis.
+    - title: Teaching Assistant
+      year: 2018-2021
+      description:
+        - During my PhD, I served as a teaching assistant for multiple undergraduate modules of the School of Computer Science <i>(University of Nottingham)</i>.
+        - My duties included <b>lab tutoring</b>, <b>coursework marking</b> and <b>running tutorials</b>.
+        - title: Modules
+          contents:
+            - "<i>Computer Fundamentals</i>"
+            - "<i>C++ Programming</i>"
+            - "<i>Mobile Developments</i>"
+            - "<i>Image Processing</i>"
 
+        
 
 - title: Interests
   type: list
