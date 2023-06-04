@@ -23,6 +23,8 @@ Welcome!! 👋  I am a Postdoctoral Researcher at the [Interdisciplinary Centre 
 
 I received my PhD in Computer Vision at the **University of Nottingham** under the supervision of [Dr. Yorgos Tzimiropoulos](https://ytzimiro.github.io/). I was also a Research Intern at [Samsung AI Cambridge (SAIC)](https://research.samsung.com/aicenter_cambridge) and later a Senior Machine Learning Engineer for [Taboola](https://www.taboola.com/) and [Deeplab](https://deeplab.ai/).
 
+In this website you can find more info about me, check publications and recent news. You can also browse through my photography <a href="https://dimitriosmallis.myportfolio.com/">here</a> 📸 !!
+
 ### Research
 
 During my PhD, I concentrated on learning with minimal manual supervision through _self-supervised_ and _semi-supervised learning_, specifically for the tasks of _landmark detection_ and _human pose estimation_. Later, I also looked into deep learning based recommender systems and the problem of _click-through-rate (CTR)_ prediction. My current focus in on 3D vision, and its application towards accelerating _parametric computer-aided design (CAD)_.
