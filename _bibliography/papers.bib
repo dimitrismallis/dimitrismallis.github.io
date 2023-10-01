@@ -4,6 +4,34 @@
 @string{aps = {American Physical Society,}}
 
 
+
+@article{Mallis2023SHARPC2,
+  title={SHARP Challenge 2023: Solving CAD History and pArameters Recovery from Point clouds and 3D scans. Overview, Datasets, Metrics, and Baselines},
+  author={Dimitrios Mallis and Sk Aziz Ali and Elona Dupont and Kseniya Cherenkova and Ahmet Serdar Karadeniz and Mohammad Sadil Khan and Anis Kacem and Gleb Gusev and Djamila Aouada},
+  journal={International Conference on Computer Vision Workshops (ICCVW)},
+  year={2023},
+  arxiv={2308.15966},
+  code={https://gitlab.uni.lu/cvi2/iccv2023-sharp-challenge},
+  preview={sharppaper.jpg}, 
+  html={https://cvi2.uni.lu/sharp2023-challenge/}, 
+  abstract={Recent breakthroughs in geometric Deep Learning (DL) and the availability of large Computer-Aided Design (CAD) datasets have advanced the research on learning CAD modeling processes and relating them to real objects. In this context, 3D reverse engineering of CAD models from 3D scans is considered to be one of the most sought-after goals for the CAD industry. However, recent efforts assume multiple simplifications limiting the applications in real-world settings. The SHARP Challenge 2023 aims at pushing the research a step closer to the real-world scenario of CAD reverse engineering through dedicated datasets and tracks. In this paper, we define the proposed SHARP 2023 tracks, describe the provided datasets, and propose a set of baseline methods along with suitable evaluation metrics to assess the performance of the track solutions. All proposed datasets along with useful routines and the evaluation metrics are publicly available.},
+  abbr={SHARP2023},
+  bibtex_show={true},
+}
+
+@article{Parelli2023InterpretableVQ,
+  title={Interpretable Visual Question Answering via Reasoning Supervision},
+  author={Maria Parelli and Dimitrios Mallis and Markos Diomataris and Vassilis Pitsikalis},
+  journal={IEEE International Conference on Image Processing (ICIP)},
+  year={2023},
+  arxiv={2309.03726},
+  abbr={ICIP2023},
+  preview={icip.jpg}, 
+  bibtex_show={true},
+  html={https://ieeexplore.ieee.org/abstract/document/10223156}, 
+  abstract={Transformer-based architectures have recently demonstrated remarkable performance in the Visual Question Answering (VQA) task. However, such models are likely to disregard crucial visual cues and often rely on multimodal shortcuts and inherent biases of the language modality to predict the correct answer, a phenomenon commonly referred to as lack of visual grounding. In this work, we alleviate this shortcoming through a novel architecture for visual question answering that leverages common sense reasoning as a supervisory signal. Reasoning supervision takes the form of a textual justification of the correct answer, with such annotations being already available on large-scale Visual Common Sense Reasoning (VCR) datasets. The model's visual attention is guided toward important elements of the scene through a similarity loss that aligns the learned attention distributions guided by the question and the correct reasoning. We demonstrate both quantitatively and qualitatively that the proposed approach can boost the model's visual perception capability and lead to performance increase, without requiring training on explicit grounding annotations.}
+}
+
 @ARTICLE{Mallis2023landm,
   author={Mallis, Dimitrios and Sanchez, Enrique and Bell, Matt and Tzimiropoulos, Georgios},
   journal={IEEE Transactions on Pattern Analysis and Machine Intelligence}, 
@@ -44,6 +72,7 @@
   year={2022},
   bibtex_show={true},
   abbr={PhDThesis},
+  preview={thesis.jpg},  
   abstract={Object parts, also known as landmarks, convey information about an object's shape and spatial configuration in 3D space, especially for deformable objects. The goal of landmark detection is to have a model that, for a particular object instance, can estimate the locations of its parts. Research in this field is mainly driven by supervised approaches, where a sufficient amount of human-annotated data is available. As annotating landmarks for all objects is impractical, this thesis focuses on learning landmark detectors without supervision. Despite good performance on limited scenarios (objects showcasing minor rigid deformation), unsupervised landmark discovery mostly remains an open problem. Existing work fails to capture semantic landmarks, i.e. points similar to the ones assigned by human annotators and may not generalise well to highly articulated objects like the human body, complicated backgrounds or large viewpoint variations.
 
 In this thesis, we propose a novel self-training framework for the discovery of unsupervised landmarks. Contrary to existing methods that build on auxiliary tasks such as image generation or equivariance, we depart from generic keypoints and train a landmark detector and descriptor to improve itself, tuning the keypoints into distinctive landmarks. We propose an iterative algorithm that alternates between producing new pseudo-labels through feature clustering and learning distinctive features for each pseudo-class through contrastive learning. Our detector can discover highly semantic landmarks, that are more flexible in terms of capturing large viewpoint changes and out-of-plane rotations (3D rotations). New state-of-the-art performance is achieved in multiple challenging datasets.}
@@ -81,6 +110,7 @@ viewpoint. We show the favourable properties of our method on a variety of diffi
   journal = {Landbauforschung},
   year = {2019},
   bibtex_show={true},
+  abbr={Landb/schung},
   author = {Matt Bell and Phil Garnsworthy and Dimitrios Mallis and Richrd Eckard and Peter Moate and Tianhai Yan},
   pdf={methanestudy.pdf},
   abstract={The aim of this study was to compare metrics for quantifying
@@ -174,7 +204,6 @@ annotated tweets, in a meaningful way, to the set of words that appear in them.}
   journal={Panhellenic Conference on Informatics},
   year={2015},
   bibtex_show={true},
-  preview={PCI2015.jpg},  
   doi={10.1145/2801948.2802010},
   abbr={PCI2015},
   website={http://hashtag.nonrelevant.net/},

@@ -27,7 +27,9 @@ In this website you can find more info about me, check publications and recent n
 
 ### Research
 
-During my PhD, I concentrated on learning with minimal manual supervision through _self-supervised_ and _semi-supervised learning_, specifically for the tasks of _landmark detection_ and _human pose estimation_. Later, I also looked into deep learning based recommender systems and the problem of _click-through-rate (CTR)_ prediction. My current focus in on 3D vision, and its application towards accelerating _parametric computer-aided design (CAD)_.
+Currently my focus in on 3D vision and it's application towards accelerating parametric Computer-Aided Design (CAD). I am particularly interested in automated reverse engineering of 2D/3D CAD models, effective recovery of construction history and capturing of design intent. 
+
+During my PhD, I concentrated on learning with minimal manual supervision through self-supervised and semi-supervised learning, specifically for the tasks of landmark detection and human pose estimation. Later, I also looked into deep learning based recommender systems and the problem of click-through-rate (CTR) prediction. 
 
 
 

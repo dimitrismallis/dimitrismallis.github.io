@@ -8,33 +8,6 @@
     - name: Address
       value: Luxembourg
 
-- title: Education
-  type: time_table
-  contents:
-    - title: PhD in Computer Vision
-      institution: University of Nottingham
-      year: 2018-2022
-      description:
-        - "<i><u>Advisor:</u></i> <a href=https://ytzimiro.github.io/>Dr. Yiorgos Tzimiropoulos</a>"
-        - Member of the <a href="https://www.nottingham.ac.uk/research/groups/cvl/">Computer Vision Laboratory (CVL)</a> of the University of Nottingham.
-        - My PhD thesis was on <i><b>Unsupervised Landmark Discovery via Self-Training Correspondence</b></i>.
-        - "My research on self-supervised representation learning< for landmark correspondence recovery lead to prestigious publications at the Conference on Neural Information Processing Systems (<b>NeurIPS</b>) in 2020 and IEEE's Transactions on Pattern Analysis and Machine Intelligence (<b>TPAMI</b>) in 2023."
-        - title: <b>Research areas</b>
-          contents:
-            - "<i>Unsupervised Landmark Discovery</i>"
-            - "<i>Self-Supervised Learning</i>"
-            - "<i>Self-Training</i>"
-            - "<i>Learning under label noise</i>"
-    - title: Diploma in Electrical and Computer Engineering
-      institution: Democritus University of Thrace (D.U.Th.)
-      year: 2010-2015
-      description:
-        - "<i>Program Duration:</i> 5 years"
-        - "A diploma is the Greek equivelant to <b>BSc + MSc</b>."
-        - My diploma thesis was on <b>Sound Source Separation in Real Room Environment</b>.
-        - Graduated with the <b>4th highest grade</b> on my cohord.
-        - "<i><u>Advisor:</u></i> <a href=https://utopia.duth.gr/nmitiano/>Dr. Nikos Mitianoudis</a>"
-
 
 - title: Experience
   type: time_table
@@ -42,9 +15,20 @@
     - title: Posdoctoral Researcher (3D Computer Vision)
       institution: SnT - Interdisciplinary Center for Security, Reliability and Trust •  University of Luxembourg
       year: 2023-present
+      description:
+        - Member of the <a href=https://cvi2.uni.lu/>Computer Vision, Imaging & Machine Intelligence Research Group (CVI²)</a> at <a href=https://www.uni.lu/snt-en/>SnT</a>, <a href=https://www.uni.lu/en/>University of Luxembourg</a>.
+        - "<i><u>Group Head:</u></i> <a href=https://cvi2.uni.lu/profile-djamila-aouada/>Dr. Djamila Aouada</a>"
+        - My research focus is on reverse engineering of CAD models from 3D scans, recovery of construction history and capturing of design intent.
+        - Organizer for the <a href=https://cvi2.uni.lu/sharp2023-challenge/>SHARP2023 Challenge</a>, organized in conjunction with the ICCV 2023 and the SHARP Workshop.
+        - title: <b>Research areas</b>
+          contents:
+            - "<i>Reverse Engineering from 3D Scans</i>"
+            - "<i>Reverse Engineering of Parametric CAD Sketches</i>"
+            - "<i>Self-Supervised Learning</i>"
+
 
     - title: Senior Machine Learning Engineer (Recommender Systems)
-      institution: Taboola - DeepLab
+      institution: <a href=https://www.taboola.com/>Taboola</a> - <a href=https://deeplab.ai/>DeepLab</a>
       year: 2022-2023
       description:
         - Part of DeepLab's dedicated team of <i>Taboolars</i>.
@@ -77,11 +61,76 @@
       - Designing custom solution, applications and services for organisations of the Greek public sector.
       - Main focus on server-side applications, middle-wares and APIs, using .NET and C#.
 
+
+- title: Education
+  type: time_table
+  contents:
+    - title: PhD in Computer Vision
+      institution: University of Nottingham
+      year: 2018-2022
+      description:
+        - "<i><u>Advisor:</u></i> <a href=https://ytzimiro.github.io/>Dr. Yiorgos Tzimiropoulos</a>"
+        - Member of the <a href="https://www.nottingham.ac.uk/research/groups/cvl/">Computer Vision Laboratory (CVL)</a> of the University of Nottingham.
+        - My PhD thesis was on <i><b>Unsupervised Landmark Discovery via Self-Training Correspondence</b></i>.
+        - "My research on self-supervised representation learning< for landmark correspondence recovery lead to prestigious publications at the Conference on Neural Information Processing Systems (<b>NeurIPS</b>) in 2020 and IEEE's Transactions on Pattern Analysis and Machine Intelligence (<b>TPAMI</b>) in 2023."
+        - title: <b>Research areas</b>
+          contents:
+            - "<i>Unsupervised Landmark Discovery</i>"
+            - "<i>Self-Supervised Learning</i>"
+            - "<i>Self-Training</i>"
+            - "<i>Learning under label noise</i>"
+    - title: Diploma in Electrical and Computer Engineering
+      institution: Democritus University of Thrace (D.U.Th.)
+      year: 2010-2015
+      description:
+        - "<i>Program Duration:</i> 5 years"
+        - "A diploma is the Greek equivelant to <b>BSc + MSc</b>."
+        - My diploma thesis was on <b>Sound Source Separation in Real Room Environment</b>.
+        - Graduated with the <b>4th highest grade</b> on my cohord.
+        - "<i><u>Advisor:</u></i> <a href=https://utopia.duth.gr/nmitiano/>Dr. Nikos Mitianoudis</a>"
+
+
+
+
+- title: Teaching
+  type: time_table
+  contents:
+
+    - title: Master/Undergrad students  (collaboration with <a href=https://deeplab.ai/>Deeplab</a>).
+      year: 2022 - present
+      description:
+        - Through my ongoing collaboration with Deeplab, I participate in the supervision master/undergrad student's, towards either the completion of their thesis or paper submissions.
+        - Part of Deeplabs collaboration with the National Technical University of Athens <i>(NTUA)</i>.
+        - title: <b>Student Projects</b>
+          contents:
+            - "<i>Maria Parelli's</i> work on <a href=https://ieeexplore.ieee.org/abstract/document/10223156>Interpretable Visual Question Answering Via Reasoning Supervision</a>, presented at <a href=https://2023.ieeeicip.org/>ICIP 2023</a> as a lecture."
+            - "<i>Zacharias Anastasaki's</i> diploma thesis on Weakly Supervised Visual Relationship Detection."
+            
+    - title: CVIA lectures
+      year: 2023 - present
+      description:
+        - Guess lecturer for the Computer Vision & Image Analysis (CVIA) Course.
+        - Part of the <a href=https://ism.uni.lu/>Interdisciplinary Space Master (ISM)</a> / <a href=https://www.uni.lu/fstm-en/study-programs/master-in-information-and-computer-sciences/>Master is Information and Computer Science (MICS)</a> of SnT, Univesity of Luxembourg.
+        - Lecture on Deep Learning. 
+
+    - title: Teaching Assistant
+      year: 2018-2021
+      description:
+        - During my PhD, I served as a teaching assistant for multiple undergraduate modules of the School of Computer Science <i>(University of Nottingham)</i>.
+        - My duties included <b>lab tutoring</b>, <b>coursework marking</b> and <b>running tutorials</b>.
+        - title: Modules
+          contents:
+            - "<i>Computer Fundamentals</i>"
+            - "<i>C++ Programming</i>"
+            - "<i>Mobile Developments</i>"
+            - "<i>Image Processing</i>"
+
+
 - title: Reviewer
   type: list
   contents:
-    - "I am a reviewer for the following journals and conferences: <br> 
-    <ul><li><b>NeurIPS, ECCV, BMVC, ICIP, ICMLA, CVPR</b>.</li></ul>"
+    - "I have served as reviewer for the following journals and conferences: <br> 
+    <ul><li><b>ECCV, BMVC, NeurIPS(W), ICIP, ICMLA, CVPR, ICCV(W), WACV</b>.</li></ul>"
 
 
 - title: Awards and Disntinctions
@@ -109,26 +158,6 @@
       description: "Code NeurIPS 2020 paper, <i>Unsupervised Learning of Object Landmarks via Self-Training Correspondence</i>."
 
 
-- title: Teaching
-  type: time_table
-  contents:
-    - title: Master and Undergraduate Students
-      year: 2022 - present
-      description:
-        - At DeepLab, I supervised one <i>undergraduate</i> and one <i>master</i> student, towards either the completion of their thesis or journal submissions.
-        - Part of DeepLabs collaboration with the National Technical University of Athens <i>(NTUA)</i>.
-        - At present, I am supervising one <i>master</i> student towards the completion of his thesis.
-    - title: Teaching Assistant
-      year: 2018-2021
-      description:
-        - During my PhD, I served as a teaching assistant for multiple undergraduate modules of the School of Computer Science <i>(University of Nottingham)</i>.
-        - My duties included <b>lab tutoring</b>, <b>coursework marking</b> and <b>running tutorials</b>.
-        - title: Modules
-          contents:
-            - "<i>Computer Fundamentals</i>"
-            - "<i>C++ Programming</i>"
-            - "<i>Mobile Developments</i>"
-            - "<i>Image Processing</i>"
 
         
 
