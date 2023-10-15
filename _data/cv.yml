@@ -5,7 +5,7 @@
       value: Dimitrios Mallis
     - name: Email
       value: malldimi1 <i><b>[at]</b></i> gmail <i><b>[dot]</b></i> com
-    - name: Address
+    - name: Location
       value: Luxembourg
 
 
@@ -13,14 +13,19 @@
   type: time_table
   contents:
     - title: Posdoctoral Researcher (3D Computer Vision)
-      institution: SnT - Interdisciplinary Center for Security, Reliability and Trust •  University of Luxembourg
+      institution: "<a href=https://www.uni.lu/snt-en/>SnT</a> • University of Luxembourg <i>(Luxembourg)</i>"
       year: 2023-present
       description:
         - Member of the <a href=https://cvi2.uni.lu/>Computer Vision, Imaging & Machine Intelligence Research Group (CVI²)</a> at <a href=https://www.uni.lu/snt-en/>SnT</a>, <a href=https://www.uni.lu/en/>University of Luxembourg</a>.
-        - "<i><u>Group Head:</u></i> <a href=https://cvi2.uni.lu/profile-djamila-aouada/>Dr. Djamila Aouada</a>"
         - Working in close collaboration with our industrial partner <a href=https://www.artec3d.com/>Artec3D</a>.
         - My research focus is on reverse engineering of CAD models from 3D scans, recovery of construction history and capturing of design intent.
         - Organizer for the <a href=https://cvi2.uni.lu/sharp2023-challenge/>SHARP2023 Challenge</a>, organized in conjunction with the ICCV 2023 and the SHARP Workshop.
+        - "<i><u>Group Head:</u></i> <a href=https://cvi2.uni.lu/profile-djamila-aouada/>Dr. Djamila Aouada</a>"
+        - title: <b>Projects</b>
+          contents:
+            - <i>Deep Learning of 3D Scanned Data</i> [<a href=https://cvi2.uni.lu/2022/06/07/deep-learning-of-3d-scanned-data/>Project Page</a>]
+            - <i><b>CASCADES</b>, Constrained Sequence modelling of CAD for reverse Engineering from 3d Scans</i> [<a href=https://cvi2.uni.lu/2022/09/07/cascades/>Project Page</a>]
+            - <i><b>FREE-3D</b>, Feature Reverse Engineering Of 3D Scans</i> [<a href=https://cvi2.uni.lu/2022/06/07/free-3d-feature-based-reverse-engineering-of-3d-scans/>Project Page</a>]
         - title: <b>Research areas</b>
           contents:
             - "<i>Reverse Engineering from 3D Scans</i>"
@@ -29,7 +34,7 @@
 
 
     - title: Senior Machine Learning Engineer (Recommender Systems)
-      institution: <a href=https://www.taboola.com/>Taboola</a> - <a href=https://deeplab.ai/>DeepLab</a>
+      institution: <a href=https://www.taboola.com/>Taboola</a> • <a href=https://deeplab.ai/>DeepLab</a> <i>(Athens, Greece)</i>
       year: 2022-2023
       description:
         - Part of DeepLab's dedicated team of <i>Taboolars</i>.
@@ -42,7 +47,7 @@
             - "<i>Deep Learning for Recommender Systems</i>"
             - <i>Click-Through-Rate (CTR)</i> prediction
     - title: Research Intern (Computer Vision)
-      institution: Samsung AI Centre Cambridge (SAIC-C)
+      institution: Samsung AI Centre Cambridge (<a href=https://research.samsung.com/aicenter_cambridge>SAIC-C</a>) <i>(Cambridge, UK)</i>
       year: 2020-2021
       description:
         - <i>Six-month</i> PhD Internshp, extended to a <i>part-time</i> position.
@@ -56,18 +61,21 @@
             - "<i>Self-Training</i>"
 
     - title: Software Engineer
-      institution: Singular Logic, Athens
+      institution: <a href=https://portal.singularlogic.eu/en>Singular Logic</a> <i>(Athens, Greece)</i>
       year: 2016 - 2017
       description:
       - Designing custom solution, applications and services for organisations of the Greek public sector.
       - Main focus on server-side applications, middle-wares and APIs, using .NET and C#.
+      - title: <b>Technologies</b>
+        contents:
+          - C#, .NET Core, ASP.NET Web Api 2, ASP.NET Core, LINQ, Ninject, TFS, ADO.NET, Async Programming.
 
 
 - title: Education
   type: time_table
   contents:
     - title: PhD in Computer Vision
-      institution: University of Nottingham
+      institution: University of Nottingham <i>(Nottingham, UK)</i>
       year: 2018-2022
       description:
         - "<i><u>Advisor:</u></i> <a href=https://ytzimiro.github.io/>Dr. Yiorgos Tzimiropoulos</a>"
@@ -81,12 +89,14 @@
             - "<i>Self-Training</i>"
             - "<i>Learning under label noise</i>"
     - title: Diploma in Electrical and Computer Engineering
-      institution: Democritus University of Thrace (D.U.Th.)
+      institution: Democritus University of Thrace (<a href=https://duth.gr/en>D.U.Th</a>) <i>(Xanthi, Greece)</i>
       year: 2010-2015
       description:
         - "<i>Program Duration:</i> 5 years"
         - "A diploma is the Greek equivelant to <b>BSc + MSc</b>."
         - My diploma thesis was on <b>Sound Source Separation in Real Room Environment</b>.
+        - Research conducted for my thesis has been partially published in <a href=https://www.springerprofessional.de/en/convolutive-audio-source-separation-using-robust-ica-and-reduced/10651414>[AIAI2016]</a> and later <a href=https://link.springer.com/article/10.1007/s12530-017-9199-3>[EvolvingSystems2018]</a>.
+        - Our work on sentiment analysis of Greek Tweets lead to publications in <a href=https://dl.acm.org/doi/10.1145/2801948.2802010https://dl.acm.org/doi/10.1145/2801948.2802010>[PCI2015]</a> and <a href=https://www.emerald.com/insight/content/doi/10.1108/JSIT-06-2017-0040/full/html>[JSIT2018]</a>.
         - Graduated with the <b>4th highest grade</b> on my cohord.
         - "<i><u>Advisor:</u></i> <a href=https://utopia.duth.gr/nmitiano/>Dr. Nikos Mitianoudis</a>"
 
@@ -105,7 +115,8 @@
         - title: <b>Student Projects</b>
           contents:
             - "<i>Maria Parelli's</i> work on <a href=https://ieeexplore.ieee.org/abstract/document/10223156>Interpretable Visual Question Answering Via Reasoning Supervision</a>, presented at <a href=https://2023.ieeeicip.org/>ICIP 2023</a> as a lecture."
-            - "<i>Zacharias Anastasaki's</i> diploma thesis on Weakly Supervised Visual Relationship Detection."
+            - "<i>Zacharias Anastasaki's</i> diploma thesis on <i>Weakly Supervised Visual Relationship Detection</i>."
+            - "<i>Danai Brilli's</i> diploma thesis on <i>Scene Graph Guided Visual Question Answering</i> <i>(ongoing)</i>."
             
     - title: CVIA lectures
       year: 2023 - present
@@ -146,7 +157,7 @@
       description:
         - I graduated with the 4th highest grade of my university cohord <i>(DUTH)</i>.
 
-- title: Open Source Projects
+- title: Open Source Repositories
   type: time_table
   contents:
     - title: <a href="https://gitlab.uni.lu/cvi2/iccv2023-sharp-challenge">ICCV 2023 - SHARP CHALLENGE</a>
