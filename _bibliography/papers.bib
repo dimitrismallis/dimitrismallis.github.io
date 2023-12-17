@@ -3,7 +3,16 @@
 
 @string{aps = {American Physical Society,}}
 
-
+@article{Anastasakis2023WACV,
+  title={Self-Supervised Learning for Visual Relationship Detection through Masked Bounding Box Reconstruction},
+  author={Zacharias Anastasakis and Dimitrios Mallis and Markos Diomataris and George Alexandridis and Stefanos Kollias and Vassilis Pitsikalis},
+  journal={IEEE/CVF Winter Conference on Applications of Computer Vision (WACV)},
+  year={2023},
+  preview={WACV2023_preview.jpg},  
+  bibtex_show={true},
+  arxiv={2311.04834},
+  abstract={We present a novel self-supervised approach for representation learning, particularly for the task of Visual Relationship Detection (VRD). Motivated by the effectiveness of Masked Image Modeling (MIM), we propose Masked Bounding Box Reconstruction (MBBR), a variation of MIM where a percentage of the entities/objects within a scene are masked and subsequently reconstructed based on the unmasked objects. The core idea is that, through object-level masked modeling, the network learns context-aware representations that capture the interaction of objects within a scene and thus are highly predictive of visual object relationships. We extensively evaluate learned representations, both qualitatively and quantitatively, in a few-shot setting and demonstrate the efficacy of MBBR for learning robust visual representations, particularly tailored for VRD. The proposed method is able to surpass state-of-the-art VRD methods on the Predicate Detection (PredDet) evaluation setting, using only a few annotated samples. }
+}
 
 @article{Mallis2023SHARPC2,
   title={SHARP Challenge 2023: Solving CAD History and pArameters Recovery from Point clouds and 3D scans. Overview, Datasets, Metrics, and Baselines},
@@ -12,10 +21,9 @@
   year={2023},
   arxiv={2308.15966},
   code={https://gitlab.uni.lu/cvi2/iccv2023-sharp-challenge},
-  preview={sharppaper.jpg}, 
+  preview={ICCVW2023_preview.jpg}, 
   html={https://cvi2.uni.lu/sharp2023-challenge/}, 
   abstract={Recent breakthroughs in geometric Deep Learning (DL) and the availability of large Computer-Aided Design (CAD) datasets have advanced the research on learning CAD modeling processes and relating them to real objects. In this context, 3D reverse engineering of CAD models from 3D scans is considered to be one of the most sought-after goals for the CAD industry. However, recent efforts assume multiple simplifications limiting the applications in real-world settings. The SHARP Challenge 2023 aims at pushing the research a step closer to the real-world scenario of CAD reverse engineering through dedicated datasets and tracks. In this paper, we define the proposed SHARP 2023 tracks, describe the provided datasets, and propose a set of baseline methods along with suitable evaluation metrics to assess the performance of the track solutions. All proposed datasets along with useful routines and the evaluation metrics are publicly available.},
-  abbr={SHARP2023},
   bibtex_show={true},
 }
 
@@ -25,8 +33,7 @@
   journal={IEEE International Conference on Image Processing (ICIP)},
   year={2023},
   arxiv={2309.03726},
-  abbr={ICIP2023},
-  preview={icip.jpg}, 
+  preview={ICIP2023_preview.jpg}, 
   bibtex_show={true},
   html={https://ieeexplore.ieee.org/abstract/document/10223156}, 
   abstract={Transformer-based architectures have recently demonstrated remarkable performance in the Visual Question Answering (VQA) task. However, such models are likely to disregard crucial visual cues and often rely on multimodal shortcuts and inherent biases of the language modality to predict the correct answer, a phenomenon commonly referred to as lack of visual grounding. In this work, we alleviate this shortcoming through a novel architecture for visual question answering that leverages common sense reasoning as a supervisory signal. Reasoning supervision takes the form of a textual justification of the correct answer, with such annotations being already available on large-scale Visual Common Sense Reasoning (VCR) datasets. The model's visual attention is guided toward important elements of the scene through a similarity loss that aligns the learned attention distributions guided by the question and the correct reasoning. We demonstrate both quantitatively and qualitatively that the proposed approach can boost the model's visual perception capability and lead to performance increase, without requiring training on explicit grounding annotations.}
@@ -38,13 +45,10 @@
   title={From Keypoints to Object Landmarks via Self-Training Correspondence: A novel approach to Unsupervised Landmark Discovery}, 
   year={2023},
   selected={true},
-  preview={tpami2022.jpg},  
-  doi={10.1109/TPAMI.2023.3234212},
+  preview={TPAMI2023_preview.jpg},  
   code={https://github.com/dimitrismallis/KeypointsToLandmarks},
   arxiv={2205.15895},
   bibtex_show={true},
-  abbr={TPAM2023},
-  altmetric={true},
   html={https://ieeexplore.ieee.org/document/10005822},
   abstract={This paper proposes a novel paradigm for the unsupervised learning of object landmark detectors. Contrary to existing methods that build on auxiliary tasks such as image generation or equivariance, we propose a self-training approach where, departing from generic keypoints, a landmark detector and descriptor is trained to improve itself, tuning the keypoints into distinctive landmarks. To this end, we propose an iterative algorithm that alternates between producing new pseudo-labels through feature clustering and learning distinctive features for each pseudo-class through contrastive learning. With a shared backbone for the landmark detector and descriptor, the keypoint locations progressively converge to stable landmarks, filtering those less stable. Compared to previous works, our approach can learn points that are more flexible in terms of capturing large viewpoint changes. We validate our method on a variety of difficult datasets, including LS3D, BBCPose, Human3.6M and PennAction, achieving new state of the art results.}
 }
@@ -53,11 +57,8 @@
   author={Petros Katsileros and Nikiforos Mandilaras and Dimitrios Mallis and Vassilis Pitsikalis and Stavros Theodorakis and Gil Chamiel},
   journal={Conference on Recommender Systems},
   year={2022},
-  preview={recsys2022.jpg},  
-  doi={10.1145/3523227.3547390},
+  preview={RECSYS2022_preview.jpg},  
   bibtex_show={true},
-  abbr={RecSys2022},
-  altmetric={true},
   html={https://dl.acm.org/doi/10.1145/3523227.3547390},
   arxiv={2209.00458},
   abstract={In this work we introduce an incremental learning framework for Click-Through-Rate (CTR) prediction and demonstrate its effectiveness for Taboola's massive-scale recommendation service. Our approach enables rapid capture of emerging trends through warm-starting from previously deployed models and fine tuning on "fresh" data only. Past knowledge is maintained via a teacher-student paradigm, where the teacher acts as a distillation technique, mitigating the catastrophic forgetting phenomenon. Our incremental learning framework enables significantly faster training and deployment cycles (x12 speedup). We demonstrate a consistent Revenue Per Mille (RPM) lift over multiple traffic segments and a significant CTR increase on newly introduced items.}
@@ -71,8 +72,7 @@
   pdf={Thesis.pdf},
   year={2022},
   bibtex_show={true},
-  abbr={PhDThesis},
-  preview={thesis.jpg},  
+  preview={THESIS_preview.jpg},  
   abstract={Object parts, also known as landmarks, convey information about an object's shape and spatial configuration in 3D space, especially for deformable objects. The goal of landmark detection is to have a model that, for a particular object instance, can estimate the locations of its parts. Research in this field is mainly driven by supervised approaches, where a sufficient amount of human-annotated data is available. As annotating landmarks for all objects is impractical, this thesis focuses on learning landmark detectors without supervision. Despite good performance on limited scenarios (objects showcasing minor rigid deformation), unsupervised landmark discovery mostly remains an open problem. Existing work fails to capture semantic landmarks, i.e. points similar to the ones assigned by human annotators and may not generalise well to highly articulated objects like the human body, complicated backgrounds or large viewpoint variations.
 
 In this thesis, we propose a novel self-training framework for the discovery of unsupervised landmarks. Contrary to existing methods that build on auxiliary tasks such as image generation or equivariance, we depart from generic keypoints and train a landmark detector and descriptor to improve itself, tuning the keypoints into distinctive landmarks. We propose an iterative algorithm that alternates between producing new pseudo-labels through feature clustering and learning distinctive features for each pseudo-class through contrastive learning. Our detector can discover highly semantic landmarks, that are more flexible in terms of capturing large viewpoint changes and out-of-plane rotations (3D rotations). New state-of-the-art performance is achieved in multiple challenging datasets.}
@@ -86,11 +86,8 @@ author={Mallis, Dimitrios and Sanchez, Enrique and Bell, Matt and Tzimiropoulos,
 journal={Neural Information Processing Systems},
 year={2020},
 selected={true},  
-preview={nips2020.jpg},  
+preview={NEURIPS2020_preview.jpg},  
 bibtex_show={true},
-abbr={NeurIPS2020},
-altmetric={true},
-slides={https://crossminds.ai/video/unsupervised-learning-of-object-landmarks-via-self-training-correspondence-606ff105f43a7f2f827c18dd/},
 html={https://proceedings.neurips.cc/paper/2020/hash/32508f53f24c46f685870a075eaaa29c-Abstract.html},
 pdf={https://proceedings.neurips.cc/paper/2020/file/32508f53f24c46f685870a075eaaa29c-Paper.pdf},
 supp={https://proceedings.neurips.cc/paper_files/paper/2020/file/32508f53f24c46f685870a075eaaa29c-Supplemental.pdf},
@@ -110,7 +107,7 @@ viewpoint. We show the favourable properties of our method on a variety of diffi
   journal = {Landbauforschung},
   year = {2019},
   bibtex_show={true},
-  abbr={Landb/schung},
+  preview={Landbauforschung2019_preview.jpg},  
   author = {Matt Bell and Phil Garnsworthy and Dimitrios Mallis and Richrd Eckard and Peter Moate and Tianhai Yan},
   pdf={methanestudy.pdf},
   abstract={The aim of this study was to compare metrics for quantifying
@@ -146,7 +143,7 @@ emissions from the maximum amplitude of an eructation.}
   journal={Evolving Systems},
   year={2018},
   bibtex_show={true},
-  abbr={EvolvingSystems},
+  preview={EvolvingSystems2018_preview.jpg},  
   html={https://link.springer.com/article/10.1007/s12530-017-9199-3},
   arxiv={1708.03989},
   html={https://link.springer.com/article/10.1007/s12530-017-9199-3},
@@ -157,8 +154,8 @@ emissions from the maximum amplitude of an eructation.}
   author={Georgios Kalamatianos and Symeon Symeonidis and Dimitrios Mallis and Avi Arampatzis},
   journal={Journal of Systems and Information Technology},
   year={2018},
+  preview={JSIT2018_preview.jpg},  
   bibtex_show={true},
-  abbr={JSIT2018},
   pdf={JSIT18.pdf}, 
   website={http://hashtag.nonrelevant.net/},
   html={https://www.emerald.com/insight/content/doi/10.1108/JSIT-06-2017-0040/full/html},
@@ -191,8 +188,8 @@ annotated tweets, in a meaningful way, to the set of words that appear in them.}
   author={Dimitrios Mallis and Thomas Sgouros and Nikolaos Mitianoudis},
   journal={Artificial Intelligence Applications and Innovations},
   year={2016},
+  preview={AIAI2016_preview.jpg},  
   bibtex_show={true},
-  abbr={AIAI2016},
   pdf={aiai2016.pdf},
   html={https://www.springerprofessional.de/en/convolutive-audio-source-separation-using-robust-ica-and-reduced/10651414},
   abstract={Audio source separation is the task of isolating sound sources that are active simultaneously in a room captured by a set of microphones. Convolutive audio source separation of equal number of sources and microphones has a number of shortcomings including the complexity of frequency-domain ICA, the permutation ambiguity and the problem’s scalabity with increasing number of sensors. In this paper, the authors propose a multiple-microphone audio source separation algorithm based on a previous work of Mitianoudis and Davies. Complex FastICA is substituted by Robust ICA increasing robustness and performance. Permutation ambiguity is solved using the Likelihood Ration Jump solution, which is now modified to decrease computational complexity in the case of multiple microphones.}
@@ -205,7 +202,7 @@ annotated tweets, in a meaningful way, to the set of words that appear in them.}
   year={2015},
   bibtex_show={true},
   doi={10.1145/2801948.2802010},
-  abbr={PCI2015},
+  preview={PCI2015_preview.jpg},  
   website={http://hashtag.nonrelevant.net/},
   html={https://dl.acm.org/doi/10.1145/2801948.2802010},
   pdf={PCI2015a.pdf},

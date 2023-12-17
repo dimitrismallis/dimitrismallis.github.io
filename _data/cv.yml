@@ -2,9 +2,13 @@
   type: map
   contents:
     - name: Full Name
-      value: Dimitrios Mallis
+      value: Dimitrios Mallis, PhD
     - name: Email
       value: malldimi1 <i><b>[at]</b></i> gmail <i><b>[dot]</b></i> com
+    - name: Github
+      value: <a href=https://github.com/dimitrismallis/>github.com/dimitrismallis</a>
+    - name: Linkedin
+      value: <a href=https://www.linkedin.com/in/dimitrismallis/>linkedin.com/in/dimitrismallis</a>
     - name: Location
       value: Luxembourg
 
@@ -114,8 +118,8 @@
         - Part of Deeplabs collaboration with the National Technical University of Athens <i>(NTUA)</i>.
         - title: <b>Student Projects</b>
           contents:
-            - "<i>Maria Parelli's</i> work on <a href=https://ieeexplore.ieee.org/abstract/document/10223156>Interpretable Visual Question Answering Via Reasoning Supervision</a>, presented at <a href=https://2023.ieeeicip.org/>ICIP 2023</a> as a lecture."
-            - "<i>Zacharias Anastasaki's</i> diploma thesis on <i>Weakly Supervised Visual Relationship Detection</i>."
+            - "<i>Maria Parelli's</i> work on <a href=https://ieeexplore.ieee.org/abstract/document/10223156>Interpretable Visual Question Answering Via Reasoning Supervision</a>, presented at ICIP 2023 as a lecture."
+            - "<i>Zacharias Anastasaki's</i> diploma thesis on <a href=https://arxiv.org/abs/2311.04834>Self-Supervised Visual Relationship Detection</a>, also partially presented at WAVC 2023 as a poster."
             - "<i>Danai Brilli's</i> diploma thesis on <i>Scene Graph Guided Visual Question Answering</i> <i>(ongoing)</i>."
             
     - title: CVIA lectures
@@ -172,8 +176,3 @@
 
 
         
-
-- title: Interests
-  type: list
-  contents:
-    - Callisthenics, Crossfit, Photography, Audiobooks, Motorcycling. 
