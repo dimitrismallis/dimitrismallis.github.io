@@ -3,6 +3,35 @@
 
 @string{aps = {American Physical Society,}}
 
+
+@article{Karadeniz2024PICASSOAF,
+  title={DAVINCI: A Single-Stage Architecture for Constrained CAD Sketch Inference},
+  author={Ahmet Serdar Karadeniz and Dimitrios Mallis and Nesryne Mejri and Kseniya Cherenkova and Anis Kacem and Djamila Aouada},
+  journal={British Machine Vision Conference (BMVC)},
+  year={2024},
+  preview={davinci.png},  
+  bibtex_show={true},
+  selected={true},
+  arxiv={2410.22857},
+  html={https://cvi2snt.github.io/davinci/}, 
+  code={https://github.com/cvi2snt/CPTSketchGraphs},
+  abstract={This work presents DAVINCI, a unified architecture for single-stage Computer-Aided Design (CAD) sketch parameterization and constraint inference directly from raster sketch images. By jointly learning both outputs, DAVINCI minimizes error accumulation and enhances the performance of constrained CAD sketch inference. Notably, DAVINCI achieves state-of-the-art results on the large-scale SketchGraphs dataset, demonstrating effectiveness on both precise and hand-drawn raster CAD sketches. To reduce DAVINCI’s reliance on large-scale annotated datasets, we explore the efficacy of CAD sketch augmentations. We introduce Constraint-Preserving Transformations (CPTs), i.e. random permutations of the parametric primitives of a CAD sketch that preserve its constraints. This data augmentation strategy allows DAVINCI to achieve reasonable performance when trained with only 0.1% of the SketchGraphs dataset. Furthermore, this work contributes a new version of SketchGraphs, augmented with CPTs. The newly introduced CPTSketchGraphs dataset includes 80 million CPT-augmented sketches, thus providing a rich resource for future research in the CAD sketch domain.}
+}
+
+@article{Karadeniz2025DAVINCI,
+  title={PICASSO: A Feed-Forward Framework for Parametric Inference of CAD Sketches via Rendering Self-Supervision},
+  author={Ahmet Serdar Karadeniz and Dimitrios Mallis and Nesryne Mejri and Kseniya Cherenkova and Anis Kacem and Djamila Aouada},
+  journal={Arxiv (now accepted to WACV)},
+  year={2024},
+  preview={picasso.png},  
+  bibtex_show={true},
+  arxiv={2407.13394},
+  html={https://cvi2snt.github.io/picasso/}, 
+  abstract={This work introduces PICASSO, a framework for the parameterization of 2D CAD sketches from hand-drawn and precise sketch images. PICASSO converts a given CAD sketch image into parametric primitives that can be seamlessly integrated into CAD software. Our framework leverages rendering self-supervision to enable the pre-training of a CAD sketch parameterization network using sketch renderings only, thereby eliminating the need for corresponding CAD parameterization. Thus, we significantly reduce reliance on parameter-level annotations, which are often unavailable, particularly for hand-drawn sketches. The two primary components of PICASSO are (1) a Sketch Parameterization Network (SPN) that predicts a series of parametric primitives from CAD sketch images, and (2) a Sketch Rendering Network (SRN) that renders parametric CAD sketches in a differentiable manner and facilitates the computation of a rendering (image-level) loss for self-supervision. We demonstrate that the proposed PICASSO can achieve reasonable performance even when finetuned with only a small number of parametric CAD sketches. Extensive evaluation on the widely used SketchGraphs and CAD as Language datasets validates the effectiveness of the proposed approach on zero- and few-shot learning scenarios.}
+}
+
+
+
 @article{dupont2024transcad,
   title={TransCAD: A Hierarchical Transformer for CAD Sequence Inference from Point Clouds},
   author={Elona Dupont and Kseniya Cherenkova and Dimitrios Mallis and Gleb Gusev and Anis Kacem and Djamila Aouada},
@@ -34,7 +63,6 @@
   journal={International Conference on Computer Vision Workshops (ICCVW)},
   year={2023},
   arxiv={2308.15966},
-  code={https://gitlab.uni.lu/cvi2/iccv2023-sharp-challenge},
   preview={ICCVW2023_preview.jpg}, 
   html={https://cvi2.uni.lu/sharp2023-challenge/}, 
   abstract={Recent breakthroughs in geometric Deep Learning (DL) and the availability of large Computer-Aided Design (CAD) datasets have advanced the research on learning CAD modeling processes and relating them to real objects. In this context, 3D reverse engineering of CAD models from 3D scans is considered to be one of the most sought-after goals for the CAD industry. However, recent efforts assume multiple simplifications limiting the applications in real-world settings. The SHARP Challenge 2023 aims at pushing the research a step closer to the real-world scenario of CAD reverse engineering through dedicated datasets and tracks. In this paper, we define the proposed SHARP 2023 tracks, describe the provided datasets, and propose a set of baseline methods along with suitable evaluation metrics to assess the performance of the track solutions. All proposed datasets along with useful routines and the evaluation metrics are publicly available.},

@@ -164,8 +164,8 @@
 - title: Open Source Repositories
   type: time_table
   contents:
-    - title: <a href="https://gitlab.uni.lu/cvi2/iccv2023-sharp-challenge">ICCV 2023 - SHARP CHALLENGE</a>
-      description: SHARP 2023 workshop and challenge organised by the CVI² group of the University of Luxembourg and Artec3D, in conjunction with ICCV 2023.
+    - title: <a href="https://github.com/cvi2snt/CPTSketchGraphs">CPTSketchGraphs</a>
+      description: "A dataset of 80 millon constraint preserving transformations (CPTs) of CAD sketches derived from the SketchGraphs dataset."
 
     - title: <a href="https://github.com/dimitrismallis/KeypointsToLandmarks">KeypointsToLandmarks</a>
       description: "Code for our TPAMI paper <i>From Keypoints to Object Landmarks via Self-Training Correspondence: A novel approach to Unsupervised Landmark Discovery.</i>"

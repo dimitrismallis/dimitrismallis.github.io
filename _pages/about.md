@@ -19,7 +19,7 @@ selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true  # includes social icons at the bottom of the page
 ---
 
-Welcome!! 👋  I am a Postdoctoral Researcher at the [Interdisciplinary Centre for Security, Reliability and Trust (SnT)](https://www.uni.lu/snt) of the **University of Luxembourg**, focusing on 3D Computer Vision and it's applications for Computer-Aided Design (CAD).
+Welcome!! 👋  I am a Postdoctoral Researcher at the [Interdisciplinary Centre for Security, Reliability and Trust (SnT)](https://www.uni.lu/snt) of the **University of Luxembourg**, focusing on computer vision its appliations for Computer-Aided Design (CAD).
 
 I received my PhD in Computer Vision at the **University of Nottingham** under the supervision of [Dr. Yorgos Tzimiropoulos](https://ytzimiro.github.io/). I was also a Research Intern at [Samsung AI Cambridge (SAIC)](https://research.samsung.com/aicenter_cambridge) and later a Senior Machine Learning Engineer for [Taboola](https://www.taboola.com/) and [Deeplab](https://deeplab.ai/).
 
@@ -27,7 +27,7 @@ In this website you can find more info about me, check publications and recent n
 
 ### Research
 
-Currently my focus in on 3D vision and it's application towards accelerating parametric Computer-Aided Design (CAD). I am particularly interested in automated reverse engineering of 2D/3D CAD models, effective recovery of construction history and capturing of design intent. 
+Currently my focus in on 3D vision and it's application towards accelerating parametric Computer-Aided Design (CAD). I am particularly interested in automated reverse engineering of 2D/3D CAD models as well as leveraging multimodal large language models (MLLMs) for AI-assisted design.
 
 During my PhD, I concentrated on learning with minimal manual supervision through self-supervised and semi-supervised learning, specifically for the tasks of landmark detection and human pose estimation. Later, I also looked into deep learning based recommender systems and the problem of click-through-rate (CTR) prediction. 
 
