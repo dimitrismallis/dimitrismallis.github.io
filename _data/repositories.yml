@@ -3,6 +3,7 @@ github_users:
 
 
 github_repos:
+  - filaPro/cad-recode
   - dimitrismallis/KeypointsToLandmarks
   - dimitrismallis/UnsupervisedLandmarks
   - cvi2snt/CPTSketchGraphs

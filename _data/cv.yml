@@ -164,6 +164,9 @@
 - title: Open Source Repositories
   type: time_table
   contents:
+    - title: <a href="https://github.com/filaPro/cad-recode">CADRecode</a>
+      description: "The implementation of CAD-Recode, a 3D CAD reverse engineering method introduced in our paper: <i>CAD-Recode: Reverse Engineering CAD Code from Point Clouds</i>"
+
     - title: <a href="https://github.com/cvi2snt/CPTSketchGraphs">CPTSketchGraphs</a>
       description: "A dataset of 80 millon constraint preserving transformations (CPTs) of CAD sketches derived from the SketchGraphs dataset."
 

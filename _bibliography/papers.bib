@@ -3,6 +3,31 @@
 
 @string{aps = {American Physical Society,}}
 
+@article{Mallis2025CADAssistant,
+  title={CAD-Assistant: Tool-Augmented VLLMs as Generic CAD Task Solvers},
+  author={Dimitrios Mallis and Ahmet Serdar Karadeniz and Sebastian Cavada and Danila Rukhovich and Niki Foteinopoulou and Kseniya Cherenkova and Anis Kacem and Djamila Aouada},
+  journal={ArXiv},
+  year={2025},
+  bibtex_show={true},
+  selected={true},
+  arxiv={2412.13810},
+  preview={cadassistant.png},  
+  abstract={We propose CAD-Assistant, a general-purpose CAD agent for AI-assisted design. Our approach is based on a powerful Vision and Large Language Model (VLLM) as a planner and a tool-augmentation paradigm using CAD-specific tools. CAD-Assistant addresses multimodal user queries by generating actions that are iteratively executed on a Python interpreter equipped with the FreeCAD software, accessed via its Python API. Our framework is able to assess the impact of generated CAD commands on geometry and adapts subsequent actions based on the evolving state of the CAD design. We consider a wide range of CAD-specific tools including a sketch image parameterizer, rendering modules, a 2D cross-section generator, and other specialized routines. CAD-Assistant is evaluated on multiple CAD benchmarks, where it outperforms VLLM baselines and supervised task-specific methods. Beyond existing benchmarks, we qualitatively demonstrate the potential of tool-augmented VLLMs as general-purpose CAD solvers across diverse workflows.}
+}
+
+@article{Rukhovich2025CADRecodeRE,
+  title={CAD-Recode: Reverse Engineering CAD Code from Point Clouds},
+  author={Danila Rukhovich and Elona Dupont and Dimitrios Mallis and Kseniya Cherenkova and Anis Kacem and Djamila Aouada},
+  journal={ArXiv},
+  year={2025},
+  arxiv={2412.14042},
+  bibtex_show={true},
+  selected={true},
+  preview={cadrecode.png},  
+  html={https://huggingface.co/spaces/filapro/cad-recode}, 
+  code={https://github.com/filaPro/cad-recode},
+  abstract={Computer-Aided Design (CAD) models are typically constructed by sequentially drawing parametric sketches and applying CAD operations to obtain a 3D model. The problem of 3D CAD reverse engineering consists of reconstructing the sketch and CAD operation sequences from 3D representations such as point clouds. In this paper, we address this challenge through novel contributions across three levels: CAD sequence representation, network design, and training dataset. In particular, we represent CAD sketch-extrude sequences as Python code. The proposed CAD-Recode translates a point cloud into Python code that, when executed, reconstructs the CAD model. Taking advantage of the exposure of pre-trained Large Language Models (LLMs) to Python code, we leverage a relatively small LLM as a decoder for CAD-Recode and combine it with a lightweight point cloud projector. CAD-Recode is trained on a procedurally generated dataset of one million CAD sequences. CAD-Recode significantly outperforms existing methods across the DeepCAD, Fusion360 and realworld CC3D datasets. Furthermore, we show that our CAD Python code output is interpretable by off-the-shelf LLMs, enabling CAD editing and CAD-specific question answering from point clouds.}
+}
 
 @article{Karadeniz2024PICASSOAF,
   title={DAVINCI: A Single-Stage Architecture for Constrained CAD Sketch Inference},
@@ -17,6 +42,9 @@
   code={https://github.com/cvi2snt/CPTSketchGraphs},
   abstract={This work presents DAVINCI, a unified architecture for single-stage Computer-Aided Design (CAD) sketch parameterization and constraint inference directly from raster sketch images. By jointly learning both outputs, DAVINCI minimizes error accumulation and enhances the performance of constrained CAD sketch inference. Notably, DAVINCI achieves state-of-the-art results on the large-scale SketchGraphs dataset, demonstrating effectiveness on both precise and hand-drawn raster CAD sketches. To reduce DAVINCI’s reliance on large-scale annotated datasets, we explore the efficacy of CAD sketch augmentations. We introduce Constraint-Preserving Transformations (CPTs), i.e. random permutations of the parametric primitives of a CAD sketch that preserve its constraints. This data augmentation strategy allows DAVINCI to achieve reasonable performance when trained with only 0.1% of the SketchGraphs dataset. Furthermore, this work contributes a new version of SketchGraphs, augmented with CPTs. The newly introduced CPTSketchGraphs dataset includes 80 million CPT-augmented sketches, thus providing a rich resource for future research in the CAD sketch domain.}
 }
+
+
+
 
 @article{Karadeniz2025DAVINCI,
   title={PICASSO: A Feed-Forward Framework for Parametric Inference of CAD Sketches via Rendering Self-Supervision},
@@ -39,7 +67,6 @@
   year={2024},
   preview={eccv2024.jpg},  
   bibtex_show={true},
-  selected={true},
   html={https://cvi2snt.github.io/transcad/}, 
   arxiv={2407.12702},
   abstract={3D reverse engineering, in which a CAD model is inferred given a 3D scan of a physical object, is a research direction that offers many promising practical applications. This paper proposes TransCAD, an end-to-end transformer-based architecture that predicts the CAD sequence from a point cloud. TransCAD leverages the structure of CAD sequences by using a hierarchical learning strategy. A loop refiner is also introduced to regress sketch primitive parameters. Rigorous experimentation on the DeepCAD and Fusion360 datasets show that TransCAD achieves state-of-the-art results. The result analysis is supported with a proposed metric for CAD sequence, the mean Average Precision of CAD Sequence, that addresses the limitations of existing metrics. }
