@@ -1,1 +1,6 @@
 bundle exec jekyll serve --lsi
+
+
+you have to 
+rbenv install 3.2.2
+rbenv global 3.2.2
