@@ -21,20 +21,22 @@
       year: 2023-present
       description:
         - Member of the <a href=https://cvi2.uni.lu/>Computer Vision, Imaging & Machine Intelligence Research Group (CVI²)</a> at <a href=https://www.uni.lu/snt-en/>SnT</a>, <a href=https://www.uni.lu/en/>University of Luxembourg</a>.
+        - My research focus is on reverse engineering of CAD models from 3D scans and Agentic CAD design.
         - Working in close collaboration with our industrial partner <a href=https://www.artec3d.com/>Artec3D</a>.
-        - My research focus is on reverse engineering of CAD models from 3D scans, recovery of construction history and capturing of design intent.
-        - Organizer for the <a href=https://cvi2.uni.lu/sharp2023-challenge/>SHARP2023 Challenge</a>, organized in conjunction with the ICCV 2023 and the SHARP Workshop.
         - "<i><u>Group Head:</u></i> <a href=https://cvi2.uni.lu/profile-djamila-aouada/>Dr. Djamila Aouada</a>"
         - title: <b>Projects</b>
           contents:
+            - <i><b>MORFIS</b>, <i>is an AI design platform that empowers users, regardless of their technical background, to create, customize, and prototype physical products.</i> [<a href=https://www.morfis.ai/>Project Page</a>]
             - <i>Deep Learning of 3D Scanned Data</i> [<a href=https://cvi2.uni.lu/2022/06/07/deep-learning-of-3d-scanned-data/>Project Page</a>]
             - <i><b>CASCADES</b>, Constrained Sequence modelling of CAD for reverse Engineering from 3d Scans</i> [<a href=https://cvi2.uni.lu/2022/09/07/cascades/>Project Page</a>]
             - <i><b>FREE-3D</b>, Feature Reverse Engineering Of 3D Scans</i> [<a href=https://cvi2.uni.lu/2022/06/07/free-3d-feature-based-reverse-engineering-of-3d-scans/>Project Page</a>]
         - title: <b>Research areas</b>
           contents:
+            - "<i>VLLMs for Agentic CAD Design</i>"
+            - "<i>Text-to-CAD</i>" 
             - "<i>Reverse Engineering from 3D Scans</i>"
             - "<i>Reverse Engineering of Parametric CAD Sketches</i>"
-            - "<i>Self-Supervised Learning</i>"
+
 
 
     - title: Senior Machine Learning Engineer (Recommender Systems)
@@ -164,7 +166,10 @@
 - title: Open Source Repositories
   type: time_table
   contents:
-    - title: <a href="https://github.com/filaPro/cad-recode">CADRecode</a>
+    - title: <a href="https://github.com/dimitrismallis/CAD-Assistant">CAD-Assistant</a>
+      description: "This repository will contain the official codebase for our ICCV 2025 paper: <i>CAD-Assistant: Tool-Augmented VLLMs as Generic CAD Task Solvers</i>"
+
+    - title: <a href="https://github.com/filaPro/cad-recode">CAD-Recode</a>
       description: "The implementation of CAD-Recode, a 3D CAD reverse engineering method introduced in our paper: <i>CAD-Recode: Reverse Engineering CAD Code from Point Clouds</i>"
 
     - title: <a href="https://github.com/cvi2snt/CPTSketchGraphs">CPTSketchGraphs</a>

@@ -3,6 +3,7 @@ github_users:
 
 
 github_repos:
+  - dimitrismallis/CAD-Assistant
   - filaPro/cad-recode
   - dimitrismallis/KeypointsToLandmarks
   - dimitrismallis/UnsupervisedLandmarks
