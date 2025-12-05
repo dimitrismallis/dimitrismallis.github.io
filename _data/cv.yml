@@ -21,7 +21,7 @@
       year: 2023-present
       description:
         - Member of the <a href=https://cvi2.uni.lu/>Computer Vision, Imaging & Machine Intelligence Research Group (CVI²)</a> at <a href=https://www.uni.lu/snt-en/>SnT</a>, <a href=https://www.uni.lu/en/>University of Luxembourg</a>.
-        - My research focus is on reverse engineering of CAD models from 3D scans and Agentic CAD design.
+        - My research focus is on reverse engineering of CAD models from 3D scans and CAD design generation (Text2CAD).
         - Working in close collaboration with our industrial partner <a href=https://www.artec3d.com/>Artec3D</a>.
         - "<i><u>Group Head:</u></i> <a href=https://cvi2.uni.lu/profile-djamila-aouada/>Dr. Djamila Aouada</a>"
         - title: <b>Projects</b>
@@ -32,8 +32,8 @@
             - <i><b>FREE-3D</b>, Feature Reverse Engineering Of 3D Scans</i> [<a href=https://cvi2.uni.lu/2022/06/07/free-3d-feature-based-reverse-engineering-of-3d-scans/>Project Page</a>]
         - title: <b>Research areas</b>
           contents:
-            - "<i>VLLMs for Agentic CAD Design</i>"
-            - "<i>Text-to-CAD</i>" 
+            - "<i>VLLMs for CAD Design</i>"
+            - "<i>Text2CAD</i>" 
             - "<i>Reverse Engineering from 3D Scans</i>"
             - "<i>Reverse Engineering of Parametric CAD Sketches</i>"
 
@@ -45,9 +45,8 @@
       description:
         - Part of DeepLab's dedicated team of <i>Taboolars</i>.
         - I aqured experience with <i>developing</i> and <i>deploying</i> ML solutions at scale, for <b>Taboola</b>'s massive <i>recommender system service</i>.
-        - Our work on <i>incremental learning</i> for efficient <i>Click-Through-Rate (CTR)</i> prediction, was presented on the industrial track of <b>RecSys</b> in 2022.
-        - I supervised <i>two bachelor</i> students and <i>one master</i> student along the lines of DeepLab's collaboration with the National Technical University of Athens.
-        - "<i><u>Manager:</u></i> <a href=https://stangelid.github.io/>Dr. Stefanos Angelidis</a>"
+        - Our work on <i>incremental learning</i> for efficient <i>Click-Through-Rate (CTR)</i> prediction, was presented on the industrial track of <a href=https://dl.acm.org/doi/10.1145/3523227.3547390>[RecSys2022]</a>.
+        - I supervised <i>two bachelor</i> students and <i>one master</i> student along the lines of DeepLab's collaboration with the National Technical University of Athens (NTUA).
         - title: <b>Research areas</b>
           contents:
             - "<i>Deep Learning for Recommender Systems</i>"
@@ -87,7 +86,7 @@
         - "<i><u>Advisor:</u></i> <a href=https://ytzimiro.github.io/>Dr. Yiorgos Tzimiropoulos</a>"
         - Member of the <a href="https://www.nottingham.ac.uk/research/groups/cvl/">Computer Vision Laboratory (CVL)</a> of the University of Nottingham.
         - My PhD thesis was on <i><b>Unsupervised Landmark Discovery via Self-Training Correspondence</b></i>.
-        - "My research on self-supervised representation learning for landmark correspondence recovery lead to prestigious publications at the Conference on Neural Information Processing Systems (<b>NeurIPS</b>) in 2020 and IEEE's Transactions on Pattern Analysis and Machine Intelligence (<b>TPAMI</b>) in 2023."
+        - "Research conducted for my thesis has been partially published at <a href=https://proceedings.neurips.cc/paper/2020/hash/32508f53f24c46f685870a075eaaa29c-Abstract.html>[NeurIPS2020]</a> and <a href=https://ieeexplore.ieee.org/document/10005822>[TPAMI2023]</a>."
         - title: <b>Research areas</b>
           contents:
             - "<i>Unsupervised Landmark Discovery</i>"
@@ -114,7 +113,7 @@
   contents:
 
     - title: Master/Undergrad students  (collaboration with <a href=https://deeplab.ai/>Deeplab</a>).
-      year: 2022 - present
+      year: 2022 - 2025
       description:
         - Through my ongoing collaboration with Deeplab, I participate in the supervision master/undergrad student's, towards either the completion of their thesis or paper submissions.
         - Part of Deeplabs collaboration with the National Technical University of Athens <i>(NTUA)</i>.
@@ -122,14 +121,13 @@
           contents:
             - "<i>Maria Parelli's</i> work on <a href=https://ieeexplore.ieee.org/abstract/document/10223156>Interpretable Visual Question Answering Via Reasoning Supervision</a>, presented at ICIP 2023 as a lecture."
             - "<i>Zacharias Anastasaki's</i> diploma thesis on <a href=https://arxiv.org/abs/2311.04834>Self-Supervised Visual Relationship Detection</a>, also partially presented at WAVC 2023 as a poster."
-            - "<i>Danai Brilli's</i> diploma thesis on <i>Scene Graph Guided Visual Question Answering</i> <i>(ongoing)</i>."
+            - "<i>Danai Brilli's</i> diploma thesis on <a href=https://arxiv.org/pdf/2511.20201>Scene Graph Guided Visual Question Answering</a>, presented at BMVC 2025 <a href=https://sites.google.com/view/su2hm/home>SU2HM Workshop</a> both as an oral and poster presentation."
             
     - title: CVIA lectures
       year: 2023 - present
       description:
         - Guess lecturer for the Computer Vision & Image Analysis (CVIA) Course.
         - Part of the <a href=https://ism.uni.lu/>Interdisciplinary Space Master (ISM)</a> / <a href=https://www.uni.lu/fstm-en/study-programs/master-in-information-and-computer-sciences/>Master is Information and Computer Science (MICS)</a> of SnT, Univesity of Luxembourg.
-        - Lecture on Deep Learning. 
 
     - title: Teaching Assistant
       year: 2018-2021

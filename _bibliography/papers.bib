@@ -3,6 +3,21 @@
 
 @string{aps = {American Physical Society,}}
 
+
+@article{Karadeniz2025MiCADangeloFR,
+  title={MiCADangelo: Fine-Grained Reconstruction of Constrained CAD Models from 3D Scans},
+  author={Ahmet Serdar Karadeniz and Dimitrios Mallis and Danila Rukhovich and Kseniya Cherenkova and Anis Kacem and Djamila Aouada},
+  journal={Neural Information Processing Systems (NeurIPS)},
+  year={2025},
+  bibtex_show={true},
+  selected={true},
+  arxiv={2510.23429},
+  preview={micadangelo.png},
+  html={https://cvi2snt.github.io/micadangelo/},
+  poster={https://neurips.cc/media/PosterPDFs/NeurIPS%202025/118942.png},
+  abstract={Computer-Aided Design (CAD) plays a foundational role in modern manufacturing and product development, often requiring designers to modify or build upon existing models. Converting 3D scans into parametric CAD representations--a process known as CAD reverse engineering--remains a significant challenge due to the high precision and structural complexity of CAD models. Existing deep learning-based approaches typically fall into two categories: bottom-up, geometry-driven methods, which often fail to produce fully parametric outputs, and top-down strategies, which tend to overlook fine-grained geometric details. Moreover, current methods neglect an essential aspect of CAD modeling: sketch-level constraints. In this work, we introduce a novel approach to CAD reverse engineering inspired by how human designers manually perform the task. Our method leverages multi-plane cross-sections to extract 2D patterns and capture fine parametric details more effectively. It enables the reconstruction of detailed and editable CAD models, outperforming state-of-the-art methods and, for the first time, incorporating sketch constraints directly into the reconstruction process.}
+}
+
 @article{Mallis2025CADAssistant,
   title={CAD-Assistant: Tool-Augmented VLLMs as Generic CAD Task Solvers},
   author={Dimitrios Mallis and Ahmet Serdar Karadeniz and Sebastian Cavada and Danila Rukhovich and Niki Foteinopoulou and Kseniya Cherenkova and Anis Kacem and Djamila Aouada},
@@ -41,7 +56,7 @@
   year={2024},
   preview={davinci.png},  
   bibtex_show={true},
-  selected={true},
+  selected={false},
   arxiv={2410.22857},
   html={https://cvi2snt.github.io/davinci/}, 
   code={https://github.com/cvi2snt/CPTSketchGraphs},
@@ -57,7 +72,7 @@
   journal={Winter Conference on Applications of Computer Vision (WACV)},
   year={2025},
   preview={picasso.png},  
-  bibtex_show={true},
+  bibtex_show={false},
   arxiv={2407.13394},
   html={https://cvi2snt.github.io/picasso/}, 
   abstract={This work introduces PICASSO, a framework for the parameterization of 2D CAD sketches from hand-drawn and precise sketch images. PICASSO converts a given CAD sketch image into parametric primitives that can be seamlessly integrated into CAD software. Our framework leverages rendering self-supervision to enable the pre-training of a CAD sketch parameterization network using sketch renderings only, thereby eliminating the need for corresponding CAD parameterization. Thus, we significantly reduce reliance on parameter-level annotations, which are often unavailable, particularly for hand-drawn sketches. The two primary components of PICASSO are (1) a Sketch Parameterization Network (SPN) that predicts a series of parametric primitives from CAD sketch images, and (2) a Sketch Rendering Network (SRN) that renders parametric CAD sketches in a differentiable manner and facilitates the computation of a rendering (image-level) loss for self-supervision. We demonstrate that the proposed PICASSO can achieve reasonable performance even when finetuned with only a small number of parametric CAD sketches. Extensive evaluation on the widely used SketchGraphs and CAD as Language datasets validates the effectiveness of the proposed approach on zero- and few-shot learning scenarios.}
@@ -118,7 +133,7 @@
   journal={IEEE Transactions on Pattern Analysis and Machine Intelligence}, 
   title={From Keypoints to Object Landmarks via Self-Training Correspondence: A novel approach to Unsupervised Landmark Discovery}, 
   year={2023},
-  selected={true},
+  selected={false},
   preview={TPAMI2023_preview.jpg},  
   code={https://github.com/dimitrismallis/KeypointsToLandmarks},
   arxiv={2205.15895},
@@ -159,7 +174,7 @@ title={Unsupervised Learning of Object Landmarks via Self-Training Correspondenc
 author={Mallis, Dimitrios and Sanchez, Enrique and Bell, Matt and Tzimiropoulos, Georgios},
 journal={Neural Information Processing Systems},
 year={2020},
-selected={true},  
+selected={false},  
 preview={NEURIPS2020_preview.jpg},  
 bibtex_show={true},
 html={https://proceedings.neurips.cc/paper/2020/hash/32508f53f24c46f685870a075eaaa29c-Abstract.html},
