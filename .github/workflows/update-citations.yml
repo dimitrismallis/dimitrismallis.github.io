@@ -1,0 +1,61 @@
+name: Update Google Scholar citations
+
+on:
+  schedule:
+    - cron: "0 4 * * 1" # Mondays, 04:00 UTC
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  actions: write # to dispatch the deploy workflow after committing new counts
+
+jobs:
+  update-citations:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout 🛎️
+        uses: actions/checkout@v4
+
+      - name: Setup Python 🐍
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+
+      - name: Install dependencies 📦
+        run: pip install --upgrade pyyaml
+
+      # Google throttles datacenter IPs, so a failed scrape is expected from time to
+      # time. The script leaves citations.yml untouched on any failure, so the site
+      # keeps rendering the last known counts instead of regressing to zeros.
+      - name: Refresh citations 🎓
+        id: refresh
+        continue-on-error: true
+        run: python3 bin/update_scholar_citations.py
+
+      - name: Report outcome 📋
+        run: |
+          if [ "${{ steps.refresh.outcome }}" = "success" ]; then
+            echo "✅ Scholar fetch succeeded." >> $GITHUB_STEP_SUMMARY
+          else
+            echo "⚠️ Scholar fetch failed (likely rate limiting). Existing counts kept." >> $GITHUB_STEP_SUMMARY
+          fi
+
+      - name: Commit if changed 📤
+        run: |
+          if git diff --quiet -- _data/citations.yml; then
+            echo "ℹ️ No citation changes." >> $GITHUB_STEP_SUMMARY
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add _data/citations.yml
+          git commit -m "Update Google Scholar citations"
+          git push
+          echo "✅ Committed updated citation counts." >> $GITHUB_STEP_SUMMARY
+          # Counts are baked into the HTML at build time, so the site has to rebuild
+          # for new numbers to show. A push made with GITHUB_TOKEN does not trigger
+          # other workflows, so dispatch the deploy explicitly.
+          gh workflow run deploy.yml --ref "${GITHUB_REF_NAME}"
+          echo "🚀 Dispatched deploy workflow." >> $GITHUB_STEP_SUMMARY
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}

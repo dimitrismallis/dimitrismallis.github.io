@@ -128,6 +128,12 @@ enable_simple_analytics: false # Simple Analytics identifies a site by its domai
 
 # For Google Search Console, see https://support.google.com/webmasters/answer/9008080?hl=en#meta_tag_verification&zippy=%2Chtml-tag
 google_site_verification: lhGajE3afrJp3Jyzmt5y_513I9mjrw1rCg9KE9PQBY0 # your google-site-verification ID (Google Search Console)
+
+# Google Scholar ID. Also set in _data/socials.yml (used for the social icon and
+# the scholar badge's link); al_folio_core's bib layout builds its citation lookup
+# key from site.scholar_userid, so it has to be here too.
+scholar_userid: Gfc5ZXoAAAAJ
+
 bing_site_verification: # out your bing-site-verification ID (Bing Webmaster)
 
 # -----------------------------------------------------------------------------
