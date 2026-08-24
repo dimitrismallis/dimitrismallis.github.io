@@ -28,6 +28,15 @@ impressum_path:  # set to path to include impressum link in the footer, use the 
 highlight_theme_light: github   # https://github.com/jwarby/jekyll-pygments-themes
 highlight_theme_dark: native    # https://github.com/jwarby/jekyll-pygments-themes
 
+# external services rendering the GitHub repo/user cards.
+# The old anuraghazra/github-readme-stats public instance is paused indefinitely
+# (see https://github.com/anuraghazra/github-readme-stats/issues/4737), so upstream
+# al-folio now defaults to github-stats-extended. Change these to a self-hosted
+# deployment if the public instances ever go down again.
+external_services:
+  github_readme_stats_url: https://github-stats-extended.vercel.app
+  github_profile_trophy_url: https://github-profile-trophy.vercel.app
+
 # repo color theme
 repo_theme_light: default       # https://github.com/anuraghazra/github-readme-stats/blob/master/themes/README.md
 repo_theme_dark: dark           # https://github.com/anuraghazra/github-readme-stats/blob/master/themes/README.md

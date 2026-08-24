@@ -164,6 +164,9 @@
 - title: Open Source Repositories
   type: time_table
   contents:
+    - title: <a href="https://github.com/dimitrismallis/CADTestBench">CADTestBench</a>
+      description: "Code for our paper: <i>Text-to-CAD Evaluation with CADTests</i>."
+
     - title: <a href="https://github.com/dimitrismallis/CAD-Assistant">CAD-Assistant</a>
       description: "This repository will contain the official codebase for our ICCV 2025 paper: <i>CAD-Assistant: Tool-Augmented VLLMs as Generic CAD Task Solvers</i>"
 
