@@ -6,4 +6,5 @@ github_username: dimitrismallis
 linkedin_username: dimitrismallis
 scholar_userid: Gfc5ZXoAAAAJ
 instagram_id: dimimall1
-rss_icon: false
+# rss_icon: true # uncomment to show the RSS icon (the plugin keys off presence,
+#                 not the value, so setting it false does not hide it)

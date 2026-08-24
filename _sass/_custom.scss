@@ -1,0 +1,55 @@
+// Site-specific styles. No al_folio_core counterpart, so this is not a gem override
+// and `al-folio upgrade overrides audit` does not track it. Loaded last from the
+// local assets/css/main.scss, so these declarations win over the gem's _themes.scss
+// at equal specificity (same `:root` / `html[data-theme="dark"]` selectors).
+
+// ---------------------------------------------------------------------------
+// Colour palette carried over from the pre-v1 site (_sass/_themes.scss at 97db76e).
+// v1's gem defaults are a magenta accent on a pure-white page; this restores the
+// blue-on-off-white pair used before the upgrade.
+// ---------------------------------------------------------------------------
+
+:root {
+  --global-bg-color: #f5f5f5;
+  --global-code-bg-color: #f0f0f0;
+  --global-text-color: #333;
+  --global-text-color-light: #777;
+  --global-theme-color: #1f8ceb;
+  --global-hover-color: #1f8ceb;
+  --global-hover-text-color: #fff;
+  --global-footer-bg-color: #333;
+  --global-footer-text-color: #777;
+  --global-footer-link-color: #fff;
+  --global-distill-app-color: #777;
+  --global-divider-color: rgba(0, 0, 0, 0.1);
+  --global-card-bg-color: #f5f5f5;
+}
+
+html[data-theme="dark"] {
+  --global-bg-color: #2d2d2d;
+  --global-code-bg-color: #1c1c1c;
+  --global-text-color: #c5c5c5;
+  --global-text-color-light: #999;
+  --global-theme-color: #3dbdd1;
+  --global-hover-color: #3dbdd1;
+  --global-hover-text-color: #fff;
+  --global-footer-bg-color: #1c1c1c;
+  --global-footer-text-color: #999;
+  --global-footer-link-color: #f5f5f5;
+  --global-distill-app-color: #999;
+  --global-divider-color: #424246;
+  --global-card-bg-color: #2d2d2d;
+}
+
+// ---------------------------------------------------------------------------
+// Layout tweaks
+// ---------------------------------------------------------------------------
+
+// Larger profile photo on the About page. The gem sets 30% from 576px up
+// (_sass/_components.scss); the figure inside is width:100%, so widening the
+// container is all that is needed.
+@media (min-width: 576px) {
+  .profile {
+    width: 38%;
+  }
+}
