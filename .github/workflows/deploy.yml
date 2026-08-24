@@ -30,10 +30,11 @@ jobs:
           sudo apt-get update && sudo apt-get install -y imagemagick
           export JEKYLL_ENV=production
           bundle exec jekyll build
-          # The external nav-link pages (_pages/morfis.md, _pages/photography.md) carry
-          # absolute permalinks, which Jekyll also writes out as literal "https:/..."
-          # directories. They are excluded from the sitemap; drop the stubs too.
-          rm -rf "_site/https:"
+          # Nav-only stub pages leave unreachable output behind: _pages/photography.md
+          # carries an absolute permalink, which Jekyll writes out as a literal
+          # "https:/..." directory, and _pages/projects.md is a dropdown parent that
+          # never navigates. Both are excluded from the sitemap; drop the stubs too.
+          rm -rf "_site/https:" "_site/_pages"
       - name: Purge unused CSS 🧹
         run: |
           npm install -g purgecss
