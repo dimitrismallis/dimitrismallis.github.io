@@ -70,7 +70,7 @@ al_folio:
     allow_remote_loader: false
   features:
     cv:
-      enabled: true
+      enabled: false # no online CV -- _pages/cv.md and _data/cv.yml removed
     distill:
       enabled: true
   compat:

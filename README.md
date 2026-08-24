@@ -16,11 +16,11 @@ content and configuration:
 | --- | --- |
 | `_config.yml` | Site configuration |
 | `_data/socials.yml` | Social links, Google Scholar ID |
-| `_data/cv.yml` | CV content (RenderCV schema) |
 | `_data/repositories.yml` | GitHub repos shown as cards |
+| `_data/citations.yml` | Google Scholar citation counts (generated) |
 | `_bibliography/papers.bib` | Publications |
 | `_news/` | News items shown on the landing page |
-| `_pages/` | About, Publications, Vitae, News, external nav links |
+| `_pages/` | About, Publications, News, external nav links |
 | `assets/` | Images, PDFs, publication previews |
 
 There are **no local overrides** of gem-owned files, so upgrades are just a dependency
