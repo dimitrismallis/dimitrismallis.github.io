@@ -36,14 +36,5 @@ During my PhD, I concentrated on learning with minimal manual supervision throug
 
 Currently my focus is on 3D vision and its application towards accelerating parametric Computer-Aided Design (CAD). I am particularly interested in automated reverse engineering of 2D/3D CAD models as well as Multimodal Large Language Models (MLLMs) for AI-assisted design. I also lead [Morfis](https://morfisai.github.io/), an SnT project focused on AI-assisted physical product customization.
 
-## Open Source Projects
-
-{% if site.data.repositories.github_repos %}
-
-<div class="repositories d-flex flex-wrap flex-md-row flex-column justify-content-between align-items-center">
-  {% for repo in site.data.repositories.github_repos %}
-    {% include repository/repo.liquid repository=repo %}
-  {% endfor %}
-</div>
-
-{% endif %}
+<!-- The Open Source Projects section is rendered by _layouts/about.liquid, after
+     selected publications -- page content always renders above News. -->
