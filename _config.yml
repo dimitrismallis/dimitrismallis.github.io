@@ -98,7 +98,7 @@ footer_fixed: true
 search_enabled: true
 socials_in_search: true
 posts_in_search: true
-bib_search: true
+bib_search: false # per-page publication filter box (removed from _pages/publications.md)
 
 # Dimensions
 max_width: 800px
