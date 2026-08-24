@@ -1,10 +1,11 @@
 # Social media links and usernames.
 # Migrated out of _config.yml during the v1 upgrade -- in v1.x these live here
-# and are rendered by the jekyll-socials plugin.
+# and are rendered by the jekyll-socials plugin, in the order defined below.
+#
+# Note: the plugin keys off the presence of a key, not its value, so a service is
+# hidden by removing (or commenting out) its line -- setting it to false still
+# renders the icon.
 email: malldimi1@gmail.com
+scholar_userid: Gfc5ZXoAAAAJ
 github_username: dimitrismallis
 linkedin_username: dimitrismallis
-scholar_userid: Gfc5ZXoAAAAJ
-instagram_id: dimimall1
-# rss_icon: true # uncomment to show the RSS icon (the plugin keys off presence,
-#                 not the value, so setting it false does not hide it)
