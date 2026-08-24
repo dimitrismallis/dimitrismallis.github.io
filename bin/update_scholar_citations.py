@@ -1,110 +1,139 @@
-#!/usr/bin/env python3
-"""Refresh _data/citations.yml from Google Scholar.
+#!/usr/bin/env python
 
-al_folio_core's bib layout renders the scholar badge by looking up
-'<scholar_userid>:<google_scholar_id>' in site.data.citations.papers and baking the
-count into a shields.io URL at build time. Google publishes no embed widget or API
-for citation counts, so they have to be fetched out of band and committed.
-
-Reads scholar_userid from _data/socials.yml. Writes _data/citations.yml.
-
-Google throttles datacenter IPs hard, so this is expected to fail sometimes. On any
-failure it leaves the existing citations.yml untouched and exits non-zero; the site
-then keeps rendering the last known counts rather than regressing to zeros.
-
-Usage:  python3 bin/update_scholar_citations.py
-"""
-
-from __future__ import annotations
-
-import html
-import re
+import os
 import sys
-import urllib.error
-import urllib.request
-from datetime import date, timezone, datetime
-from pathlib import Path
-
 import yaml
-
-ROOT = Path(__file__).resolve().parent.parent
-SOCIALS = ROOT / "_data" / "socials.yml"
-OUTPUT = ROOT / "_data" / "citations.yml"
-UA = (
-    "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 "
-    "(KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
-)
-ROW_RE = re.compile(
-    r'citation_for_view=(?P<uid>[\w-]+):(?P<pid>[\w-]+)"[^>]*>(?P<title>.*?)</a>'
-    r'.*?gsc_a_c">.*?>(?P<cites>\d*)</a>.*?gsc_a_y">.*?>(?P<year>\d*)<',
-    re.S,
-)
+from datetime import datetime
+from scholarly import scholarly
 
 
-def scholar_userid() -> str:
-    if not SOCIALS.exists():
-        sys.exit(f"{SOCIALS} not found")
-    uid = (yaml.safe_load(SOCIALS.read_text(encoding="utf-8")) or {}).get("scholar_userid")
-    if not uid:
-        sys.exit(f"no 'scholar_userid' in {SOCIALS}")
-    return str(uid)
-
-
-def fetch(uid: str) -> str:
-    url = f"https://scholar.google.com/citations?user={uid}&hl=en&cstart=0&pagesize=100"
-    req = urllib.request.Request(url, headers={"User-Agent": UA})
+def load_scholar_user_id() -> str:
+    """Load the Google Scholar user ID from the configuration file."""
+    config_file = "_data/socials.yml"
+    if not os.path.exists(config_file):
+        print(
+            f"Configuration file {config_file} not found. Please ensure the file exists and contains your Google Scholar user ID."
+        )
+        sys.exit(1)
     try:
-        with urllib.request.urlopen(req, timeout=60) as resp:
-            body = resp.read().decode("utf-8", errors="replace")
-    except (urllib.error.URLError, TimeoutError) as exc:
-        sys.exit(f"could not reach Google Scholar: {exc}")
-    if re.search(r"unusual traffic|not a robot|/sorry/", body, re.I):
-        sys.exit("Google Scholar served a bot check; leaving citations.yml unchanged")
-    if f"citation_for_view={uid}:" not in body:
-        sys.exit("no publications found in the profile page; layout may have changed")
-    return body
+        with open(config_file, "r") as f:
+            config = yaml.safe_load(f)
+        scholar_user_id = config.get("scholar_userid")
+        if not scholar_user_id:
+            print(
+                "No 'scholar_userid' found in the configuration file. Please add 'scholar_userid' to _data/socials.yml."
+            )
+            sys.exit(1)
+        return scholar_user_id
+    except yaml.YAMLError as e:
+        print(
+            f"Error parsing YAML file {config_file}: {e}. Please check the file for correct YAML syntax."
+        )
+        sys.exit(1)
 
 
-def strip_tags(text: str) -> str:
-    return html.unescape(re.sub(r"<[^>]*>", "", text)).strip()
+SCHOLAR_USER_ID: str = load_scholar_user_id()
+OUTPUT_FILE: str = "_data/citations.yml"
 
 
-def main() -> None:
-    uid = scholar_userid()
-    papers = {}
-    for m in ROW_RE.finditer(fetch(uid)):
-        if m.group("uid") != uid:
-            continue
-        papers[f"{uid}:{m.group('pid')}"] = {
-            "citations": int(m.group("cites") or 0),
-            "title": strip_tags(m.group("title")),
-            "year": m.group("year") or "Unknown Year",
-        }
-    if not papers:
-        sys.exit("parsed zero publications; leaving citations.yml unchanged")
+def get_scholar_citations() -> None:
+    """Fetch and update Google Scholar citation data."""
+    print(f"Fetching citations for Google Scholar ID: {SCHOLAR_USER_ID}")
+    today = datetime.now().strftime("%Y-%m-%d")
 
-    header = (
-        "# Google Scholar citation counts, consumed by al_folio_core's bib layout.\n"
-        "# Regenerate with: python3 bin/update_scholar_citations.py\n"
-        "# Keys are '<scholar_userid>:<google_scholar_id>' and must match the\n"
-        "# google_scholar_id fields in _bibliography/papers.bib.\n"
-    )
-    doc = {
-        "metadata": {
-            "last_updated": date.today().isoformat(),
-            "scholar_userid": uid,
-        },
-        "papers": dict(
-            sorted(papers.items(), key=lambda kv: -kv[1]["citations"])
-        ),
-    }
-    OUTPUT.write_text(
-        header + yaml.safe_dump(doc, sort_keys=False, allow_unicode=True, width=1000),
-        encoding="utf-8",
-    )
-    total = sum(p["citations"] for p in papers.values())
-    print(f"wrote {OUTPUT.relative_to(ROOT)}: {len(papers)} papers, {total} total citations")
+    # LOCAL PATCH (one line, not upstream): the old/new comparison further down reads
+    # `existing_data`, which upstream only assigns inside the `os.path.exists` branch
+    # below. With no _data/citations.yml yet that comparison raises UnboundLocalError
+    # after the scrape has already run, and the file is never written -- so a fresh
+    # site cannot bootstrap. Drop this once upstream initialises it.
+    existing_data = None
+
+    # Check if the output file was already updated today
+    if os.path.exists(OUTPUT_FILE):
+        try:
+            with open(OUTPUT_FILE, "r") as f:
+                existing_data = yaml.safe_load(f)
+            if (
+                existing_data
+                and "metadata" in existing_data
+                and "last_updated" in existing_data["metadata"]
+            ):
+                print(f"Last updated on: {existing_data['metadata']['last_updated']}")
+                if existing_data["metadata"]["last_updated"] == today:
+                    print("Citations data is already up-to-date. Skipping fetch.")
+                    return
+        except Exception as e:
+            print(
+                f"Warning: Could not read existing citation data from {OUTPUT_FILE}: {e}. The file may be missing or corrupted."
+            )
+
+    citation_data = {"metadata": {"last_updated": today}, "papers": {}}
+
+    scholarly.set_timeout(15)
+    scholarly.set_retries(3)
+    try:
+        author = scholarly.search_author_id(SCHOLAR_USER_ID)
+        author_data = scholarly.fill(author)
+    except Exception as e:
+        print(
+            f"Error fetching author data from Google Scholar for user ID '{SCHOLAR_USER_ID}': {e}. Please check your internet connection and Scholar user ID."
+        )
+        sys.exit(1)
+
+    if not author_data:
+        print(
+            f"Could not fetch author data for user ID '{SCHOLAR_USER_ID}'. Please verify the Scholar user ID and try again."
+        )
+        sys.exit(1)
+
+    if "publications" not in author_data:
+        print(f"No publications found in author data for user ID '{SCHOLAR_USER_ID}'.")
+        sys.exit(1)
+
+    for pub in author_data["publications"]:
+        try:
+            pub_id = pub.get("pub_id") or pub.get("author_pub_id")
+            if not pub_id:
+                print(
+                    f"Warning: No ID found for publication: {pub.get('bib', {}).get('title', 'Unknown')}. This publication will be skipped."
+                )
+                continue
+
+            title = pub.get("bib", {}).get("title", "Unknown Title")
+            year = pub.get("bib", {}).get("pub_year", "Unknown Year")
+            citations = pub.get("num_citations", 0)
+
+            print(f"Found: {title} ({year}) - Citations: {citations}")
+
+            citation_data["papers"][pub_id] = {
+                "title": title,
+                "year": year,
+                "citations": citations,
+            }
+        except Exception as e:
+            print(
+                f"Error processing publication '{pub.get('bib', {}).get('title', 'Unknown')}': {e}. This publication will be skipped."
+            )
+
+    # Compare new data with existing data
+    if existing_data and existing_data.get("papers") == citation_data["papers"]:
+        print("No changes in citation data. Skipping file update.")
+        return
+
+    try:
+        with open(OUTPUT_FILE, "w") as f:
+            yaml.dump(citation_data, f, width=1000, sort_keys=True)
+        print(f"Citation data saved to {OUTPUT_FILE}")
+    except Exception as e:
+        print(
+            f"Error writing citation data to {OUTPUT_FILE}: {e}. Please check file permissions and disk space."
+        )
+        sys.exit(1)
 
 
 if __name__ == "__main__":
-    main()
+    try:
+        get_scholar_citations()
+    except Exception as e:
+        print(f"Unexpected error: {e}")
+        sys.exit(1)

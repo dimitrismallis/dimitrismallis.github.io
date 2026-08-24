@@ -1,0 +1,8 @@
+# Python dependencies for bin/update_scholar_citations.py.
+#
+# Upstream al-folio's requirements.txt also pins nbconvert (for Jupyter notebook
+# posts) and rendercv[full] (for the rendercv CLI). Neither is used here: this site
+# has no notebooks, and _data/cv.yml is read directly by al_folio_cv rather than
+# rendered through the rendercv tool. Add them back if either becomes relevant.
+pyyaml
+scholarly

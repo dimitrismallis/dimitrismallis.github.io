@@ -1,43 +1,54 @@
-# Google Scholar citation counts, consumed by al_folio_core's bib layout.
-# Regenerate with: python3 bin/update_scholar_citations.py
-# Keys are '<scholar_userid>:<google_scholar_id>' and must match the
-# google_scholar_id fields in _bibliography/papers.bib.
 metadata:
   last_updated: '2026-08-24'
-  scholar_userid: Gfc5ZXoAAAAJ
 papers:
-  Gfc5ZXoAAAAJ:hqOjcs7Dif8C:
-    citations: 86
-    title: 'Cad-recode: Reverse engineering cad code from point clouds'
-    year: '2025'
   Gfc5ZXoAAAAJ:0EnyYjriUFMC:
     citations: 67
     title: 'CAD-Assistant: Tool-Augmented VLLMs as Generic CAD Task Solvers'
     year: '2025'
-  Gfc5ZXoAAAAJ:roLk4NBRz8UC:
-    citations: 64
-    title: 'Transcad: A hierarchical transformer for cad sequence inference from point clouds'
-    year: '2024'
-  Gfc5ZXoAAAAJ:u5HHmVD_uO8C:
-    citations: 49
-    title: Sentiment analysis of greek tweets and hashtags using a sentiment lexicon
-    year: '2015'
+  Gfc5ZXoAAAAJ:3fE2CSJIrl8C:
+    citations: 0
+    title: 'GHR-VQA: Graph-guided Hierarchical Relational Reasoning for Video Question Answering'
+    year: '2025'
+  Gfc5ZXoAAAAJ:5nxA0vEk-isC:
+    citations: 0
+    title: 'Morfis: AI-Assisted Physical Product Customization Startup Track'
+    year: Unknown Year
+  Gfc5ZXoAAAAJ:9yKSN-GCB0IC:
+    citations: 10
+    title: Convolutive audio source separation using robust ICA and an intelligent evolving permutation ambiguity solution
+    year: '2018'
+  Gfc5ZXoAAAAJ:L8Ckcad2t8MC:
+    citations: 3
+    title: Text-to-CAD Evaluation with CADTests
+    year: '2026'
   Gfc5ZXoAAAAJ:LkGwnXOMwfcC:
     citations: 25
     title: 'Sharp challenge 2023: Solving cad history and parameters recovery from point clouds and 3d scans. overview, datasets, metrics, and baselines'
     year: '2023'
-  Gfc5ZXoAAAAJ:zYLM7Y9cAGgC:
-    citations: 24
-    title: Unsupervised learning of object landmarks via self-training correspondence
-    year: '2020'
-  Gfc5ZXoAAAAJ:UebtZRa9Y70C:
-    citations: 15
-    title: 'DAVINCI: A Single-Stage Architecture for Constrained CAD Sketch Inference'
-    year: '2024'
+  Gfc5ZXoAAAAJ:MXK_kJrjxJIC:
+    citations: 4
+    title: 'Micadangelo: Fine-grained reconstruction of constrained cad models from 3d scans'
+    year: '2026'
+  Gfc5ZXoAAAAJ:R3hNpaxXUhUC:
+    citations: 0
+    title: An Incremental Learning framework for Large-scale CTR Prediction
+    year: '2022'
   Gfc5ZXoAAAAJ:Se3iqnhoufwC:
     citations: 13
     title: 'Picasso: A feed-forward framework for parametric inference of cad sketches via rendering self-supervision'
     year: '2025'
+  Gfc5ZXoAAAAJ:UebtZRa9Y70C:
+    citations: 15
+    title: 'DAVINCI: A Single-Stage Architecture for Constrained CAD Sketch Inference'
+    year: '2024'
+  Gfc5ZXoAAAAJ:W7OEmFMy1HYC:
+    citations: 12
+    title: An incremental learning framework for large-scale ctr prediction
+    year: '2022'
+  Gfc5ZXoAAAAJ:WF5omc3nYNoC:
+    citations: 0
+    title: Unsupervised landmark discovery via self-training correspondence
+    year: '2023'
   Gfc5ZXoAAAAJ:Y0pCki6q_DkC:
     citations: 13
     title: 'From keypoints to object landmarks via self-training correspondence: A novel approach to unsupervised landmark discovery'
@@ -46,30 +57,6 @@ papers:
     citations: 13
     title: Modified approach to estimating daily methane emissions of dairy cows by measuring filtered eructations during milking
     year: '2019'
-  Gfc5ZXoAAAAJ:W7OEmFMy1HYC:
-    citations: 12
-    title: An incremental learning framework for large-scale ctr prediction
-    year: '2022'
-  Gfc5ZXoAAAAJ:9yKSN-GCB0IC:
-    citations: 10
-    title: Convolutive audio source separation using robust ICA and an intelligent evolving permutation ambiguity solution
-    year: '2018'
-  Gfc5ZXoAAAAJ:ufrVoPGSRksC:
-    citations: 8
-    title: Interpretable visual question answering via reasoning supervision
-    year: '2023'
-  Gfc5ZXoAAAAJ:qjMakFHDy7sC:
-    citations: 5
-    title: Towards the creation of an emotion lexicon for microblogging
-    year: '2018'
-  Gfc5ZXoAAAAJ:MXK_kJrjxJIC:
-    citations: 4
-    title: 'Micadangelo: Fine-grained reconstruction of constrained cad models from 3d scans'
-    year: '2026'
-  Gfc5ZXoAAAAJ:L8Ckcad2t8MC:
-    citations: 3
-    title: Text-to-CAD Evaluation with CADTests
-    year: '2026'
   Gfc5ZXoAAAAJ:_FxGoFyzp5QC:
     citations: 3
     title: Self-supervised learning for visual relationship detection through masked bounding box reconstruction
@@ -78,19 +65,27 @@ papers:
     citations: 1
     title: Convolutive Audio Source Separation Using Robust ICA and Reduced Likelihood Ratio Jump
     year: '2016'
-  Gfc5ZXoAAAAJ:3fE2CSJIrl8C:
-    citations: 0
-    title: 'GHR-VQA: Graph-guided Hierarchical Relational Reasoning for Video Question Answering'
+  Gfc5ZXoAAAAJ:hqOjcs7Dif8C:
+    citations: 86
+    title: 'Cad-recode: Reverse engineering cad code from point clouds'
     year: '2025'
-  Gfc5ZXoAAAAJ:WF5omc3nYNoC:
-    citations: 0
-    title: Unsupervised landmark discovery via self-training correspondence
+  Gfc5ZXoAAAAJ:qjMakFHDy7sC:
+    citations: 5
+    title: Towards the creation of an emotion lexicon for microblogging
+    year: '2018'
+  Gfc5ZXoAAAAJ:roLk4NBRz8UC:
+    citations: 64
+    title: 'Transcad: A hierarchical transformer for cad sequence inference from point clouds'
+    year: '2024'
+  Gfc5ZXoAAAAJ:u5HHmVD_uO8C:
+    citations: 49
+    title: Sentiment analysis of greek tweets and hashtags using a sentiment lexicon
+    year: '2015'
+  Gfc5ZXoAAAAJ:ufrVoPGSRksC:
+    citations: 8
+    title: Interpretable visual question answering via reasoning supervision
     year: '2023'
-  Gfc5ZXoAAAAJ:R3hNpaxXUhUC:
-    citations: 0
-    title: An Incremental Learning framework for Large-scale CTR Prediction
-    year: '2022'
-  Gfc5ZXoAAAAJ:5nxA0vEk-isC:
-    citations: 0
-    title: 'Morfis: AI-Assisted Physical Product Customization Startup Track'
-    year: Unknown Year
+  Gfc5ZXoAAAAJ:zYLM7Y9cAGgC:
+    citations: 24
+    title: Unsupervised learning of object landmarks via self-training correspondence
+    year: '2020'

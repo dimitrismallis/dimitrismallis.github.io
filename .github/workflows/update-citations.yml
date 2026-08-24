@@ -22,15 +22,18 @@ jobs:
           python-version: "3.13"
 
       - name: Install dependencies 📦
-        run: pip install --upgrade pyyaml
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
 
       # Google throttles datacenter IPs, so a failed scrape is expected from time to
-      # time. The script leaves citations.yml untouched on any failure, so the site
+      # time. The script exits non-zero before writing on any failure, so the site
       # keeps rendering the last known counts instead of regressing to zeros.
+      # Upstream caps the attempt at 90s; scholarly's own retries sit inside that.
       - name: Refresh citations 🎓
         id: refresh
         continue-on-error: true
-        run: python3 bin/update_scholar_citations.py
+        run: timeout 90 python3 bin/update_scholar_citations.py
 
       - name: Report outcome 📋
         run: |
