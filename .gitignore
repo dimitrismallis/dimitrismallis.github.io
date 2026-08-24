@@ -9,3 +9,6 @@ _site
 Gemfile.lock
 vendor
 
+
+# al-folio v1 upgrade tooling output
+al-folio-upgrade-report.md

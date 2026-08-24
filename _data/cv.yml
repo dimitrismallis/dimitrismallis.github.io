@@ -1,187 +1,193 @@
-- title: General Information
-  type: map
-  contents:
-    - name: Full Name
-      value: Dimitrios Mallis, PhD
-    - name: Email
-      value: malldimi1 <i><b>[at]</b></i> gmail <i><b>[dot]</b></i> com
-    - name: Github
-      value: <a href=https://github.com/dimitrismallis/>github.com/dimitrismallis</a>
-    - name: Linkedin
-      value: <a href=https://www.linkedin.com/in/dimitrismallis/>linkedin.com/in/dimitrismallis</a>
-    - name: Location
-      value: Luxembourg
+# CV data in RenderCV format (al-folio v1.x / al_folio_cv).
+#
+# Migrated from the pre-v1 al-folio schema (`- title: ... type: time_table`),
+# which al_folio_cv no longer reads. Field contract per entry type:
+#   Experience: position, company, location, start_date, end_date, url, summary, highlights
+#   Education:  institution, area, studyType, location, start_date, end_date, url, highlights
+#   Awards:     title, awarder, date, summary, url
+#   Projects:   name, summary, url, highlights
+#   generic:    bullet  (or label + details)
+# `summary` and `highlights` are passed through markdownify, so use markdown links.
 
+cv:
+  name: Dimitrios Mallis, PhD
+  label: Computer Vision Researcher
+  email: malldimi1@gmail.com
+  location: Luxembourg
+  image: ""
+  summary: >
+    Postdoctoral researcher in 3D computer vision at SnT, University of Luxembourg,
+    working on AI for Computer-Aided Design (CAD).
 
-- title: Experience
-  type: time_table
-  contents:
-    - title: Posdoctoral Researcher (3D Computer Vision)
-      institution: "<a href=https://www.uni.lu/snt-en/>SnT</a> • University of Luxembourg <i>(Luxembourg)</i>"
-      year: 2023-present
-      description:
-        - Member of the <a href=https://cvi2.uni.lu/>Computer Vision, Imaging & Machine Intelligence Research Group (CVI²)</a> at <a href=https://www.uni.lu/snt-en/>SnT</a>, <a href=https://www.uni.lu/en/>University of Luxembourg</a>.
-        - My research focus is on reverse engineering of CAD models from 3D scans and CAD design generation (Text2CAD).
-        - Working in close collaboration with our industrial partner <a href=https://www.artec3d.com/>Artec3D</a>.
-        - "<i><u>Group Head:</u></i> <a href=https://cvi2.uni.lu/profile-djamila-aouada/>Dr. Djamila Aouada</a>"
-        - title: <b>Projects</b>
-          contents:
-            - <i><b>MORFIS</b>, <i>is an AI design platform that empowers users, regardless of their technical background, to create, customize, and prototype physical products.</i> [<a href=https://www.morfis.ai/>Project Page</a>]
-            - <i>Deep Learning of 3D Scanned Data</i> [<a href=https://cvi2.uni.lu/2022/06/07/deep-learning-of-3d-scanned-data/>Project Page</a>]
-            - <i><b>CASCADES</b>, Constrained Sequence modelling of CAD for reverse Engineering from 3d Scans</i> [<a href=https://cvi2.uni.lu/2022/09/07/cascades/>Project Page</a>]
-            - <i><b>FREE-3D</b>, Feature Reverse Engineering Of 3D Scans</i> [<a href=https://cvi2.uni.lu/2022/06/07/free-3d-feature-based-reverse-engineering-of-3d-scans/>Project Page</a>]
-        - title: <b>Research areas</b>
-          contents:
-            - "<i>VLLMs for CAD Design</i>"
-            - "<i>Text2CAD</i>" 
-            - "<i>Reverse Engineering from 3D Scans</i>"
-            - "<i>Reverse Engineering of Parametric CAD Sketches</i>"
+  social_networks:
+    - network: GitHub
+      username: dimitrismallis
+    - network: LinkedIn
+      username: dimitrismallis
 
+  sections:
+    Experience:
+      - position: Postdoctoral Researcher (3D Computer Vision)
+        company: SnT • University of Luxembourg
+        location: Luxembourg
+        url: https://www.uni.lu/snt-en/
+        start_date: "2023"
+        highlights:
+          - Member of the [Computer Vision, Imaging & Machine Intelligence Research Group (CVI²)](https://cvi2.uni.lu/) at [SnT](https://www.uni.lu/snt-en/), [University of Luxembourg](https://www.uni.lu/en/).
+          - My research focus is on reverse engineering of CAD models from 3D scans and CAD design generation (Text2CAD).
+          - Working in close collaboration with our industrial partner [Artec3D](https://www.artec3d.com/).
+          - "*Group Head:* [Dr. Djamila Aouada](https://cvi2.uni.lu/profile-djamila-aouada/)"
+          - |
+            **Projects**
+            - **MORFIS** — *an AI design platform that empowers users, regardless of their technical background, to create, customize, and prototype physical products.* [[Project Page](https://www.morfis.ai/)]
+            - *Deep Learning of 3D Scanned Data* [[Project Page](https://cvi2.uni.lu/2022/06/07/deep-learning-of-3d-scanned-data/)]
+            - **CASCADES** — *Constrained Sequence modelling of CAD for reverse Engineering from 3D Scans* [[Project Page](https://cvi2.uni.lu/2022/09/07/cascades/)]
+            - **FREE-3D** — *Feature Reverse Engineering Of 3D Scans* [[Project Page](https://cvi2.uni.lu/2022/06/07/free-3d-feature-based-reverse-engineering-of-3d-scans/)]
+          - |
+            **Research areas**
+            - *VLLMs for CAD Design*
+            - *Text2CAD*
+            - *Reverse Engineering from 3D Scans*
+            - *Reverse Engineering of Parametric CAD Sketches*
 
+      - position: Senior Machine Learning Engineer (Recommender Systems)
+        company: Taboola • DeepLab
+        location: Athens, Greece
+        url: https://deeplab.ai/
+        start_date: "2022"
+        end_date: "2023"
+        highlights:
+          - Part of DeepLab's dedicated team of *Taboolars*.
+          - I acquired experience with *developing* and *deploying* ML solutions at scale, for **Taboola**'s massive *recommender system service*.
+          - Our work on *incremental learning* for efficient *Click-Through-Rate (CTR)* prediction was presented on the industrial track of [[RecSys2022]](https://dl.acm.org/doi/10.1145/3523227.3547390).
+          - I supervised *two bachelor* students and *one master* student along the lines of DeepLab's collaboration with the National Technical University of Athens (NTUA).
+          - |
+            **Research areas**
+            - *Deep Learning for Recommender Systems*
+            - *Click-Through-Rate (CTR)* prediction
 
-    - title: Senior Machine Learning Engineer (Recommender Systems)
-      institution: <a href=https://www.taboola.com/>Taboola</a> • <a href=https://deeplab.ai/>DeepLab</a> <i>(Athens, Greece)</i>
-      year: 2022-2023
-      description:
-        - Part of DeepLab's dedicated team of <i>Taboolars</i>.
-        - I aqured experience with <i>developing</i> and <i>deploying</i> ML solutions at scale, for <b>Taboola</b>'s massive <i>recommender system service</i>.
-        - Our work on <i>incremental learning</i> for efficient <i>Click-Through-Rate (CTR)</i> prediction, was presented on the industrial track of <a href=https://dl.acm.org/doi/10.1145/3523227.3547390>[RecSys2022]</a>.
-        - I supervised <i>two bachelor</i> students and <i>one master</i> student along the lines of DeepLab's collaboration with the National Technical University of Athens (NTUA).
-        - title: <b>Research areas</b>
-          contents:
-            - "<i>Deep Learning for Recommender Systems</i>"
-            - <i>Click-Through-Rate (CTR)</i> prediction
-    - title: Research Intern (Computer Vision)
-      institution: Samsung AI Centre Cambridge (<a href=https://research.samsung.com/aicenter_cambridge>SAIC-C</a>) <i>(Cambridge, UK)</i>
-      year: 2020-2021
-      description:
-        - <i>Six-month</i> PhD Internshp, extended to a <i>part-time</i> position.
-        - "<i><u>Manager:</u></i> <a href=https://ytzimiro.github.io/>Dr. Yiorgos Tzimiropoulos</a>"
-        - I developed a framework for adapting <i>pretrained</i> pose estimation models on new target domains. Significant performance increase was reported on internal company benchmarks, with direct application on various pipelines within Samsung.
-        - title: <b>Research areas</b>
-          contents:
-            - "<i>Multiperson Human Pose Estimation</i>"
-            - "<i>3D Pose Estimation</i>"
-            - "<i>Semi-Supervised Learning</i>"
-            - "<i>Self-Training</i>"
+      - position: Research Intern (Computer Vision)
+        company: Samsung AI Centre Cambridge (SAIC-C)
+        location: Cambridge, UK
+        url: https://research.samsung.com/aicenter_cambridge
+        start_date: "2020"
+        end_date: "2021"
+        highlights:
+          - "*Six-month* PhD Internship, extended to a *part-time* position."
+          - "*Manager:* [Dr. Yiorgos Tzimiropoulos](https://ytzimiro.github.io/)"
+          - I developed a framework for adapting *pretrained* pose estimation models on new target domains. Significant performance increase was reported on internal company benchmarks, with direct application on various pipelines within Samsung.
+          - |
+            **Research areas**
+            - *Multiperson Human Pose Estimation*
+            - *3D Pose Estimation*
+            - *Semi-Supervised Learning*
+            - *Self-Training*
 
-    - title: Software Engineer
-      institution: <a href=https://portal.singularlogic.eu/en>Singular Logic</a> <i>(Athens, Greece)</i>
-      year: 2016 - 2017
-      description:
-      - Designing custom solution, applications and services for organisations of the Greek public sector.
-      - Main focus on server-side applications, middle-wares and APIs, using .NET and C#.
-      - title: <b>Technologies</b>
-        contents:
-          - C#, .NET Core, ASP.NET Web Api 2, ASP.NET Core, LINQ, Ninject, TFS, ADO.NET, Async Programming.
+      - position: Software Engineer
+        company: Singular Logic
+        location: Athens, Greece
+        url: https://portal.singularlogic.eu/en
+        start_date: "2016"
+        end_date: "2017"
+        highlights:
+          - Designing custom solutions, applications and services for organisations of the Greek public sector.
+          - Main focus on server-side applications, middlewares and APIs, using .NET and C#.
+          - |
+            **Technologies**
+            - C#, .NET Core, ASP.NET Web Api 2, ASP.NET Core, LINQ, Ninject, TFS, ADO.NET, Async Programming.
 
+    Education:
+      - institution: University of Nottingham
+        area: Computer Vision
+        studyType: PhD
+        location: Nottingham, UK
+        start_date: "2018"
+        end_date: "2022"
+        url: https://www.nottingham.ac.uk/research/groups/cvl/
+        highlights:
+          - "*Advisor:* [Dr. Yiorgos Tzimiropoulos](https://ytzimiro.github.io/)"
+          - Member of the [Computer Vision Laboratory (CVL)](https://www.nottingham.ac.uk/research/groups/cvl/) of the University of Nottingham.
+          - My PhD thesis was on ***Unsupervised Landmark Discovery via Self-Training Correspondence***.
+          - Research conducted for my thesis has been partially published at [[NeurIPS2020]](https://proceedings.neurips.cc/paper/2020/hash/32508f53f24c46f685870a075eaaa29c-Abstract.html) and [[TPAMI2023]](https://ieeexplore.ieee.org/document/10005822).
+          - |
+            **Research areas**
+            - *Unsupervised Landmark Discovery*
+            - *Self-Supervised Learning*
+            - *Self-Training*
+            - *Learning under label noise*
 
-- title: Education
-  type: time_table
-  contents:
-    - title: PhD in Computer Vision
-      institution: University of Nottingham <i>(Nottingham, UK)</i>
-      year: 2018-2022
-      description:
-        - "<i><u>Advisor:</u></i> <a href=https://ytzimiro.github.io/>Dr. Yiorgos Tzimiropoulos</a>"
-        - Member of the <a href="https://www.nottingham.ac.uk/research/groups/cvl/">Computer Vision Laboratory (CVL)</a> of the University of Nottingham.
-        - My PhD thesis was on <i><b>Unsupervised Landmark Discovery via Self-Training Correspondence</b></i>.
-        - "Research conducted for my thesis has been partially published at <a href=https://proceedings.neurips.cc/paper/2020/hash/32508f53f24c46f685870a075eaaa29c-Abstract.html>[NeurIPS2020]</a> and <a href=https://ieeexplore.ieee.org/document/10005822>[TPAMI2023]</a>."
-        - title: <b>Research areas</b>
-          contents:
-            - "<i>Unsupervised Landmark Discovery</i>"
-            - "<i>Self-Supervised Learning</i>"
-            - "<i>Self-Training</i>"
-            - "<i>Learning under label noise</i>"
-    - title: Diploma in Electrical and Computer Engineering
-      institution: Democritus University of Thrace (<a href=https://duth.gr/en>D.U.Th</a>) <i>(Xanthi, Greece)</i>
-      year: 2010-2015
-      description:
-        - "<i>Program Duration:</i> 5 years"
-        - "A diploma is the Greek equivelant to <b>BSc + MSc</b>."
-        - My diploma thesis was on <b>Sound Source Separation in Real Room Environment</b>.
-        - Research conducted for my thesis has been partially published in <a href=https://www.springerprofessional.de/en/convolutive-audio-source-separation-using-robust-ica-and-reduced/10651414>[AIAI2016]</a> and later <a href=https://link.springer.com/article/10.1007/s12530-017-9199-3>[EvolvingSystems2018]</a>.
-        - Our work on sentiment analysis of Greek Tweets lead to publications in <a href=https://dl.acm.org/doi/10.1145/2801948.2802010https://dl.acm.org/doi/10.1145/2801948.2802010>[PCI2015]</a> and <a href=https://www.emerald.com/insight/content/doi/10.1108/JSIT-06-2017-0040/full/html>[JSIT2018]</a>.
-        - Graduated with the <b>4th highest grade</b> on my cohord.
-        - "<i><u>Advisor:</u></i> <a href=https://utopia.duth.gr/nmitiano/>Dr. Nikos Mitianoudis</a>"
+      - institution: Democritus University of Thrace (D.U.Th)
+        area: Electrical and Computer Engineering
+        studyType: Diploma
+        location: Xanthi, Greece
+        start_date: "2010"
+        end_date: "2015"
+        url: https://duth.gr/en
+        highlights:
+          - "*Program Duration:* 5 years"
+          - A diploma is the Greek equivalent to **BSc + MSc**.
+          - My diploma thesis was on **Sound Source Separation in Real Room Environment**.
+          - Research conducted for my thesis has been partially published in [[AIAI2016]](https://www.springerprofessional.de/en/convolutive-audio-source-separation-using-robust-ica-and-reduced/10651414) and later [[EvolvingSystems2018]](https://link.springer.com/article/10.1007/s12530-017-9199-3).
+          - Our work on sentiment analysis of Greek Tweets led to publications in [[PCI2015]](https://dl.acm.org/doi/10.1145/2801948.2802010) and [[JSIT2018]](https://www.emerald.com/insight/content/doi/10.1108/JSIT-06-2017-0040/full/html).
+          - Graduated with the **4th highest grade** in my cohort.
+          - "*Advisor:* [Dr. Nikos Mitianoudis](https://utopia.duth.gr/nmitiano/)"
 
+    Teaching:
+      - bullet: |
+          **Master/Undergrad students** (collaboration with [Deeplab](https://deeplab.ai/)) · *2022 – 2025*
 
+          Through my ongoing collaboration with Deeplab, I participate in the supervision of master/undergrad students, towards either the completion of their thesis or paper submissions. Part of Deeplab's collaboration with the National Technical University of Athens *(NTUA)*.
 
+          - *Maria Parelli's* work on [Interpretable Visual Question Answering Via Reasoning Supervision](https://ieeexplore.ieee.org/abstract/document/10223156), presented at ICIP 2023 as a lecture.
+          - *Zacharias Anastasakis'* diploma thesis on [Self-Supervised Visual Relationship Detection](https://arxiv.org/abs/2311.04834), also partially presented at WACV 2024 as a poster.
+          - *Danai Brilli's* diploma thesis on [Scene Graph Guided Visual Question Answering](https://arxiv.org/pdf/2511.20201), presented at BMVC 2025 [SU2HM Workshop](https://sites.google.com/view/su2hm/home) both as an oral and poster presentation.
+      - bullet: |
+          **CVIA lectures** · *2023 – present*
 
-- title: Teaching
-  type: time_table
-  contents:
+          Guest lecturer for the Computer Vision & Image Analysis (CVIA) course. Part of the [Interdisciplinary Space Master (ISM)](https://ism.uni.lu/) / [Master in Information and Computer Science (MICS)](https://www.uni.lu/fstm-en/study-programs/master-in-information-and-computer-sciences/) of SnT, University of Luxembourg.
+      - bullet: |
+          **Teaching Assistant** · *2018 – 2021*
 
-    - title: Master/Undergrad students  (collaboration with <a href=https://deeplab.ai/>Deeplab</a>).
-      year: 2022 - 2025
-      description:
-        - Through my ongoing collaboration with Deeplab, I participate in the supervision master/undergrad student's, towards either the completion of their thesis or paper submissions.
-        - Part of Deeplabs collaboration with the National Technical University of Athens <i>(NTUA)</i>.
-        - title: <b>Student Projects</b>
-          contents:
-            - "<i>Maria Parelli's</i> work on <a href=https://ieeexplore.ieee.org/abstract/document/10223156>Interpretable Visual Question Answering Via Reasoning Supervision</a>, presented at ICIP 2023 as a lecture."
-            - "<i>Zacharias Anastasaki's</i> diploma thesis on <a href=https://arxiv.org/abs/2311.04834>Self-Supervised Visual Relationship Detection</a>, also partially presented at WAVC 2023 as a poster."
-            - "<i>Danai Brilli's</i> diploma thesis on <a href=https://arxiv.org/pdf/2511.20201>Scene Graph Guided Visual Question Answering</a>, presented at BMVC 2025 <a href=https://sites.google.com/view/su2hm/home>SU2HM Workshop</a> both as an oral and poster presentation."
-            
-    - title: CVIA lectures
-      year: 2023 - present
-      description:
-        - Guess lecturer for the Computer Vision & Image Analysis (CVIA) Course.
-        - Part of the <a href=https://ism.uni.lu/>Interdisciplinary Space Master (ISM)</a> / <a href=https://www.uni.lu/fstm-en/study-programs/master-in-information-and-computer-sciences/>Master is Information and Computer Science (MICS)</a> of SnT, Univesity of Luxembourg.
+          During my PhD, I served as a teaching assistant for multiple undergraduate modules of the School of Computer Science *(University of Nottingham)*. My duties included **lab tutoring**, **coursework marking** and **running tutorials**.
 
-    - title: Teaching Assistant
-      year: 2018-2021
-      description:
-        - During my PhD, I served as a teaching assistant for multiple undergraduate modules of the School of Computer Science <i>(University of Nottingham)</i>.
-        - My duties included <b>lab tutoring</b>, <b>coursework marking</b> and <b>running tutorials</b>.
-        - title: Modules
-          contents:
-            - "<i>Computer Fundamentals</i>"
-            - "<i>C++ Programming</i>"
-            - "<i>Mobile Developments</i>"
-            - "<i>Image Processing</i>"
+          - *Computer Fundamentals*
+          - *C++ Programming*
+          - *Mobile Developments*
+          - *Image Processing*
 
+    Reviewer:
+      - bullet: |
+          I have served as reviewer for the following journals and conferences:
 
-- title: Reviewer
-  type: list
-  contents:
-    - "I have served as reviewer for the following journals and conferences: <br> 
-    <ul><li><b>ECCV, BMVC, NeurIPS(W), ICIP, ICMLA, CVPR, ICCV(W), WACV</b>.</li></ul>"
+          - **ECCV, BMVC, NeurIPS(W), ICIP, ICMLA, CVPR, ICCV(W), WACV**.
 
+    Awards:
+      - title: Fully funded PhD scholarship
+        awarder: University of Nottingham and The Douglas Bomford Trust
+        date: "2018"
+        url: https://www.dbt.org.uk/
+        summary: I was awarded a fully funded PhD scholarship by the University of Nottingham and The Douglas Bomford Trust.
+      - title: 4th highest grade of my university cohort
+        awarder: Democritus University of Thrace (DUTh)
+        date: "2015"
+        summary: I graduated with the 4th highest grade of my university cohort *(DUTh)*.
 
-- title: Awards and Disntinctions
-  type: time_table
-  contents:
-    - title: 
-      year: 2018
-      description:
-        - I was awarded a full funded PhD scholarship by the University of Nottingham and <a href="https://www.dbt.org.uk/">The Douglas Bomford Trust</a>.
-    - title: 
-      year: 2015
-      description:
-        - I graduated with the 4th highest grade of my university cohord <i>(DUTH)</i>.
-
-- title: Open Source Repositories
-  type: time_table
-  contents:
-    - title: <a href="https://github.com/dimitrismallis/CADTestBench">CADTestBench</a>
-      description: "Code for our paper: <i>Text-to-CAD Evaluation with CADTests</i>."
-
-    - title: <a href="https://github.com/dimitrismallis/CAD-Assistant">CAD-Assistant</a>
-      description: "This repository will contain the official codebase for our ICCV 2025 paper: <i>CAD-Assistant: Tool-Augmented VLLMs as Generic CAD Task Solvers</i>"
-
-    - title: <a href="https://github.com/filaPro/cad-recode">CAD-Recode</a>
-      description: "The implementation of CAD-Recode, a 3D CAD reverse engineering method introduced in our paper: <i>CAD-Recode: Reverse Engineering CAD Code from Point Clouds</i>"
-
-    - title: <a href="https://github.com/cvi2snt/CPTSketchGraphs">CPTSketchGraphs</a>
-      description: "A dataset of 80 millon constraint preserving transformations (CPTs) of CAD sketches derived from the SketchGraphs dataset."
-
-    - title: <a href="https://github.com/dimitrismallis/KeypointsToLandmarks">KeypointsToLandmarks</a>
-      description: "Code for our TPAMI paper <i>From Keypoints to Object Landmarks via Self-Training Correspondence: A novel approach to Unsupervised Landmark Discovery.</i>"
-
-    - title: <a href="https://github.com/dimitrismallis/UnsupervisedLandmarks">UnsupervisedLandmarks</a>
-      description: "Code NeurIPS 2020 paper, <i>Unsupervised Learning of Object Landmarks via Self-Training Correspondence</i>."
-
-
-
-        
+    Open Source Projects:
+      - name: CADTestBench
+        url: https://github.com/dimitrismallis/CADTestBench
+        summary: 'Code for our paper: *Text-to-CAD Evaluation with CADTests*.'
+      - name: CAD-Assistant
+        url: https://github.com/dimitrismallis/CAD-Assistant
+        summary: 'This repository will contain the official codebase for our ICCV 2025 paper: *CAD-Assistant: Tool-Augmented VLLMs as Generic CAD Task Solvers*.'
+      - name: CAD-Recode
+        url: https://github.com/filaPro/cad-recode
+        summary: 'The implementation of CAD-Recode, a 3D CAD reverse engineering method introduced in our paper: *CAD-Recode: Reverse Engineering CAD Code from Point Clouds*.'
+      - name: CPTSketchGraphs
+        url: https://github.com/cvi2snt/CPTSketchGraphs
+        summary: A dataset of 80 million constraint preserving transformations (CPTs) of CAD sketches derived from the SketchGraphs dataset.
+      - name: KeypointsToLandmarks
+        url: https://github.com/dimitrismallis/KeypointsToLandmarks
+        summary: "Code for our TPAMI paper *From Keypoints to Object Landmarks via Self-Training Correspondence: A novel approach to Unsupervised Landmark Discovery*."
+      - name: UnsupervisedLandmarks
+        url: https://github.com/dimitrismallis/UnsupervisedLandmarks
+        summary: Code for our NeurIPS 2020 paper, *Unsupervised Learning of Object Landmarks via Self-Training Correspondence*.

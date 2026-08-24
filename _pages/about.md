@@ -8,18 +8,23 @@ profile:
   align: right
   image: profile.jpg
   image_circular: false # crops the image to make it circular
-  address: 
+  more_info:
     # <p>CVI² Research Group,</p>
     # <p>University of Luxembourg</p>
 
-
-news: true  # includes a list of news items
-latest_posts: false  # includes a list of the newest posts
 selected_papers: true # includes a list of papers marked as "selected={true}"
-social: true  # includes social icons at the bottom of the page
+social: true # includes social icons at the bottom of the page
+
+announcements:
+  enabled: true # includes a list of news items
+  scrollable: true # adds a vertical scroll bar if there are more than 3 news items
+  limit: 3 # leave blank to include all the news in the `_news` folder
+
+latest_posts:
+  enabled: false
 ---
 
-Welcome!! 👋  I am a Postdoctoral Researcher at the [Interdisciplinary Centre for Security, Reliability and Trust (SnT)](https://www.uni.lu/snt) of the **University of Luxembourg**, focusing on computer vision / AI and its appliations for Computer-Aided Design (CAD).
+Welcome!! 👋  I am a Postdoctoral Researcher at the [Interdisciplinary Centre for Security, Reliability and Trust (SnT)](https://www.uni.lu/snt) of the **University of Luxembourg**, focusing on computer vision / AI and its applications for Computer-Aided Design (CAD).
 
 I received my PhD in Computer Vision at the **University of Nottingham** under the supervision of [Dr. Yorgos Tzimiropoulos](https://ytzimiro.github.io/). I was also a Research Intern at [Samsung AI Cambridge (SAIC)](https://research.samsung.com/aicenter_cambridge) and later a Senior Machine Learning Engineer for [Taboola](https://www.taboola.com/) and [Deeplab](https://deeplab.ai/).
 
@@ -27,11 +32,18 @@ In this website you can find more info about me, check publications and recent n
 
 ### Research
 
-During my PhD, I concentrated on learning with minimal manual supervision through self-supervised and semi-supervised learning, specifically for the tasks of landmark detection and human pose estimation. Later, I also looked into deep learning based recommender systems and the problem of click-through-rate (CTR) prediction. 
+During my PhD, I concentrated on learning with minimal manual supervision through self-supervised and semi-supervised learning, specifically for the tasks of landmark detection and human pose estimation. Later, I also looked into deep learning based recommender systems and the problem of click-through-rate (CTR) prediction.
 
-Currently my focus in on 3D vision and it's application towards accelerating parametric Computer-Aided Design (CAD). I am particularly interested in automated reverse engineering of 2D/3D CAD models as well as Multimodal Large Language Models (MLLMs) for AI-assisted design. I also lead [Morfis](https://morfisai.github.io/), an SnT project focused on AI-assisted physical product customization. 
+Currently my focus is on 3D vision and its application towards accelerating parametric Computer-Aided Design (CAD). I am particularly interested in automated reverse engineering of 2D/3D CAD models as well as Multimodal Large Language Models (MLLMs) for AI-assisted design. I also lead [Morfis](https://morfisai.github.io/), an SnT project focused on AI-assisted physical product customization.
 
+## Open Source Projects
 
+{% if site.data.repositories.github_repos %}
 
+<div class="repositories d-flex flex-wrap flex-md-row flex-column justify-content-between align-items-center">
+  {% for repo in site.data.repositories.github_repos %}
+    {% include repository/repo.liquid repository=repo %}
+  {% endfor %}
+</div>
 
-
+{% endif %}
