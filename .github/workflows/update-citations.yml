@@ -2,7 +2,13 @@ name: Update Google Scholar citations
 
 on:
   schedule:
-    - cron: "0 4 * * 1" # Mondays, 04:00 UTC
+    # Daily. Counts are baked into the HTML at build time (Google publishes no
+    # citations API or embed widget), so this job is what keeps them current: it
+    # commits _data/citations.yml and dispatches a deploy on its own, independent of
+    # when the site is otherwise edited. Running daily also means a run throttled by
+    # Google costs at most a day of staleness, since a failed scrape leaves the
+    # previous counts in place. Upstream al-folio runs Mon/Wed/Fri.
+    - cron: "0 4 * * *" # every day, 04:00 UTC
   workflow_dispatch:
 
 permissions:
