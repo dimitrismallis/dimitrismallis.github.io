@@ -9,6 +9,12 @@ on:
     branches:
       - master
       - main
+  schedule:
+    # Daily rebuild, purely to refresh the Google Scholar citation counts. They are
+    # baked into the HTML at build time (Google publishes no citations API), and the
+    # refresh step below regenerates _data/citations.yml in the runner without
+    # committing it -- so counts stay current without a bot commit per change.
+    - cron: "0 4 * * *" # every day, 04:00 UTC
   workflow_dispatch:
 
 permissions:
@@ -25,6 +31,23 @@ jobs:
         with:
           ruby-version: "3.3.5"
           bundler-cache: true
+      - name: Setup Python 🐍
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+
+      # Regenerates _data/citations.yml in the runner only -- deliberately never
+      # committed, so refreshing counts costs no commits on master. The committed
+      # copy is the fallback: the script exits non-zero without writing if Google
+      # throttles the runner, and the build then uses the checked-in counts rather
+      # than rendering every badge as zero. Refresh that baseline occasionally with
+      # the update-citations workflow (manual) so local builds are not far behind.
+      - name: Refresh Scholar citations 🎓
+        continue-on-error: true
+        run: |
+          pip install -r requirements.txt
+          timeout 90 python3 bin/update_scholar_citations.py
+
       - name: Install and Build 🔧
         run: |
           sudo apt-get update && sudo apt-get install -y imagemagick
