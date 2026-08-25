@@ -95,9 +95,9 @@ al_folio:
 
 navbar_fixed: true
 footer_fixed: true
-search_enabled: true
-socials_in_search: true
-posts_in_search: true
+search_enabled: false # command-K site search (ninja-keys) not needed
+socials_in_search: false # moot with search_enabled: false
+posts_in_search: false # moot with search_enabled: false
 bib_search: false # per-page publication filter box (removed from _pages/publications.md)
 
 # Dimensions
@@ -288,7 +288,8 @@ plugins:
   - al_citations
   - al_ext_posts
   - al_img_tools
-  - al_search
+  # - al_search # site search disabled (search_enabled: false); not loading the
+  #              # plugin also stops it copying ~212K of unused JS into _site
   - al_charts
   - al_math
   - al_comments
