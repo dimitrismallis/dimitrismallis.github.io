@@ -6,8 +6,10 @@ on:
   # without committing it -- so there is no bot commit per citation change.
   #
   # Run this when you want the *committed* baseline updated too: it is what local
-  # builds use, and what the deploy falls back to when Google throttles the runner.
-  # Occasionally is enough.
+  # builds use, and what the deploy falls back to when Google throttles the runner
+  # and there is no newer cached scrape. Occasionally is enough. It runs on the same
+  # throttled runners, so running bin/update_scholar_citations.py locally and
+  # committing the result is the more reliable way to refresh it.
   workflow_dispatch:
 
 permissions:

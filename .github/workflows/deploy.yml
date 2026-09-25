@@ -36,17 +36,48 @@ jobs:
         with:
           python-version: "3.13"
 
+      # Google throttles GitHub's runner IPs, so most scrapes fail (about 1 in 8
+      # succeeded in Aug-Sep 2026). The last successful scrape is carried between runs
+      # in the Actions cache; otherwise every failed day rebuilt from the committed
+      # copy and the site snapped back to those older counts.
+      - name: Restore last Scholar counts 🗄️
+        uses: actions/cache/restore@v4
+        with:
+          path: .scholar-cache
+          key: scholar-citations-${{ github.run_id }}
+          restore-keys: scholar-citations-
+
       # Regenerates _data/citations.yml in the runner only -- deliberately never
-      # committed, so refreshing counts costs no commits on master. The committed
-      # copy is the fallback: the script exits non-zero without writing if Google
-      # throttles the runner, and the build then uses the checked-in counts rather
-      # than rendering every badge as zero. Refresh that baseline occasionally with
-      # the update-citations workflow (manual) so local builds are not far behind.
+      # committed, so refreshing counts costs no commits on master. It starts from
+      # whichever of the cached and committed copies is newer (so a manual
+      # update-citations run still takes effect), and the script exits non-zero
+      # without writing if Google throttles the runner, so the build then uses those
+      # counts rather than rendering every badge as zero.
       - name: Refresh Scholar citations 🎓
+        id: scholar
         continue-on-error: true
         run: |
+          cached=.scholar-cache/citations.yml
+          if [ -f "$cached" ] && [[ "$(grep -m1 last_updated "$cached")" > "$(grep -m1 last_updated _data/citations.yml)" ]]; then
+            cp "$cached" _data/citations.yml
+          fi
           pip install -r requirements.txt
-          timeout 90 python3 bin/update_scholar_citations.py
+          timeout 90 python3 -u bin/update_scholar_citations.py
+
+      # Saved after every run, not just successful ones, so the entry never ages out
+      # of the cache however long Google keeps refusing. Jekyll skips dot-directories,
+      # so .scholar-cache never reaches _site.
+      - name: Stash Scholar counts 🗄️
+        run: |
+          mkdir -p .scholar-cache && cp _data/citations.yml .scholar-cache/
+          if [ "${{ steps.scholar.outcome }}" != "success" ]; then
+            echo "::warning::Scholar refresh failed; building with counts from $(grep -m1 last_updated _data/citations.yml | grep -oE '[0-9]{4}-[0-9]{2}-[0-9]{2}')"
+          fi
+      - name: Save Scholar counts 🗄️
+        uses: actions/cache/save@v4
+        with:
+          path: .scholar-cache
+          key: scholar-citations-${{ github.run_id }}
 
       - name: Install and Build 🔧
         run: |

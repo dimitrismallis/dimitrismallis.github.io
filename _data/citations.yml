@@ -1,12 +1,12 @@
 metadata:
-  last_updated: '2026-08-24'
+  last_updated: '2026-09-25'
 papers:
   Gfc5ZXoAAAAJ:0EnyYjriUFMC:
-    citations: 67
+    citations: 70
     title: 'CAD-Assistant: Tool-Augmented VLLMs as Generic CAD Task Solvers'
     year: '2025'
   Gfc5ZXoAAAAJ:3fE2CSJIrl8C:
-    citations: 0
+    citations: 1
     title: 'GHR-VQA: Graph-guided Hierarchical Relational Reasoning for Video Question Answering'
     year: '2025'
   Gfc5ZXoAAAAJ:5nxA0vEk-isC:
@@ -18,11 +18,11 @@ papers:
     title: Convolutive audio source separation using robust ICA and an intelligent evolving permutation ambiguity solution
     year: '2018'
   Gfc5ZXoAAAAJ:L8Ckcad2t8MC:
-    citations: 3
+    citations: 8
     title: Text-to-CAD Evaluation with CADTests
     year: '2026'
   Gfc5ZXoAAAAJ:LkGwnXOMwfcC:
-    citations: 25
+    citations: 28
     title: 'Sharp challenge 2023: Solving cad history and parameters recovery from point clouds and 3d scans. overview, datasets, metrics, and baselines'
     year: '2023'
   Gfc5ZXoAAAAJ:MXK_kJrjxJIC:
@@ -34,11 +34,11 @@ papers:
     title: An Incremental Learning framework for Large-scale CTR Prediction
     year: '2022'
   Gfc5ZXoAAAAJ:Se3iqnhoufwC:
-    citations: 13
+    citations: 14
     title: 'Picasso: A feed-forward framework for parametric inference of cad sketches via rendering self-supervision'
     year: '2025'
   Gfc5ZXoAAAAJ:UebtZRa9Y70C:
-    citations: 15
+    citations: 17
     title: 'DAVINCI: A Single-Stage Architecture for Constrained CAD Sketch Inference'
     year: '2024'
   Gfc5ZXoAAAAJ:W7OEmFMy1HYC:
@@ -66,7 +66,7 @@ papers:
     title: Convolutive Audio Source Separation Using Robust ICA and Reduced Likelihood Ratio Jump
     year: '2016'
   Gfc5ZXoAAAAJ:hqOjcs7Dif8C:
-    citations: 86
+    citations: 96
     title: 'Cad-recode: Reverse engineering cad code from point clouds'
     year: '2025'
   Gfc5ZXoAAAAJ:qjMakFHDy7sC:
@@ -74,7 +74,7 @@ papers:
     title: Towards the creation of an emotion lexicon for microblogging
     year: '2018'
   Gfc5ZXoAAAAJ:roLk4NBRz8UC:
-    citations: 64
+    citations: 65
     title: 'Transcad: A hierarchical transformer for cad sequence inference from point clouds'
     year: '2024'
   Gfc5ZXoAAAAJ:u5HHmVD_uO8C:
@@ -82,7 +82,7 @@ papers:
     title: Sentiment analysis of greek tweets and hashtags using a sentiment lexicon
     year: '2015'
   Gfc5ZXoAAAAJ:ufrVoPGSRksC:
-    citations: 8
+    citations: 9
     title: Interpretable visual question answering via reasoning supervision
     year: '2023'
   Gfc5ZXoAAAAJ:zYLM7Y9cAGgC:
